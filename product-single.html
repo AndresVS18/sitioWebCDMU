@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Second Boostrap Project</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+  </head>
+  <body>
+    <div class="navibar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Doña Tifo</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navegation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+          <li>
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="search...">
+                <div class="input-group-btn">
+                  <button class="btn btn-defoult" type="submite">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- /.navbar-form -->
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navibar navbar-inverse navbar-static-top -->
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Products</li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="page-header">
+          <h1>Products. <small>We build amazing staff.</small></h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Product One</h3>
+          <p class="text-muted"> This is an awesome product one description</p>
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group pull-right">
+            <button class="btn btn-info btn-lg">Buy Now</button>
+            <button class="btn btn-default btn-lg">Free Trial</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div id="carousel-products" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/LogoUTT.jpg" style="width:1170px; height:300px">
+              <div class="carousel-caption">
+                <p>A NICE DEMO</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/76a50a_793a7769f07b4a0082e45e3142c58b60.jpg" style="width:1170px; height:300px">
+              <div class="carousel-caption">
+                <p>A NICE DEMO</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/tomates-1.jpg" style="width:1170px; height:300px">
+              <div class="carousel-caption">
+                <p>A NICE DEMO</p>
+              </div>
+            </div>
+            <!-- indicatodors -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-products" data-slide-to="1"></li>
+              <li data-target="#carousel-products" data-slide-to="2"></li>
+            </ol>
+            <!-- controls -->
+            <a href="#carousel-products" class="left carousel-control" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel-products" class="right carousel-control" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+      </div>
+    </div>
+    <hr/>
+
+<div class="footer">
+  <p class="text-center lead">Wanna get in touch? Email us at <a href="#">andres.vazquez@alumno.uttehuacan.edu.mx</a></p>
+  <hr>
+
+  <ul class="list-unstyled text-center list-inline">
+    <li>Follow us:</li>
+    <li class="icono"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+    <li class="icono"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+    <li class="icono"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+  <p class="text-center text-muted">
+    &copy; Copyright 2017 Company Name
+  </p>
+</div>
+<!-- modal contact form  -->
+<div class="modal fade" id="modal-contact-form" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Contact Us</h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="contact-name" class="form-control-label">Name:</label>
+            <input type="text" class="form-control" id="contact-name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-control-label">Email:</label>
+            <input type="email" class="form-control" id="contact-email">
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-control-label">Message:</label>
+            <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="controls">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 4000
+      });
+    });
+    </script>
+  </body>
+</html>

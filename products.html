@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Second Boostrap Project</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
+  </head>
+  <body>
+    <div class="navibar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Doña Tifo</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navegation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+          <li>
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="search...">
+                <div class="input-group-btn">
+                  <button class="btn btn-defoult" type="submite">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- /.navbar-form -->
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navibar navbar-inverse navbar-static-top -->
+    <div class="container">
+      <div class="row">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Products</li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="page-header">
+          <h1>Products. <small>We build amazing staff.</small></h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="thubnail">
+            <a href=""><img src="img/descarga.jpg" alt=""></a>
+            <div class="caption">
+              <h4><a href="product-single.html">Product Name</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, facilis? Minima ea neque praesentium quibusdam mollitia aliquam ut odit laudantium.</p>
+              <p><a href="" class="btn btn-primary" role="button">Lear More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thubnail">
+            <a href=""><img src="img/descarga (1).jpg" alt=""></a>
+            <div class="caption">
+              <h4><a href="product-single.html">Product Name</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, facilis? Minima ea neque praesentium quibusdam mollitia aliquam ut odit laudantium.</p>
+              <p><a href="" class="btn btn-primary" role="button">Lear More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thubnail">
+            <a href=""><img src="img/descarga (1).jpg" alt=""></a>
+            <div class="caption">
+              <h4><a href="product-single.html">Product Name</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, facilis? Minima ea neque praesentium quibusdam mollitia aliquam ut odit laudantium.</p>
+              <p><a href="" class="btn btn-primary" role="button">Lear More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+
+<div class="footer">
+  <p class="text-center lead">Wanna get in touch? Email us at <a href="#">andres.vazquez@alumno.uttehuacan.edu.mx</a></p>
+  <hr>
+
+  <ul class="list-unstyled text-center list-inline">
+    <li>Follow us:</li>
+    <li class="icono"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+    <li class="icono"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+    <li class="icono"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+  <p class="text-center text-muted">
+    &copy; Copyright 2017 Company Name
+  </p>
+</div>
+<!-- modal contact form  -->
+<div class="modal fade" id="modal-contact-form" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Contact Us</h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="contact-name" class="form-control-label">Name:</label>
+            <input type="text" class="form-control" id="contact-name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-control-label">Email:</label>
+            <input type="email" class="form-control" id="contact-email">
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-control-label">Message:</label>
+            <textarea name="" id="contact-message" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="controls">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 4000
+      });
+    });
+    </script>
+  </body>
+</html>
