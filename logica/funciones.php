@@ -20,7 +20,7 @@ class funciones {
               <li><a href="index.php">Inicio</a></li>
               <li><a href="afiliacion.php">Afiliacion</a></li>
               <li><a href="#">Servicios</a></li>
-              <li><a href="#">Cursos</a></li>
+              <li><a href="Cursos.php">Cursos</a></li>
               <li><a href="Oportunidad.php">Oportunidades de Negocio</a></li>
               <li><a href="bolsa.php">Bolsa de Trabajo</a></li>
               <li class="dropdown">
@@ -84,7 +84,7 @@ class funciones {
       <!-- /.footer -->
     </footer>';
     }
-    
+
     public function carfo(){
         echo'<div class="row">
             <div id="carousel-products" class="carousel slide" data-ride="carousel">
@@ -107,7 +107,7 @@ class funciones {
                         <img src="img/cursos.jpg" alt="" style="width:1800px; height:300px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
-                
+
                 <!-- controls -->
                 <a href="#carousel-products" class="left carousel-control" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
