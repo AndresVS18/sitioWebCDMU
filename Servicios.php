@@ -72,7 +72,7 @@ $fun = new funciones();
                 <div class="row col-md-4">
             <div>
               <div class="thumbnail">
-                <img src="..." alt="...">
+              <img src="Imagenes/Servicio1" width="30px">
                 <div class="caption">
                   <h3>Servicio 1</h3>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -84,7 +84,7 @@ $fun = new funciones();
           <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="..." alt="...">
+        <img src="Imagenes/Servicio2" width="30px">
         <div class="caption">
           <h3>Servicio 2</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -96,7 +96,7 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="..." alt="...">
+        <img src="Imagenes/Servicio3" width="30px">
         <div class="caption">
           <h3>Servicio 3</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -108,7 +108,7 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="..." alt="...">
+        <img src="Imagenes/Servicio4" width="30px">
         <div class="caption">
           <h3>Servicio 4</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -120,7 +120,7 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="..." alt="...">
+        <img src="Imagenes/Servicio5" width="30px">
         <div class="caption">
           <h3>Servicio 5</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -132,7 +132,7 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="..." alt="...">
+        <img src="Imagenes/Servicio6" width="30px">
         <div class="caption">
           <h3>Servicio 6</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
