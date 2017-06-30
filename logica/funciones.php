@@ -13,20 +13,16 @@ class funciones {
             </button>
             <a class="navbar-brand" href="index.php">CDMU</a>
           </div>
- <br />
+ 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-
               <li><a href="index.php">Inicio</a></li>
               <li><a href="afiliacion.php">Afiliacion</a></li>
-<<<<<<< HEAD
               <li><a href="Servicios.php">Servicios</a></li>
               <li><a href="#">Cursos</a></li>
-=======
               <li><a href="#">Servicios</a></li>
               <li><a href="Cursos.php">Cursos</a></li>
->>>>>>> 2a13ed68dfdf8bd5040d74b7b45d039245061197
               <li><a href="Oportunidad.php">Oportunidades de Negocio</a></li>
               <li><a href="bolsa.php">Bolsa de Trabajo</a></li>
               <li class="dropdown">
