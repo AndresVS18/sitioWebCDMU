@@ -14,70 +14,74 @@ $fun = new funciones();
   <link rel="stylesheet" href="Estilo.css">
   <title>CDMU</title>
 </head>
-<body>
+<body style="background:  #f7ff08 0%, #21ad11 50%, #00a3ef 80% " >
   <!-- HEADER -->
   <?php $fun->menu(); ?>
+  <img src="Imagenes/anunciate2.jpg" style="width:100%" height: class="img-responsive" alt="Hola" style:"center">
   <!-- CUERPO -->
   <div class="container">
-    
+
 
     <hr>
 
-    <div class="row">
 
-      <div class="carousel slide" data-ride="carousel">
+      <div class="col-md-12">
+      <div id="carousel1" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel1" data-slide-to="0" class="active"></li>
           <li data-target="#carousel1" data-slide-to="1"></li>
           <li data-target="#carousel1" data-slide-to="2"></li>
+          <li data-target="#carousel1" data-slide-to="3"></li>
         </ol>
 
-        <div class="carousel-inner" role="listbox" id="carorusel1">
+        <div class="container">
+        <div class="carousel-inner" role="listbox" >
           <div class="item active" >
-            <img src="img/logo2.jpg "alt="Imagen1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            <img src="Imagenes/empresas/coppel1.jpg" alt="Imagen1" style="width: 100%" >
+
             </div>
 
             <div class="item " >
-              <img src="img/logo3.jpg" alt="Imagen 2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-              </div>
+              <img src="Imagenes/empresas/suburbia1.jpg" alt="Imagen2" style="width: 100%" >
+            </div>
 
               <div class="item">
-                <img src="img/logo5.jpg" alt="Imagen 3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                <img src="Imagenes/empresas/walmart1.png" alt="Imagen 3" style="width: 100%">
+
                 </div>
 
-                  <hr>
+                <div class="item">
+                  <img src="Imagenes/empresas/woolworth1.jpg" alt="Imagen 4" style="width: 100%">
+
+                  </div>
+                  </div>
+                  </div>
+
+
                   <div class="text-center">
                 <div class="col-md-4">
-                  <h4>servicios</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h2>Servicios</h2>
+                  <p>La Subprocuraduría de Servicios ofrece asesoría, recibe y gestiona las quejas en materia de consumo y las denuncias en materia de publicidad; también realiza el monitoreo de la publicidad en medios masivos de comunicación, lleva a cabo el registro de números telefónicos para evitar llamadas publicitarias no deseada (Repep); inicia procedimientos por infracciones a la Ley en materia de servicios ya sea de oficio o a través de una denuncia, supervisa los procedimientos de conciliación y el registro o la cancelación de contratos de adhesión de los proveedores y somos el área responsable de llevar a cabo el Registro Público de Casas de Empeño.</p>
                 </div>
 
                 <div class="col-md-4">
-                <h4>cursos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Cursos</h2>
+                <p>Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo. <hr>
+
+*Dentro de la HABILIDAD lo que buscaos es la facilidad para realizar una tarea con cierta eficiencia, empleando el mínimo de recursos y de tiempo. <br>
+
+* En el CONOCIMIENTO queremos mejorar la experiencia de los usuarios, mediante ejercicios, actividades, etc. Esto ayudará no sólo a corto plazo sino a un plazo de determinado tiempo. <br>
+
+* La CONDUCTA es la forma de actuar y de relacionarse con los demás; aquí no se evalúan las causas de las conductas. Se busca modificar conductas ante situaciones concretas.
+</p>
                 </div>
 
                 <div class="col-md-4">
-                <h4>oportunidades de trabajo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Oportunidades de trabajo</h2>
+                <p>En esta página podrá encontrar información sobre oportunidades de empleo en CEPAL en Santiago y oficinas regionales.
+                  Uno de los componentes clave en nuestra compañía son las personas, por lo que nos
+  enfocamos en construir un clima organizacional adecuado para el correcto desarrollo
+  profesional. ¡Únete a nuestro equipo!</p>
                 </div>
               </div>
 

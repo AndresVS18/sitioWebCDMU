@@ -18,15 +18,15 @@ $fun = new funciones();
 <?php $fun->menu();?>
     <div class="row">
 
-
+<br><br>
         <div class="col-md-12">
-            <p style="text-align: center">Bolsa de trabajo</p>
+            <h3 style="text-align: center">Bolsa de trabajo</h3>
         </div>
 
-
-      <div class="col-md-4">
+<div class="col-md-offset-1">
+      <div class="col-md-3">
         <div class="input-group">
-            <p>Seleccione oferta</p>
+            <h3>Seleccione oferta</h3>
 
 
             <button type="button" class="btn btn-primary btn-lg btn-block">Diseñador</button>
@@ -39,6 +39,7 @@ $fun = new funciones();
 
       </div>
       </div>
+    </div>
 
 
           <div class="col-md-8">

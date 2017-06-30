@@ -23,6 +23,7 @@ $fun = new funciones();
 </div>
 
 <div class="col-md-4">
+  <div class="col-md-offset-1">
   <div class="form-group">
   <input type="text" class="form-control" placeholder="Datos De La Empresa" > </div>
   <div class="form-group"><input type="text" class="form-control" placeholder="Razón Social"></div>
@@ -31,7 +32,7 @@ $fun = new funciones();
   <div class="form-group"><input type="text" class="form-control" placeholder="País"></div>
   <div class="form-group"><input type="text" class="form-control" placeholder="Sitio Web"></div>
 </div>
-
+</div>
 
 
 <div class="col-md-4">
@@ -43,7 +44,7 @@ $fun = new funciones();
   <div class="form-group"><input type="text" class="form-control" placeholder="Telefono"></div>
 </div>
 
-
+<div class="col-md-offset-1">
 <div class="col-md-4">
   <div class="form-group"><input type="text" class="form-control" placeholder="Datos De La Publicación" ></div>
   <div class="form-group"><input type="text" class="form-control" placeholder="Fecha De La Publicacion"></div>
@@ -52,8 +53,11 @@ $fun = new funciones();
   <div class="form-group"><input type="text" class="form-control" placeholder="País"></div>
   <div class="form-group"><input type="text" class="form-control" placeholder="Descripción"></div>
 </div>
+</div>
 
+<div class="col-md-12">
 <div class="col-md-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button> </div>
+</div>
 </div>
 <hr>
         <?php $fun->carfo();?>

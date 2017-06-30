@@ -4,7 +4,7 @@ class funciones {
 
     public function menu() {
         echo '<nav class="navbar navbar-inverse navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -13,10 +13,11 @@ class funciones {
             </button>
             <a class="navbar-brand" href="index.php">CDMU</a>
           </div>
-
+ <br />
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+
               <li><a href="index.php">Inicio</a></li>
               <li><a href="afiliacion.php">Afiliacion</a></li>
 <<<<<<< HEAD
@@ -39,22 +40,16 @@ class funciones {
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <div class="row">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
 
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="Imagenes/logo.jpg" style="width:100%" height: class="img-responsive" alt="Hola">
-          <div class="carousel-caption">
-            <h3>Texto</h3>
+<hr />
+<hr />
 
-            <p>Bienvenido</p>
+
+
+
+
+
+
           </div>
         </div>
       </div>
