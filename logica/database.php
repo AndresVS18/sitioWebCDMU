@@ -20,4 +20,12 @@ class database {
     function CerrarConexion() {
         $pdo = null;
     }
+
+    function bolsa(){
+      $sql = $this->pdo->prepare("select * from bolsa_trabajo");
+        if ($sql->execute(array(1))) {
+            return $sql->fetchAll(PDO::FETCH_ASSOC);
+        }
+        $this->CerrarConexion();
+    }
 }

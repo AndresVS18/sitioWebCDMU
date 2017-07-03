@@ -1,7 +1,14 @@
 <?php
-include_once 'database.php';
+include_once '/database.php';
+
 
 class funciones {
+
+private $bd;
+
+function __construct(){
+  $this->bd = new database();
+}
 
     public function menu() {
         echo '<nav class="navbar navbar-inverse navbar-default navbar-custom navbar-fixed-top">
@@ -14,18 +21,12 @@ class funciones {
             </button>
             <a class="navbar-brand" href="index.php">CDMU</a>
           </div>
- <br />
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-
               <li><a href="index.php">Inicio</a></li>
               <li><a href="afiliacion.php">Afiliacion</a></li>
-
               <li><a href="Servicios.php">Servicios</a></li>
-
               <li><a href="Cursos.php">Cursos</a></li>
-
               <li><a href="Oportunidad.php">Oportunidades de Negocio</a></li>
               <li><a href="bolsa.php">Bolsa de Trabajo</a></li>
               <li class="dropdown">
@@ -41,14 +42,6 @@ class funciones {
       </nav>
 
 <hr />
-<hr />
-
-
-
-
-
-
-
           </div>
         </div>
       </div>
@@ -117,6 +110,15 @@ class funciones {
                 </div>
             </div>
         </div>';
+    }
+
+    public function bolsa_trabajo(){
+      $bolsa = $this->bd->bolsa();
+      $texto="";
+      foreach ($bolsa as $sa) {
+        $texto.='<div class="panel-footer">'.$sa['Nombre_vacante'].'</div>';
+      }
+      return $texto;
     }
 
 }

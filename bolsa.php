@@ -47,7 +47,7 @@ $fun = new funciones();
   <div class="panel-body">
     Texto Infotmativo
   </div>
-  <div class="panel-footer">.......................................</div>
+  <?php echo $fun->bolsa_trabajo(); ?>
 
   </div>
           </div>
