@@ -15,7 +15,7 @@ $fun = new funciones();
   <title>CDMU</title>
 </head>
 <body style="background:  #f7ff08 0%, #21ad11 50%, #00a3ef 80% " >
-  <!-- HEADER -->
+
   <?php $fun->menu(); ?>
   <img src="Imagenes/anunciate2.jpg" style="width:100%" height: class="img-responsive" alt="Hola" style:"center">
   <!-- CUERPO -->
