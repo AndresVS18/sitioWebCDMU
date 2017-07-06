@@ -17,6 +17,7 @@ $fun = new funciones();
 <body>
   <!-- HEADER -->
   <?php $fun->menu(); ?>
+
   <!-- CUERPO -->
   <div class="container">
     <div class="col-md-12">
@@ -29,11 +30,8 @@ $fun = new funciones();
             <p>Cursos Disponibles</p>
 
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">Curso A</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Curso B</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Curso C</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Curso D</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Curso E</button>
+            <?php echo $fun->Cursos(); ?>
+
 
       </div>
       </div>
@@ -44,7 +42,7 @@ $fun = new funciones();
   <div class="panel-body">
     Texto Infotmativo
   </div>
-  <div class="panel-footer">.......................................</div>
+    <?php echo $fun->Curso(); ?>
 
   </div>
   <div class="col-md-8"><br/></div>

@@ -28,4 +28,22 @@ class database {
         }
         $this->CerrarConexion();
     }
+
+    function cursos(){
+      $sql = $this->pdo->prepare("select * from cursos");
+        if ($sql->execute(array(1))) {
+            return $sql->fetchAll(PDO::FETCH_ASSOC);
+        }
+        $this->CerrarConexion();
+}
+
+function curso(){
+  $id=1;
+  $sql = $this->pdo->prepare("select Descripcion_curso from cursos where Id_curs=?");
+    if ($sql->execute(array($id))) {
+        return $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
+    $this->CerrarConexion();
+}
+
 }

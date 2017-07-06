@@ -123,4 +123,23 @@ function __construct(){
       return $texto;
     }
 
+    public function cursos(){
+      $curso = $this->bd->cursos();
+      $texto="";
+      foreach ($curso as $c) {
+        $texto.='<button type="button" class="btn btn-primary btn-lg btn-block " value="'.$c['Id_curs'].'">'.$c['Nombre_curs'].'</button>';
+      }
+      return $texto;
+    }
+
+    public function curso(){
+      $curso = $this->bd->curso();
+      $texto="";
+      foreach ($curso as $s) {
+        $texto.='<div class="panel-footer">'.$s['Descripcion_curso'].'</div>';
+      }
+      return $texto;
+    }
+
+
 }
