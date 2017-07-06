@@ -15,13 +15,13 @@ function __construct(){
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
               <span class="sr-only">Toggle navigation</span>
               Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.php">CDMU</a>
+            <a class="navbar-brand" href="index.php" style="color:white">CDMU</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:white">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php">Inicio</a></li>
               <li><a href="afiliacion.php">Afiliacion</a></li>
@@ -51,21 +51,23 @@ function __construct(){
 
     public function footer() {
         echo'<footer>
-      <div class="footer">
+
+      <div class="footer" style="background: black">
         <div class="container">
           <div class="row">
-            <div class="col-xs-6 col-sm-4 col-md-4 ">
+          <br>
+            <div class="text-center col-xs-6 col-sm-6 col-md-4 "  style="color:white">
               Tel. Celular: (238) 0000- 111
             </div>
-            <div class="col-xs-6 col-sm-2 col-md-4 ">
+            <div class="text-center col-xs-6 col-sm-6 col-md-4 " style="color:white">
               E-mail: CDMU@gmail.com
             </div>
-            <div class="col-xs-6 col-sm-2 col-md-4 ">
-              <ul class="list-unstyled text-center list-inline" style=font-size:30px;>
+            <div class="text-center col-xs-12 col-sm-12 col-md-4 " style="color:white" >
+              <ul class="list-unstyled text-center list-inline" style= "font-size:30px; >
 
-                <li class="icono"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                <li class="icono"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                <li class="icono"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
+                <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
+                <li class="icono"><a href="#"><i class="fa fa-linkedin-square" style="color: white"></i></a></li>
               </ul>
             </div >
           </div>
