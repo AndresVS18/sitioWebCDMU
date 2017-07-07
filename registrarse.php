@@ -53,7 +53,7 @@ $fun = new funciones();
       <input class="form-control" type="password" id="formGroupInputLarge" placeholder="Confirmar contraseña">
     </div>
   </div>
-  <button type="button" class="col-md-offset-10 btn btn-primary btn-lg active">Enviar</button>
+  <button type="button" class="col-xs-offset-6 btn btn-primary btn-lg active">Enviar</button>
 
 </div>
 <hr>

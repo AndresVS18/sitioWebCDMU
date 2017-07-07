@@ -25,12 +25,12 @@ $fun = new funciones();
 <div class="col-md-4">
   <div class="col-md-offset-1">
   <div class="form-group">
-  <input type="text" class="form-control" placeholder="Datos De La Empresa" > </div>
-  <div class="form-group"><input type="text" class="form-control" placeholder="Razón Social"></div>
-  <div class="form-group"><input type="text" class="form-control" placeholder="Domicilio"></div>
-  <div class="form-group"><input type="text" class="form-control" placeholder="Estado / Provincia / Región"></div>
-  <div class="form-group"><input type="text" class="form-control" placeholder="País"></div>
-  <div class="form-group"><input type="text" class="form-control" placeholder="Sitio Web"></div>
+  <input type="text" class="form-control" placeholder="Datos De La Empresa" aria-describedby="basic-addon2" class="col-md-4" > </div>
+  <div class="form-group"><input type="text" class="form-control" placeholder="Razón Social" aria-describedby="basic-addon2" class="col-md-4"></div>
+  <div class="form-group"><input type="text" class="form-control" placeholder="Domicilio" aria-describedby="basic-addon2" class="col-md-4"></div>
+  <div class="form-group"><input type="text" class="form-control" placeholder="Estado / Provincia / Región" aria-describedby="basic-addon2" class="col-md-4"></div>
+  <div class="form-group"><input type="text" class="form-control" placeholder="País" aria-describedby="basic-addon2" class="col-md-4"></div>
+  <div class="form-group"><input type="text" class="form-control" placeholder="Sitio Web" aria-describedby="basic-addon2" class="col-md-4"></div>
 </div>
 </div>
 
@@ -56,7 +56,7 @@ $fun = new funciones();
 </div>
 
 <div class="col-md-12">
-<div class="col-md-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button> </div>
+<div class="col-xs-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button> </div>
 </div>
 </div>
 <hr>
