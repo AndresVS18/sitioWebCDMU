@@ -134,18 +134,10 @@ function __construct(){
     public function curso(){
       $con = $this->bd->curso();
       $texto="";
-<<<<<<< HEAD
       foreach ($con as $c) {
         $texto.='<div class="panel-footer">'.$c['Tipo_curso'].'</div>';
       }
       return $texto;
     }
-
-=======
-      foreach ($curso as $s) {
-        $texto.='<div class="panel-footer">'.$s['Tipo_curso'].'</div>';
-      }
-      return $texto;
-    }
->>>>>>> 56efcf460152f65aa04a29584859125e92169016
+      
 }
