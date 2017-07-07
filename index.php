@@ -25,7 +25,7 @@ $fun = new funciones();
     <hr>
 
 
-      <div class="col-md-12">
+      <div class="col-xs-12 col-sm-12 col-md-12" >
       <div id="carousel1" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel1" data-slide-to="0" class="active"></li>
@@ -33,6 +33,7 @@ $fun = new funciones();
           <li data-target="#carousel1" data-slide-to="2"></li>
           <li data-target="#carousel1" data-slide-to="3"></li>
         </ol>
+
 
         <div class="container">
         <div class="carousel-inner" role="listbox" >
@@ -58,15 +59,16 @@ $fun = new funciones();
                   </div>
 
 
+
                   <div class="text-center">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-justify">
                   <h2>Servicios</h2>
-                  <p>La Subprocuraduría de Servicios ofrece asesoría, recibe y gestiona las quejas en materia de consumo y las denuncias en materia de publicidad; también realiza el monitoreo de la publicidad en medios masivos de comunicación, lleva a cabo el registro de números telefónicos para evitar llamadas publicitarias no deseada (Repep); inicia procedimientos por infracciones a la Ley en materia de servicios ya sea de oficio o a través de una denuncia, supervisa los procedimientos de conciliación y el registro o la cancelación de contratos de adhesión de los proveedores y somos el área responsable de llevar a cabo el Registro Público de Casas de Empeño.</p>
+                  <p >La Subprocuraduría de Servicios ofrece asesoría, recibe y gestiona las quejas en materia de consumo y las denuncias en materia de publicidad; también realiza el monitoreo de la publicidad en medios masivos de comunicación, lleva a cabo el registro de números telefónicos para evitar llamadas publicitarias no deseada (Repep); inicia procedimientos por infracciones a la Ley en materia de servicios ya sea de oficio o a través de una denuncia, supervisa los procedimientos de conciliación y el registro o la cancelación de contratos de adhesión de los proveedores y somos el área responsable de llevar a cabo el Registro Público de Casas de Empeño.</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-justify" >
                 <h2>Cursos</h2>
-                <p>Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo. <hr>
+                <p >Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo.  <br><br>
 
 *Dentro de la HABILIDAD lo que buscaos es la facilidad para realizar una tarea con cierta eficiencia, empleando el mínimo de recursos y de tiempo. <br>
 
@@ -76,9 +78,9 @@ $fun = new funciones();
 </p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-justify">
                 <h2>Oportunidades de trabajo</h2>
-                <p>En esta página podrá encontrar información sobre oportunidades de empleo en CEPAL en Santiago y oficinas regionales.
+                <p >En esta página podrá encontrar información sobre oportunidades de empleo en CEPAL en Santiago y oficinas regionales.
                   Uno de los componentes clave en nuestra compañía son las personas, por lo que nos
   enfocamos en construir un clima organizacional adecuado para el correcto desarrollo
   profesional. ¡Únete a nuestro equipo!</p>
