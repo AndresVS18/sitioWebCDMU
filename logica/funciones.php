@@ -115,8 +115,8 @@ function __construct(){
     public function bolsa_trabajo(){
       $bolsa = $this->bd->bolsa();
       $texto="";
-      foreach ($bolsa as $sa) {
-        $texto.='<div class="panel-footer">'.$sa['Nombre_vacante'].'</div>';
+      foreach ($bolsa as $a) {
+        $texto.='<div class="panel-footer">'.$a['Nombre_vacante'].'</div>';
       }
       return $texto;
     }
@@ -134,10 +134,8 @@ function __construct(){
       $curso = $this->bd->curso();
       $texto="";
       foreach ($curso as $s) {
-        $texto.='<div class="panel-footer">'.$s['Descripcion_curso'].'</div>';
+        $texto.='<div class="panel-footer">'.$s['Tipo_curso'].'</div>';
       }
       return $texto;
     }
-
-
 }
