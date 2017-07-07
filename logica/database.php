@@ -21,6 +21,18 @@ class database {
         $pdo = null;
     }
 
+    function insertar(){
+
+    $sql = $this->pdo->prepare("insert into bolsa_trabajo (Nombre_vacante, Descripcion) VALUES (:Nombre_vacante, :Descripcion)");
+    $sql->bindParam(':Nombre_vacante', $nombre);
+    $sql->bindParam(':Descripcion', $Descripcion);
+
+    // insertar una fila
+    $nombre = 'corte confeccion';
+    $Descripcion = 'ashgkjdhilwjdislkjfdklfjksahdlaksjhjdhkjdfhkjsjfksbhljfahfliewhjksd';
+    $sql->execute();
+}
+
     function bolsa(){
       $sql = $this->pdo->prepare("select * from bolsa_trabajo");
         if ($sql->execute(array(1))) {
@@ -45,5 +57,4 @@ function curso(){
     }
     $this->CerrarConexion();
 }
-
 }
