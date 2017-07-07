@@ -39,7 +39,7 @@ class database {
 
 function curso(){
   $id=1;
-  $sql = $this->pdo->prepare("select Descripcion_curso from cursos where Id_curs=?");
+  $sql = $this->pdo->prepare("select Tipo_curso from cursos where Id_curs=?");
     if ($sql->execute(array($id))) {
         return $sql->fetchAll(PDO::FETCH_ASSOC);
     }
