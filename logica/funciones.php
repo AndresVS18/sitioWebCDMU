@@ -24,13 +24,12 @@ function __construct(){
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:white">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php">Inicio</a></li>
-              <li><a href="afiliacion.php">Afiliacion</a></li>
               <li><a href="Servicios.php">Servicios</a></li>
               <li><a href="Cursos.php">Cursos</a></li>
               <li><a href="Oportunidad.php">Oportunidades de Negocio</a></li>
               <li><a href="bolsa.php">Bolsa de Trabajo</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registrate<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="registrarse.php">Crear Usuario</a></li>
                   <li><a href="#">Iniciar Sesion</a></li>
@@ -117,8 +116,8 @@ function __construct(){
     public function bolsa_trabajo(){
       $bolsa = $this->bd->bolsa();
       $texto="";
-      foreach ($bolsa as $sa) {
-        $texto.='<div class="panel-footer">'.$sa['Nombre_vacante'].'</div>';
+      foreach ($bolsa as $a) {
+        $texto.='<div class="panel-footer">'.$a['Nombre_vacante'].'</div>';
       }
       return $texto;
     }
@@ -133,13 +132,12 @@ function __construct(){
     }
 
     public function curso(){
-      $curso = $this->bd->curso();
+      $con = $this->bd->curso();
       $texto="";
-      foreach ($curso as $s) {
-        $texto.='<div class="panel-footer">'.$s['Descripcion_curso'].'</div>';
+      foreach ($con as $c) {
+        $texto.='<div class="panel-footer">'.$c['Tipo_curso'].'</div>';
       }
       return $texto;
     }
-
-
+      
 }

@@ -59,7 +59,7 @@ $fun = new funciones();
                 </div>
 
             </div>
-            <div class="container col-md-offset-5"><button class="btn btn-primary btn-lg ">Enviar</button></div>
+            <div class="container col-xs-offset-6"><button class="btn btn-primary btn-lg ">Enviar</button></div>
         </div>
         <hr>
         <?php $fun->carfo();?>
