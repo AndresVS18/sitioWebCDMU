@@ -19,6 +19,8 @@ $fun = new funciones();
   <?php $fun->menu(); ?>
 
   <!-- CUERPO -->
+
+  <br>
   <div class="container">
     <div class="col-md-12">
             <p style="text-align: center">Selecciona un Curso para más informacion</p>

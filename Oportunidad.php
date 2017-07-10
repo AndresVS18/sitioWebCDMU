@@ -16,6 +16,7 @@ $fun = new funciones();
     </head>
 <body>
 <?php $fun->menu();?>
+<br>
 <div class="row">
 <div class="row col-md-12">
   <h4 style="text-align:center"> Si dese Publicar una Oportunidad de Negocio, favor de completar el siguiente formato</h4>
