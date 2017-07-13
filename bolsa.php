@@ -52,11 +52,11 @@ $fun = new funciones();
     <div class="tab-content" style="text-align:justify">
       <div id="Diseñador" class="tab-pane fade in active">
         <h3>Diseñador</h3>
-        <p>XXXXXXXXXXXXXXXXaaaaaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>aaaaaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div id="Bordadora" class="tab-pane fade">
         <h3>Bordadora</h3>
-        <p>WWWWWWWWWWWWWWWWWWWSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <p>ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
       </div>
       <div id="Costurera" class="tab-pane fade">
         <h3>Costurera</h3>
