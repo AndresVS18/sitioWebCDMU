@@ -11,7 +11,7 @@ function __construct(){
 }
 
     public function menu() {
-        echo '<nav class="navbar navbar-inverse navbar-default navbar-custom navbar-fixed-top">
+        echo '<nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color: #02022b" >
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
@@ -51,7 +51,7 @@ function __construct(){
     public function footer() {
         echo'<footer>
 
-      <div class="footer" style="background: black">
+      <div class="footer" style="background: #036449">
         <div class="container">
           <div class="row">
           <br>
@@ -80,7 +80,8 @@ function __construct(){
 
     public function carfo(){
         echo'<div class="row">
-            <div id="carousel-products" class="carousel slide" data-ride="carousel">
+
+            <div id="carousel-products" class="carousel slide container" data-ride="carousel">
                 <!-- indicatodors -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
@@ -89,15 +90,15 @@ function __construct(){
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/afiliarse.jpg" alt="" style="width:1800px; height:300px">
+                        <img src="img/afiliarse.jpg" alt="" style="width:1900px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
                     <div class="item">
-                        <img src="img/bolsa de trabajo.png" alt="" style="width:1800px; height:300px">
+                        <img src="img/bolsa de trabajo.png" alt="" style="width:1900px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
                     <div class="item">
-                        <img src="img/cursos.jpg" alt="" style="width:1800px; height:300px">
+                        <img src="img/cursos.jpg" alt="" style="width:1900px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
 
@@ -109,6 +110,7 @@ function __construct(){
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
                 </div>
+<br>
             </div>
         </div>';
     }
@@ -139,5 +141,5 @@ function __construct(){
       }
       return $texto;
     }
-      
+
 }

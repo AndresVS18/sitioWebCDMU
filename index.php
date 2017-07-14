@@ -8,21 +8,27 @@ $fun = new funciones();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="Estilo.css">
+  <link rel="stylesheet" href="newstyle.css">
   <title>CDMU</title>
 </head>
-<body style="background:  #f7ff08 0%, #21ad11 50%, #00a3ef 80% " >
+<body  >
 
   <?php $fun->menu(); ?>
-  <img src="Imagenes/anunciate2.jpg" style="width:100%" height: class="img-responsive" alt="Hola" style:"center">
+
+
+
+  <img src="Imagenes/anunciate2.jpg"    class="img-responsive" alt="Hola" width="1800px" >
+
+</div>
   <!-- CUERPO -->
   <div class="container">
 
 
-    <hr>
+    <br>
 
 
       <div class="col-xs-12 col-sm-12 col-md-12" >
@@ -35,24 +41,24 @@ $fun = new funciones();
         </ol>
 
 
-        <div class="container">
+        <div class="container ">
         <div class="carousel-inner" role="listbox" >
           <div class="item active" >
-            <img src="Imagenes/empresas/coppel1.jpg" alt="Imagen1" style="width: 100%" >
+            <img src="Imagenes/empresas/coppel1.jpg"  style="width:800px; height:250px">
 
             </div>
 
             <div class="item " >
-              <img src="Imagenes/empresas/suburbia1.jpg" alt="Imagen2" style="width: 100%" >
+              <img src="Imagenes/empresas/suburbia1.jpg"  style="width:1600px; height:250px">
             </div>
 
               <div class="item">
-                <img src="Imagenes/empresas/walmart1.png" alt="Imagen 3" style="width: 100%">
+                <img src="Imagenes/empresas/walmart1.png"  style="width:1600px; height:250px">
 
                 </div>
 
                 <div class="item">
-                  <img src="Imagenes/empresas/woolworth1.jpg" alt="Imagen 4" style="width: 100%">
+                  <img src="Imagenes/empresas/woolworth1.jpg"  style="width:1600px; height:250px">
 
                   </div>
                   </div>
@@ -60,15 +66,17 @@ $fun = new funciones();
 
 
 
-                  <div class="text-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 text-justify">
+                  <div class="text" style="font-family: 'Varela Round', sans-serif;">
+                <div class="col-xs-12 col-sm-6 col-md-4 ">
                   <h2>Servicios</h2>
+                  <br><br>
                   <p >La Subprocuraduría de Servicios ofrece asesoría, recibe y gestiona las quejas en materia de consumo y las denuncias en materia de publicidad; también realiza el monitoreo de la publicidad en medios masivos de comunicación, lleva a cabo el registro de números telefónicos para evitar llamadas publicitarias no deseada (Repep); inicia procedimientos por infracciones a la Ley en materia de servicios ya sea de oficio o a través de una denuncia, supervisa los procedimientos de conciliación y el registro o la cancelación de contratos de adhesión de los proveedores y somos el área responsable de llevar a cabo el Registro Público de Casas de Empeño.</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 text-justify" >
+                <div class="col-xs-12 col-sm-6 col-md-4" >
                 <h2>Cursos</h2>
-                <p >Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo.  <br><br>
+                <br><br>
+                <p  >Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo.  <br><br>
 
 *Dentro de la HABILIDAD lo que buscaos es la facilidad para realizar una tarea con cierta eficiencia, empleando el mínimo de recursos y de tiempo. <br>
 
@@ -78,7 +86,7 @@ $fun = new funciones();
 </p>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 text-justify">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                 <h2>Oportunidades de trabajo</h2>
                 <p >En esta página podrá encontrar información sobre oportunidades de empleo en CEPAL en Santiago y oficinas regionales.
                   Uno de los componentes clave en nuestra compañía son las personas, por lo que nos

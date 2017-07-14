@@ -19,17 +19,19 @@ $fun = new funciones();
 <?php $fun->menu();?>
     <div class="row">
 
-<br><br>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <h2 style="text-align: center">Bolsa de trabajo</h2>
-        </div>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+  <div class="container">
+ <img src="Imagenes/Bolsa/bolsaheader1.jpg" alt="" style="height: 300px">
+</div>
+</div>
 
 <br>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="container">
-          <h3 style="text-align:center">BIEVENIDO</h3>
-          <p style="text-align:justify">En estas secciones encontraras oportunidades de trabajo. Selecciona una para ver las bacantes disponibles.</p>
+          <h1 style="text-align:center">BIEVENIDO</h1>
+          <h3 style="text-align:center">En estas secciones encontraras oportunidades de trabajo. Selecciona una para ver las bacantes disponibles.</h3>
           <br>
 </div>
 </div>
@@ -38,7 +40,7 @@ $fun = new funciones();
           <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="container">
           <ul class="nav nav-tabs">
-          <li class="active"><a  data-toggle="tab" href="#Diseñador">Diseñador</a>
+          <li class="active"><a  data-toggle="tab" href="#Diseñador">Diseño Gráfico</a>
           <li><a data-toggle="tab" href="#Bordadora">Bordadora </a></li>
           <li><a data-toggle="tab" href="#Costurera">Costurera </a></li>
           <li><a data-toggle="tab" href="#Auxiliar">Auxiliar </a></li>
@@ -51,8 +53,41 @@ $fun = new funciones();
       <div class="container">
     <div class="tab-content" style="text-align:justify">
       <div id="Diseñador" class="tab-pane fade in active">
-        <h3>Diseñador</h3>
-        <p>aaaaaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="col-md-12">
+        <div class="col-md-4">
+        <h3>ALFOMBRA ROJA</h3>
+        <img src="Imagenes/Bolsa/alfombra.png" alt="">
+        </div>
+        <div class="col-md-8">
+          <br>
+          <br>
+          <br>
+        <H3>SOLICITAMOS UN "DIRECTOR CREATIVO".</H3>
+        <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+           <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+      </div>
+
+    </div>
+
+      <div class="col-md-12">
+      <div class="col-md-4">
+      <h3>ALFOMBRA ROJA</h3>
+      <img src="Imagenes/Bolsa/boutique2.jpg" alt="">
+      </div>
+      <div class="col-md-8">
+        <br>
+        <br>
+        <br>
+      <H3>SOLICITAMOS UN "DIRECTOR CREATIVO".</H3>
+      <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+         <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+    </div>
+  </div>
+  <ul class="pagination pagination-lg">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+  </ul>
+
       </div>
       <div id="Bordadora" class="tab-pane fade">
         <h3>Bordadora</h3>
