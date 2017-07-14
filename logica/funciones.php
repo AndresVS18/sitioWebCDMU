@@ -21,7 +21,7 @@ function __construct(){
             </button>
             <a class="navbar-brand" href="index.php" style="color:white">CDMU</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:white">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php">Inicio</a></li>
               <li><a href="Servicios.php">Servicios</a></li>
@@ -79,8 +79,7 @@ function __construct(){
     }
 
     public function carfo(){
-        echo'<div class="row">
-
+        echo'<div class="container">
             <div id="carousel-products" class="carousel slide container" data-ride="carousel">
                 <!-- indicatodors -->
                 <ol class="carousel-indicators">
@@ -90,15 +89,15 @@ function __construct(){
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/afiliarse.jpg" alt="" style="width:1900px; height:250px">
+                        <img src="img/afiliarse.jpg" alt="" style="width:1000px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
                     <div class="item">
-                        <img src="img/bolsa de trabajo.png" alt="" style="width:1900px; height:250px">
+                        <img src="img/bolsa de trabajo.png" alt="" style="width:1000px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
                     <div class="item">
-                        <img src="img/cursos.jpg" alt="" style="width:1900px; height:250px">
+                        <img src="img/cursos.jpg" alt="" style="width:1000px; height:250px">
                         <div class="carousel-caption"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, repudiandae.</p></div>
                     </div>
 

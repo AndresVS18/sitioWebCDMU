@@ -17,13 +17,13 @@ $fun = new funciones();
     </head>
 <body>
 <?php $fun->menu();?>
-    <div class="row">
+    
 
 
 <div class="col-xs-12 col-sm-12 col-md-12">
-  <div class="container">
+
  <img src="Imagenes/Bolsa/bolsaheader1.jpg" alt="" style="height: 300px">
-</div>
+
 </div>
 
 <br>
@@ -83,12 +83,8 @@ $fun = new funciones();
          <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
     </div>
   </div>
-  <ul class="pagination pagination-lg">
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-  </ul>
 
-      </div>
+
       <div id="Bordadora" class="tab-pane fade">
         <h3>Bordadora</h3>
         <p>ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
