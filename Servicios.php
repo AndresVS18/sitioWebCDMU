@@ -34,7 +34,8 @@ $fun = new funciones();
                 <div class="row col-md-4 container">
             <div>
               <div class="thumbnail">
-              <img src="Imagenes/Servicio1" width="30px">
+                <br>
+              <img src="Imagenes/servicios/Servicio1.jpeg" width="150px">
                 <div class="caption">
                   <h3>Servicio 1</h3>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -46,7 +47,8 @@ $fun = new funciones();
           <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="Imagenes/Servicio2" width="30px">
+        <br>
+        <img src="Imagenes/servicios/Servicio2.jpeg" width="150px"  style="border-radius:50%">
         <div class="caption">
           <h3>Servicio 2</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -58,7 +60,8 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="Imagenes/Servicio3" width="30px">
+        <br>
+        <img src="Imagenes/servicios/Servicio3.jpeg" width="150px"  style="border-radius:50%">
         <div class="caption">
           <h3>Servicio 3</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -70,7 +73,8 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="Imagenes/Servicio4" width="30px">
+        <br>
+        <img src="Imagenes/servicios/Servicio7.jpeg" width="150px" style="border-radius:50%">
         <div class="caption">
           <h3>Servicio 4</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -82,7 +86,8 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="Imagenes/Servicio5" width="30px">
+        <br>
+        <img src="Imagenes/servicios/Servicio5.jpg" width="150px"  style="border-radius:50%">
         <div class="caption">
           <h3>Servicio 5</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -94,7 +99,8 @@ $fun = new funciones();
   <div class="row col-md-4">
     <div>
       <div class="thumbnail">
-        <img src="Imagenes/Servicio6" width="30px">
+        <br>
+        <img src="Imagenes/servicios/Servicio6.png" width="150" style="border-radius:50%">
         <div class="caption">
           <h3>Servicio 6</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
