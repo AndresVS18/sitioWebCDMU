@@ -13,12 +13,20 @@ $fun = new funciones();
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="Estilo.css">
         <title>CDMU</title>
+
     </head>
 <body>
 <?php $fun->menu();?>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+ <img src="Imagenes/usuario/Join-Us.png" style="height: 300px">
+
+</div>
+
 <div class="formulario">
   <form class="form-horizontal">
-    <div class="col-md-offset-5"><h2> Ingresa los datos</h2></div>
+    <div class="col-md-offset-5"><h2 style="font-family: 'Playfair Display', serif;"> Ingresa los datos</h2></div>
   <div class="form-group form-group-lg">
     <label class="col-sm-3 control-label" for="formGroupInputLarge">Nombre: </label>
     <div class="col-md-offset-1 col-sm-7">

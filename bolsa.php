@@ -9,7 +9,6 @@ $fun = new funciones();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="Estilo.css">
@@ -17,7 +16,7 @@ $fun = new funciones();
     </head>
 <body>
 <?php $fun->menu();?>
-    
+
 
 
 <div class="col-xs-12 col-sm-12 col-md-12">
