@@ -14,8 +14,8 @@ $fun = new funciones();
         <link rel="stylesheet" href="Estilo.css">
         <title>CDMU</title>
     </head>
-    <body>
-        <?php $fun->menu(); ?>
+<body>
+<?php $fun->menu();?>
 
         <div class="row">
             <div class="container">

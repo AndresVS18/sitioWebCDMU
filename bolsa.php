@@ -16,46 +16,127 @@ $fun = new funciones();
     </head>
 <body>
 <?php $fun->menu();?>
-    <div class="row">
 
-<br><br>
-        <div class="col-md-12">
-            <h3 style="text-align: center">Bolsa de trabajo</h3>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+ <img src="Imagenes/Bolsa/bolsaheader1.jpg" alt="" style="height: 300px">
+
+</div>
+
+<br>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="container">
+          <h1 style="text-align:center">BIEVENIDO</h1>
+          <h3 style="text-align:center">En estas secciones encontraras oportunidades de trabajo. Selecciona una para ver las bacantes disponibles.</h3>
+          <br>
+</div>
+</div>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="container">
+          <ul class="nav nav-tabs">
+          <li class="active"><a  data-toggle="tab" href="#Diseñador">Diseño Gráfico</a>
+          <li><a data-toggle="tab" href="#Bordadora">Bordadora </a></li>
+          <li><a data-toggle="tab" href="#Costurera">Costurera </a></li>
+          <li><a data-toggle="tab" href="#Auxiliar">Auxiliar </a></li>
+          <li><a data-toggle="tab" href="#Muestrista">Muestrista </a></li>
+          <li><a data-toggle="tab" href="#Pais">Pais </a></li>
+          <li><a data-toggle="tab" href="#Sitio">Sitio Web </a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+    <div class="tab-content" style="text-align:justify">
+      <div id="Diseñador" class="tab-pane fade in active">
+      <div class="col-md-12">
+        <div class="col-md-4">
+        <h3>ALFOMBRA ROJA</h3>
+        <img src="Imagenes/Bolsa/alfombra.png" alt="">
         </div>
-
-<div class="col-md-offset-1">
-      <div class="col-md-3">
-        <div class="input-group">
-            <h3>Seleccione oferta</h3>
-
-
-            <button type="button" class="btn btn-primary btn-lg btn-block">Diseñador</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Bordadora</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Costurera</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Auxiliar</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Muestrista</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Pais</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Sitio Web</button>
-
+        <div class="col-md-8">
+          <br>
+          <br>
+          <br>
+        <H3>SOLICITAMOS UN "DIRECTOR CREATIVO".</H3>
+        <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+           <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
       </div>
-      </div>
+
     </div>
 
-
-          <div class="col-md-8">
-          <div class="panel panel-default">
-  <div class="panel-body">
-    Texto Infotmativo
+      <div class="col-md-12">
+      <div class="col-md-4">
+      <h3>ALFOMBRA ROJA</h3>
+      <img src="Imagenes/Bolsa/boutique2.jpg" alt="">
+      </div>
+      <div class="col-md-8">
+        <br>
+        <br>
+        <br>
+      <H3>SOLICITAMOS UN "DIRECTOR CREATIVO".</H3>
+      <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+         <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+    </div>
   </div>
-  <?php echo $fun->bolsa_trabajo(); ?>
 
+
+      <div id="Bordadora" class="tab-pane fade">
+        <h3>Bordadora</h3>
+        <p>ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+      <div id="Costurera" class="tab-pane fade">
+        <h3>Costurera</h3>
+        <p>BBBBBBBBBBBBBBBEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="Auxiliar" class="tab-pane fade">
+        <h3>Auxiliar</h3>
+        <p>GGGGGGGGGGGGGGGGGEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="Muestrista" class="tab-pane fade">
+        <h3>Muestrista</h3>
+        <p>RRRRRRRRRRRRRRRRRREaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="Pais" class="tab-pane fade">
+        <h3>Pais</h3>
+        <p>EEEEEEEEEEEEEEEEEEEEEEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+      <div id="Sitio" class="tab-pane fade">
+        <h3>Sitio Web</h3>
+        <p>AAAAAAAAAAAAAEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+      </div>
+    </div>
   </div>
-          </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </body>
+
+
+
     </div>
      <hr>
         <?php $fun->carfo();?>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    </body>
-    <?php $fun->footer(); ?>
+
+<?php $fun->footer(); ?>
+
 </html>

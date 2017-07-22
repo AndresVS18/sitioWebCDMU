@@ -16,7 +16,8 @@ $fun = new funciones();
     </head>
 <body>
 <?php $fun->menu();?>
-<div class="row">
+<br>
+
 <div class="row col-md-12">
   <h4 style="text-align:center"> Si dese Publicar una Oportunidad de Negocio, favor de completar el siguiente formato</h4>
 <hr>
@@ -56,10 +57,11 @@ $fun = new funciones();
 </div>
 
 <div class="col-md-12">
-<div class="col-xs-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button> </div>
+<div class="col-xs-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button>
+</div> <br><br>
 </div>
-</div>
-<hr>
+
+
         <?php $fun->carfo();?>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

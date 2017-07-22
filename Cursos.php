@@ -19,6 +19,8 @@ $fun = new funciones();
   <?php $fun->menu(); ?>
 
   <!-- CUERPO -->
+
+  <br>
   <div class="container">
     <div class="col-md-12">
             <p style="text-align: center">Selecciona un Curso para más informacion</p>
@@ -66,12 +68,7 @@ $fun = new funciones();
     </div>
 
 
-    <hr
-            </div>
-
-          </div>
-          <hr>
-        </div>
+  <br><br>
   <?php $fun->carfo();?>
         <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
