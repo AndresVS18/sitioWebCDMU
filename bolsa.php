@@ -9,22 +9,25 @@ $fun = new funciones();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="Estilo.css">
         <title>CDMU</title>
     </head>
 <body>
+  <div class="contenedor">
 <?php $fun->menu();?>
 
 
 
 <div class="col-xs-12 col-sm-12 col-md-12">
+  <!---Aqui esta la Imagen inicial!---->
 
- <img src="Imagenes/Bolsa/bolsaheader1.jpg" alt="" style="height: 300px">
+ <img src="Imagenes/Bolsa/bolsaheader1.jpg" alt="" style="height: 300px" class="col-xs-12">
 
 </div>
-
+        <!---Aqui inician la Bienvenida!---->
 <br>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -34,7 +37,7 @@ $fun = new funciones();
           <br>
 </div>
 </div>
-
+      <!---Aqui inician las empresas!---->
 
           <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="container">
@@ -86,27 +89,110 @@ $fun = new funciones();
 
       <div id="Bordadora" class="tab-pane fade">
         <h3>Bordadora</h3>
-        <p>ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/11.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>SOLICITAMOS UNA "BORDADORA".</H3>
+          <p>QUE TENGA UNA BUENA HABILIDAD PARA BORDAR
+             <br>QUE TENGA GUSTO POR SU TRABAJO Y TENGA CREATIVIDAD</p>
+        </div>
+
+      </div>
       </div>
       <div id="Costurera" class="tab-pane fade">
         <h3>Costurera</h3>
-        <p>BBBBBBBBBBBBBBBEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/12.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>SOLICITAMOS UNA "COSTURERA".</H3>
+          <p>QUE TENGA UNA BUENA HABILIDAD PARA COCER
+             <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+        </div>
+
+      </div>
       </div>
       <div id="Auxiliar" class="tab-pane fade">
         <h3>Auxiliar</h3>
-        <p>GGGGGGGGGGGGGGGGGEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/13.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>SOLICITAMOS UN "AUXILIAR".</H3>
+          <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+             <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+        </div>
+
+      </div>
       </div>
       <div id="Muestrista" class="tab-pane fade">
         <h3>Muestrista</h3>
-        <p>RRRRRRRRRRRRRRRRRREaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/14.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>SOLICITAMOS UNA "MUESTRISTA".</H3>
+          <p>QUE TENGA UNA BUENA HABILIDAD PARA DISTINGUIR LOS COLORES
+             <br>QUE TENGA GUSTO POR EL DIBUJO Y TENGA CREATIVIDAD</p>
+        </div>
+
+      </div>
       </div>
       <div id="Pais" class="tab-pane fade">
         <h3>Pais</h3>
-        <p>EEEEEEEEEEEEEEEEEEEEEEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/15.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>PASIES.</H3>
+
+        </div>
+
+      </div>
       </div>
       <div id="Sitio" class="tab-pane fade">
         <h3>Sitio Web</h3>
-        <p>AAAAAAAAAAAAAEaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="col-md-12">
+          <div class="col-md-4">
+          <h3>ALFOMBRA ROJA</h3>
+          <img src="Imagenes/Bolsa/16.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+          <H3>SITIO WEP</H3>
+          <p>VICITENOS EN
+             <br>NUESTRO SITIO WEP</p>
+        </div>
+
+      </div>
 
       </div>
     </div>
@@ -117,6 +203,7 @@ $fun = new funciones();
   <br>
 </div>
 
+      <!---Aqui Terminan las empresas!---->
 
 
 <br>
@@ -127,6 +214,7 @@ $fun = new funciones();
 <br>
 <br>
 <br>
+</div>
     </body>
 
 

@@ -19,10 +19,13 @@ $fun = new funciones();
 <br>
 
 <div class="row col-md-12">
+
+  <img src="Imagenes/oportunidades.jpg" alt="" style="height: 300px" class="col-xs-12">
+</br>
   <h4 style="text-align:center"> Si dese Publicar una Oportunidad de Negocio, favor de completar el siguiente formato</h4>
 <hr>
 </div>
-
+<!------Aqui inicia el FOrmulario!---->
 <div class="col-md-4">
   <div class="col-md-offset-1">
   <div class="form-group">
@@ -60,11 +63,13 @@ $fun = new funciones();
 <div class="col-xs-offset-6"> <button type="button" class="btn btn-primary "><h5>ENVIAR</h5></button>
 </div> <br><br>
 </div>
+    <!---Aqui Termina el FOrmulario!---->
 
-
+        <!---Aqui inician las conexiones!---->
         <?php $fun->carfo();?>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     </body>
     <?php $fun->footer(); ?>
+        <!---Aqui Terminan las conexiones!---->
 </html>
