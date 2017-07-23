@@ -63,45 +63,56 @@ $fun = new funciones();
                   </div>
                   </div>
                   </div>
+                  </div>
+                  </div>
+                  </div>
+
+                <div class="container">
+                <br>
+                  <div class="row featurette">
+                    <div class="col-md-7">
+                      <h2 class="featurette-heading">Servicios </h2>
+                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1ZDZkMjY2NjAzIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTVkNmQyNjY2MDMiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                    </div>
+                  </div>
+
+                  <hr class="featurette-divider">
+
+                  <div class="row featurette">
+                    <div class="col-md-7 col-md-push-5">
+                      <h2 class="featurette-heading">Cursos</h2>
+                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                      <img class="featurette-image img-responsive center-block" data-src="holder.js/350x350/auto" alt="500x500" src="img/cursos1.jpg" data-holder-rendered="true">
+                    </div>
+                  </div>
+
+                  <hr class="featurette-divider">
+
+                  <div class="row featurette">
+                    <div class="col-md-7">
+                      <h2 class="featurette-heading">Oportunidades de trabajo</h2>
+                      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="350x350" src="img/cursos.jpg"  data-holder-rendered="true">
+                    </div>
+                  </div>
+                  <hr class="featurette-divider">
+                  </div>
 
 
 
-                  <div class="text" style="font-family: 'Varela Round', sans-serif;">
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                  <h2>Servicios</h2>
-                  <br><br>
-                  <p >La Subprocuraduría de Servicios ofrece asesoría, recibe y gestiona las quejas en materia de consumo y las denuncias en materia de publicidad; también realiza el monitoreo de la publicidad en medios masivos de comunicación, lleva a cabo el registro de números telefónicos para evitar llamadas publicitarias no deseada (Repep); inicia procedimientos por infracciones a la Ley en materia de servicios ya sea de oficio o a través de una denuncia, supervisa los procedimientos de conciliación y el registro o la cancelación de contratos de adhesión de los proveedores y somos el área responsable de llevar a cabo el Registro Público de Casas de Empeño.</p>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4" >
-                <h2>Cursos</h2>
-                <br><br>
-                <p  >Ofrecemos cursos par mejorar conocimientos, habilidades, y conductas de las personas en sus puestos de trabajo.  <br><br>
-
-*Dentro de la HABILIDAD lo que buscaos es la facilidad para realizar una tarea con cierta eficiencia, empleando el mínimo de recursos y de tiempo. <br>
-
-* En el CONOCIMIENTO queremos mejorar la experiencia de los usuarios, mediante ejercicios, actividades, etc. Esto ayudará no sólo a corto plazo sino a un plazo de determinado tiempo. <br>
-
-* La CONDUCTA es la forma de actuar y de relacionarse con los demás; aquí no se evalúan las causas de las conductas. Se busca modificar conductas ante situaciones concretas.
-</p>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                <h2>Oportunidades de trabajo</h2>
-                <p >En esta página podrá encontrar información sobre oportunidades de empleo en CEPAL en Santiago y oficinas regionales.
-                  Uno de los componentes clave en nuestra compañía son las personas, por lo que nos
-  enfocamos en construir un clima organizacional adecuado para el correcto desarrollo
-  profesional. ¡Únete a nuestro equipo!</p>
-                </div>
-              </div>
-
-              </div>
 
 
 
-            </div>
 
-          </div>
+
+
           <hr>
         </div>
   <?php $fun->carfo();?>
