@@ -143,4 +143,13 @@ function __construct(){
       return $texto;
     }
 
+    public function servicio(){
+      $con = $this->bd->ser();
+      $texto="";
+      foreach ($serv as $s) {
+        $texto.='<div class="col-md-6">'.$s['Tipo_curso'].'</div>';
+      }
+      return $texto;
+    }
+
 }
