@@ -120,7 +120,7 @@ function __construct(){
       $bolsa = $this->bd->bolsa();
       $texto="";
       foreach ($bolsa as $a) {
-        $texto.='<div class="panel-footer">'.$a['Nombre_vacante'].'</div>';
+        $texto.='<div class="col-lg-12">'.$a['Nombre_vacante'].'</div>';
       }
       return $texto;
     }
