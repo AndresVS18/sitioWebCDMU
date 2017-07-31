@@ -61,17 +61,13 @@
                         <a href="bolsa.html">Bolsa de trabajo</a>
                     </li>
 
-                    <li>
-                        <a href="oportunidades.html">Oportunidades de Negocio</a>
-                    </li>
-
                   <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="registrarse.php">Crear Usuario</a></li>
                     <li><a href="iniciar.php">Iniciar Sesion</a></li>
                     <li>
-                        <a href="oportunidad.html">Oportunidad de trabajo</a>
+                        <a href="Oportunidad.php">Oportunidad de trabajo</a>
                     </li>
                   </ul>
                 </li>
