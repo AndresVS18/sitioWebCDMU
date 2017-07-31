@@ -1,6 +1,6 @@
 <?php
-include_once '/database.php';
 
+include_once 'logica/database.php';
 
 class funciones {
 
@@ -40,7 +40,7 @@ function __construct(){
         </div><!-- /.container-fluid -->
       </nav>
 
-<hr />
+<hr/>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ function __construct(){
     public function footer() {
         echo'<footer>
 
-      <div class="footer" style="background: #036449">
+      <div class="footer" style="background:#036449">
         <div class="container">
           <div class="row">
           <br>
@@ -63,7 +63,6 @@ function __construct(){
             </div>
             <div class="text-center col-xs-12 col-sm-12 col-md-4 " style="color:white" >
               <ul class="list-unstyled text-center list-inline" style= "font-size:30px; >
-
                 <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
                 <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
                 <li class="icono"><a href="#"><i class="fa fa-linkedin-square" style="color: white"></i></a></li>
@@ -80,13 +79,16 @@ function __construct(){
 
     public function carfo(){
         echo'<div class="container">
-            <div id="carousel-products" class="carousel slide container" data-ride="carousel">
+
+            <div id="carousel-products" class="carousel slide" data-ride="carousel">
                 <!-- indicatodors -->
+
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-products" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-products" data-slide-to="1"></li>
                     <li data-target="#carousel-products" data-slide-to="2"></li>
                 </ol>
+
                 <div class="carousel-inner">
                     <div class="item active">
                         <img src="img/afiliarse.jpg" alt="" style="width:1000px; height:250px">
@@ -118,7 +120,7 @@ function __construct(){
       $bolsa = $this->bd->bolsa();
       $texto="";
       foreach ($bolsa as $a) {
-        $texto.='<div class="panel-footer">'.$a['Nombre_vacante'].'</div>';
+        $texto.='<div class="col-lg-12">'.$a['Nombre_vacante'].'</div>';
       }
       return $texto;
     }
@@ -137,6 +139,15 @@ function __construct(){
       $texto="";
       foreach ($con as $c) {
         $texto.='<div class="panel-footer">'.$c['Tipo_curso'].'</div>';
+      }
+      return $texto;
+    }
+
+    public function servicio(){
+      $con = $this->bd->ser();
+      $texto="";
+      foreach ($serv as $s) {
+        $texto.='<div class="col-md-6">'.$s['Tipo_curso'].'</div>';
       }
       return $texto;
     }

@@ -23,13 +23,24 @@ class database {
 
     function insertar(){
 
-    $sql = $this->pdo->prepare("insert into bolsa_trabajo (Nombre_vacante, Descripcion) VALUES (:Nombre_vacante, :Descripcion)");
-    $sql->bindParam(':Nombre_vacante', $nombre);
+    $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo (Nombre_vacante, Descripcion) VALUES (:Nombre_vacante, :Descripcion)");
+    $sql->bindParam(':Nombre_vacante', $Nombre);
     $sql->bindParam(':Descripcion', $Descripcion);
 
     // insertar una fila
-    $nombre = 'corte confeccion';
+    $Nombre = 'corte confeccion';
     $Descripcion = 'ashgkjdhilwjdislkjfdklfjksahdlaksjhjdhkjdfhkjsjfksbhljfahfliewhjksd';
+    $sql->execute();
+}
+
+    function servicios($arg_tipo_serv, $arg_contenido){
+    $sql = $this->pdo->prepare("INSERT INTO servicios (Tipo_serv, Contenido) VALUES (:Tipo_serv, :Contenido)");
+    $sql->bindParam(':Tipo_serv', $arg_tipo_serv);
+    $sql->bindParam(':Contenido', $arg_contenido);
+
+// insertar una fila
+    $arg_tipo_serv = "Corte de telas";
+    $arg_contenido = "Lorem";
     $sql->execute();
 }
 
@@ -57,4 +68,7 @@ function curso(){
     }
     $this->CerrarConexion();
 }
+
+
+
 }
