@@ -53,17 +53,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">INCIO</a>
+                        <a href="index.php">INCIO</a>
                     </li>
                     <li>
-                        <a href="about.html">SERVICIOS</a>
+                        <a href="servicios.php">SERVICIOS</a>
                     </li>
                     <li>
-                        <a href="blog.html">CURSOS</a>
+                        <a href="cursos.php">CURSOS</a>
                     </li>
 
                     <li>
-                        <a href="bolsa.html">Bolsa de trabajo</a>
+                        <a href="bolsa.php">Bolsa de trabajo</a>
                     </li>
 
                   <li class="dropdown">
@@ -72,12 +72,12 @@
                     <li><a href="registrarse.php">Crear Usuario</a></li>
                     <li><a href="iniciar.php">Iniciar Sesion</a></li>
                     <li>
-                        <a href="Oportunidad.php">Oportunidad de trabajo</a>
+                        <a href="oportunidad.php">Oportunidad de trabajo</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
                 </ul>
             </div>
