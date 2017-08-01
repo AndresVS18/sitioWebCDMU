@@ -219,13 +219,27 @@
     </div>
     <!-- /.container -->
 
-    <footer>
+    <footer style="background-color: #282c34">
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
+          <h1 style=" color: #e94c3d">CONTACT</h1> <br>
+            <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
+              <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
+              <br><br>
+              <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
+              <br><br>
+              <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
             </div>
+            </div>
+
+          <div class="col-xs-12 col-sm-12  col-md-4"   >
+            <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
+              <ul class="list-unstyled  list-inline" style= "font-size:80px" >
+                      <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
+              </ul>
+          </div>
         </div>
     </footer>
 

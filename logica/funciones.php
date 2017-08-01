@@ -51,7 +51,7 @@ function __construct(){
     public function footer() {
         echo'<footer>
 
-      <div class="footer" style="background:#036449">
+      <div class="footer" style="background-color: black; ">
         <div class="container">
           <div class="row">
           <br>

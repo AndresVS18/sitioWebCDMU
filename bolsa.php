@@ -52,31 +52,34 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">INCIO</a>
-                    </li>
-                    <li>
-                        <a href="servicios.php">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="cursos.php">CURSOS</a>
-                    </li>
+                  <li>
+                      <a href="index.php">INCIO</a>
+                  </li>
+                  <li>
+                      <a href="servicios.php">SERVICIOS</a>
+                  </li>
+                  <li>
+                      <a href="cursos.php">CURSOS</a>
+                  </li>
 
-                    <li>
-                        <a href="bolsa.php">Bolsa de trabajo</a>
-                    </li>
+                  <li>
+                      <a href="bolsa.php">Bolsa de trabajo</a>
+                  </li>
 
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="registrarse.php">Crear Usuario</a></li>
-                    <li><a href="iniciar.php">Iniciar Sesion</a></li>
-                    <li>
-                        <a href="oportunidad.php">Oportunidad de trabajo</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="registrarse.php">Crear Usuario</a></li>
+                  <li><a href="iniciar.php">Iniciar Sesion</a></li>
+                  <li>
+                      <a href="oportunidad.php">Oportunidad de trabajo</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                  <a href="contact.php">Contact</a>
+              </li>
+              </ul>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -246,13 +249,27 @@
     </div>
     <!-- /.container -->
 
-    <footer>
+    <footer style="background-color: #282c34">
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
+          <h1 style=" color: #e94c3d">CONTACT</h1> <br>
+            <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
+              <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
+              <br><br>
+              <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
+              <br><br>
+              <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
             </div>
+            </div>
+
+          <div class="col-xs-12 col-sm-12  col-md-4"   >
+            <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
+              <ul class="list-unstyled  list-inline" style= "font-size:80px" >
+                      <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
+              </ul>
+          </div>
         </div>
     </footer>
 
