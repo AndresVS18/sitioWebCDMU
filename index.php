@@ -219,11 +219,11 @@
     </div>
     <!-- /.container -->
 
-    <footer style="background-color: #282c34">
+    <footer style="background-color: rgba(255,255,255,0.9">
 
         <div class="container">
           <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-            <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
+            <div class="col-xs-12 col-sm-12 col-md-8" style="color: black">
               <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
               <br><br>
               <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
@@ -232,16 +232,12 @@
             </div>
             </div>
 
-          <div class="col-xs-12 col-sm-12  col-md-4"   >
-            <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
-              <ul class="list-unstyled  list-inline" style= "font-size:80px" >
-                      <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-                      <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-                      <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
-              </ul>
-          </div>
+            <div class="col-xs-12 col-sm-12  col-md-4"   >
+              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-facebook-square" style="font-size:36px"></i>
+            </div>
         </div>
-    </footer>
+   </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
