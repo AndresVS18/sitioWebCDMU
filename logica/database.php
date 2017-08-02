@@ -28,4 +28,12 @@ class database {
         }
         $this->CerrarConexion();
       }
+
+      function consulta2(){
+        $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=3");
+          if ($sql->execute(array(1))) {
+              return $sql->fetchAll(PDO::FETCH_ASSOC);
+          }
+          $this->CerrarConexion();
+        }
 }

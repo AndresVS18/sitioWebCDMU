@@ -124,4 +124,15 @@ function __construct(){
       }
       return $texto;
     }
+
+    public function consulta2(){
+      $con = $this->bd->consulta2();
+      $texto="";
+      foreach ($con as $prueba2) {
+        $texto.='<div>' .$prueba2['Contenido'].'</div>';
+      }
+      return $texto;
+    }
+
+
 }
