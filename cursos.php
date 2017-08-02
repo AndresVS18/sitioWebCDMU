@@ -1,3 +1,8 @@
+<?php
+include_once 'logica/funciones.php';
+$fun = new funciones();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,7 +108,7 @@
                         <br>
                         <small>October 13, 2013</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <?php echo $fun->consulta4()?>
                     <a href="#" class="btn btn-default btn-lg">Read More</a>
                     <hr>
                 </div>
@@ -113,7 +118,7 @@
                         <br>
                         <small>October 13, 2013</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <?php echo $fun->consulta5()?>
                     <a href="#" class="btn btn-default btn-lg">Read More</a>
                     <hr>
                 </div>
@@ -123,7 +128,7 @@
                         <br>
                         <small>October 13, 2013</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    
                     <a href="#" class="btn btn-default btn-lg">Read More</a>
                     <hr>
                 </div>
