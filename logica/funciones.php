@@ -116,40 +116,12 @@ function __construct(){
         </div>';
     }
 
-    public function bolsa_trabajo(){
-      $bolsa = $this->bd->bolsa();
+    public function consulta1(){
+      $con = $this->bd->consulta1();
       $texto="";
-      foreach ($bolsa as $a) {
-        $texto.='<div class="col-lg-12">'.$a['Nombre_vacante'].'</div>';
+      foreach ($con as $prueba) {
+        $texto.='<div class="col-md-6">' .$prueba['Nombre_curs'].$prueba['Tipo_curso'].'</div>';
       }
       return $texto;
     }
-
-    public function cursos(){
-      $curso = $this->bd->cursos();
-      $texto="";
-      foreach ($curso as $c) {
-        $texto.='<button type="button" class="btn btn-primary btn-lg btn-block " value="'.$c['Id_curs'].'">'.$c['Nombre_curs'].'</button>';
-      }
-      return $texto;
-    }
-
-    public function curso(){
-      $con = $this->bd->curso();
-      $texto="";
-      foreach ($con as $c) {
-        $texto.='<div class="panel-footer">'.$c['Tipo_curso'].'</div>';
-      }
-      return $texto;
-    }
-
-    public function servicio(){
-      $con = $this->bd->ser();
-      $texto="";
-      foreach ($serv as $s) {
-        $texto.='<div class="col-md-6">'.$s['Tipo_curso'].'</div>';
-      }
-      return $texto;
-    }
-
 }

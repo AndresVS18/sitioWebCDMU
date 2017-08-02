@@ -1,3 +1,8 @@
+<?php
+include_once 'logica/funciones.php';
+$fun = new funciones();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +32,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -113,6 +117,7 @@
                 <div class="clearfix"></div>
             </div>
         </div>
+
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -124,14 +129,14 @@
                 <div class="col-md-6">
                     <img class="img-responsive img-border-left" src="img/bg.jpg" alt="">
                 </div>
+
                 <div class="col-md-6">
-                    <p>This is a great place to introduce your company or project and describe what you do.</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  <?php echo $fun->consulta1()?>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
+
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
