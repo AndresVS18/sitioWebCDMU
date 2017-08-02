@@ -143,4 +143,21 @@ function __construct(){
       return $texto;
     }
 
+    public function consulta4(){
+      $con = $this->bd->consulta4();
+      $texto="";
+      foreach ($con as $prueba4) {
+        $texto.='<p>' .$prueba4['Tipo_curso'].'</p>';
+      }
+      return $texto;
+    }
+    public function consulta5(){
+      $con = $this->bd->consulta5();
+      $texto="";
+      foreach ($con as $prueba5) {
+        $texto.='<p>' .$prueba5['Tipo_curso'].'</p>';
+      }
+      return $texto;
+    }
+
 }
