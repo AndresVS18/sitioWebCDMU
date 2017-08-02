@@ -120,7 +120,7 @@ function __construct(){
       $con = $this->bd->consulta1();
       $texto="";
       foreach ($con as $prueba) {
-        $texto.='<div class="col-md-6">' .$prueba['Nombre_curs'].$prueba['Tipo_curso'].'</div>';
+        $texto.='<div>' .$prueba['Contenido'].'</div>';
       }
       return $texto;
     }
@@ -134,5 +134,12 @@ function __construct(){
       return $texto;
     }
 
-
+    public function consulta3(){
+      $con = $this->bd->consulta3();
+      $texto="";
+      foreach ($con as $prueba3) {
+        $texto.='<div>' .$prueba3['Contenido'].'</div>';
+      }
+      return $texto;
+    }
 }

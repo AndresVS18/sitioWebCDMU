@@ -22,7 +22,7 @@ class database {
     }
 
     function consulta1(){
-      $sql = $this->pdo->prepare("select Nombre_curs,Tipo_curso  from cursos");
+      $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=2");
         if ($sql->execute(array(1))) {
             return $sql->fetchAll(PDO::FETCH_ASSOC);
         }
@@ -36,4 +36,12 @@ class database {
           }
           $this->CerrarConexion();
         }
+
+        function consulta3(){
+          $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=1");
+            if ($sql->execute(array(1))) {
+                return $sql->fetchAll(PDO::FETCH_ASSOC);
+            }
+            $this->CerrarConexion();
+          }
 }
