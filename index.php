@@ -16,11 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/Style.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -219,25 +220,33 @@
     </div>
     <!-- /.container -->
 
-    <footer style="background-color: rgba(255,255,255,0.9">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 footer-col">
+            <div class="logofooter">Contactanos</div>
+            <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
+          </div>
 
-        <div class="container">
-          <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-            <div class="col-xs-12 col-sm-12 col-md-8" style="color: black">
-              <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
-              <br><br>
-              <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
-              <br><br>
-              <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
-            </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-12  col-md-4"   >
-              <i class="fa fa-facebook-square"></i>
-              <i class="fa fa-facebook-square" style="font-size:36px"></i>
-            </div>
+          <div class="col-lg-4 col-md-4 footer-col">
+            <h6 class="heading7">LATEST POST</h6>
+            <div class="post">
+              <p>facebook crack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 footer-col">
+            <h6 class="heading7">Social Media</h6>
+            <ul class="footer-social">
+              <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+              <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+            </ul>
+          </div>
         </div>
-   </footer>
+      </div>
+    </footer>
+    <!--footer start from here-->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
