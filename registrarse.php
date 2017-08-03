@@ -1,8 +1,3 @@
-<?php
-include_once 'logica/funciones.php';
-$fun = new funciones();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +16,9 @@ $fun = new funciones();
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
+
+    <!--Business.css-->
+    <link href="css/Business.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -57,94 +55,88 @@ $fun = new funciones();
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">INCIO</a>
-                    </li>
-                    <li>
-                        <a href="servicios.php">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="cursos.php">CURSOS</a>
-                    </li>
+                  <li>
+                      <a href="index.php">INCIO</a>
+                  </li>
+                  <li>
+                      <a href="servicios.php">SERVICIOS</a>
+                  </li>
+                  <li>
+                      <a href="cursos.php">CURSOS</a>
+                  </li>
 
-                    <li>
-                        <a href="bolsa.php">Bolsa de trabajo</a>
-                    </li>
+                  <li>
+                      <a href="bolsa.php">Bolsa de trabajo</a>
+                  </li>
 
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="registrarse.php">Crear Usuario</a></li>
-                    <li><a href="iniciar.php">Iniciar Sesion</a></li>
-                    <li>
-                        <a href="oportunidad.php">Oportunidad de trabajo</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="registrarse.php">Crear Usuario</a></li>
+                  <li><a href="iniciar.php">Iniciar Sesion</a></li>
+                  <li>
+                      <a href="oportunidad.php">Oportunidad de trabajo</a>
+                  </li>
                 </ul>
+              </li>
+              <li>
+                  <a href="contact.php">Contact</a>
+              </li>
+              </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
-    <div class="container">
+       <!--Inicio Formulario de Registro-->
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>CURSOS</strong>
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt="">
-                    <h2>JAVA
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <?php echo $fun->consulta4()?>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-2.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <?php echo $fun->consulta5()?>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-3.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
+       <div class="container">
+           <div class="box">
+               <div class="col-lg-12">
+                   <hr>
+                   <h2 class="intro-text text-center">Registrate</h2>
+                   <hr>
+                   <h3 class="text-center">Para continuar registrate por favor</h3>
+                   <form role="form">
+                       <div class="row">
+                           <div class="form-group col-lg-4">
+                               <label>Nombre(s)</label>
+                               <input type="text" class="form-control" class="form-control input-sm" placeholder="Name">
+                           </div>
+                           <div class="form-group col-lg-4">
+                               <label>Apellidos</label>
 
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                               <input type="text" class="form-control" class="form-control input-sm" placeholder="Last Name">
+                           </div>
+                           <div class="form-group col-lg-4">
+                               <label>Correo Electronico @</label>
+                               <input type="email" class="form-control" class="form-control input-sm" placeholder="Email @">
+                           </div>
+                           <div class="form-group col-lg-4">
+                               <label>Nombre de Usuario</label>
+                               <input type="text" class="form-control" class="form-control input-sm" placeholder="Username">
+                           </div>
+                           <div class="form-group col-lg-4">
+                               <label>Ingresa su Contraseña</label>
+                               <input type="password" class="form-control" class="form-control input-sm" placeholder="Password">
+                           </div>
+                           <div class="form-group col-lg-4">
+                               <label>Confirme su contraseña</label>
+                               <input type="password" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+                           </div>
+                           <div class="form-group col-lg-12">
+                               <input type="hidden" name="save" value="contact">
+                               <button  type="submit" class="btn btn-default col-sm-offset-6 ">Registrarse</button>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+             </div>
+           </div>
+      <!--Final Registro-->
 
-    </div>
-    <!-- /.container -->
 
     <footer style="background-color: #282c34">
 
