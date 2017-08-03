@@ -22,42 +22,28 @@ class database {
     }
 
     function consulta1(){
-      $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=2");
+      $sql = $this->pdo->prepare("select * from servicios");
         if ($sql->execute(array(1))) {
             return $sql->fetchAll(PDO::FETCH_ASSOC);
         }
         $this->CerrarConexion();
       }
 
-      function consulta2(){
-        $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=3");
-          if ($sql->execute(array(1))) {
-              return $sql->fetchAll(PDO::FETCH_ASSOC);
-          }
-          $this->CerrarConexion();
-        }
-
-        function consulta3(){
-          $sql = $this->pdo->prepare("select Contenido from servicios where Id_serv=1");
-            if ($sql->execute(array(1))) {
-                return $sql->fetchAll(PDO::FETCH_ASSOC);
-            }
-            $this->CerrarConexion();
-          }
 
           function consulta4(){
-            $sql = $this->pdo->prepare("select Tipo_curso from cursos where Id_curs=1");
+            $sql = $this->pdo->prepare("select * from cursos");
               if ($sql->execute(array(1))) {
                   return $sql->fetchAll(PDO::FETCH_ASSOC);
               }
               $this->CerrarConexion();
             }
 
-            function consulta5(){
-              $sql = $this->pdo->prepare("select Tipo_curso from cursos where Id_curs=2");
+            function consulta6(){
+              $sql = $this->pdo->prepare("select * from bolsa_trabajo");
                 if ($sql->execute(array(1))) {
                     return $sql->fetchAll(PDO::FETCH_ASSOC);
                 }
                 $this->CerrarConexion();
               }
+
 }
