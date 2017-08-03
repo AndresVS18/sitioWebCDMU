@@ -120,23 +120,25 @@ function __construct(){
       $con = $this->bd->consulta1();
       $texto="";
       foreach ($con as $prueba) {
-        $texto.='<div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">'.$prueba['Tipo_serv'].'
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/'.$prueba['imagen'].'" alt="">
-                </div>
-                <div>
-                  <div>' .$prueba['Contenido'].'</div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>';
+        $texto.='<div>' .$prueba['Contenido'].'</div>';
+      }
+      return $texto;
+    }
+
+    public function consulta2(){
+      $con = $this->bd->consulta2();
+      $texto="";
+      foreach ($con as $prueba2) {
+        $texto.='<div>' .$prueba2['Contenido'].'</div>';
+      }
+      return $texto;
+    }
+
+    public function consulta3(){
+      $con = $this->bd->consulta3();
+      $texto="";
+      foreach ($con as $prueba3) {
+        $texto.='<div>' .$prueba3['Contenido'].'</div>';
       }
       return $texto;
     }
@@ -145,32 +147,15 @@ function __construct(){
       $con = $this->bd->consulta4();
       $texto="";
       foreach ($con as $prueba4) {
-        $texto.='<div class="col-lg-12 text-center">
-            <img class="img-responsive img-border img-full" src="img/'.$prueba4['imagen'].'" alt="">
-            <h2>'.$prueba4['Nombre_curs'].'
-                <br>
-                <small>'.$prueba4['Fecha_curso'].'</small>
-            </h2>
-            <p>' .$prueba4['Tipo_curso'].'</p>
-            <a href="#" class="btn btn-default btn-lg">Read More</a>
-            <hr>
-        </div>';
+        $texto.='<p>' .$prueba4['Tipo_curso'].'</p>';
       }
       return $texto;
     }
-    public function consulta6(){
-      $con = $this->bd->consulta6();
+    public function consulta5(){
+      $con = $this->bd->consulta5();
       $texto="";
-      foreach ($con as $prueba4) {
-        $texto.='<div class="col-sm-4 text-center">
-            <h3>
-            ' .$prueba4['Nombre_vacante'].'
-            </h3>
-            <h4 class="text-justify">
-              <small>' .$prueba4['Contenido'].'<br> Telefono:'.$prueba4['Telefono'].'<br> Direccion:'.$prueba4['Direccion'].'</small>
-            </h4>
-            <a href="#" class="btn btn-default btn-lg">Enviar datos</a>
-        </div>';
+      foreach ($con as $prueba5) {
+        $texto.='<p>' .$prueba5['Tipo_curso'].'</p>';
       }
       return $texto;
     }

@@ -99,7 +99,60 @@ $fun = new funciones();
             </div>
           </div>
         </div>
-                  <?php echo $fun->consulta1()?>
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">SERVICIO 1
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/bgR.jpg" alt="">
+                </div>
+              <div>
+              <?php echo $fun->consulta1()?>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">SERVICIO 2
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/bg.jpg" alt="">
+                </div>
+
+                <div>
+                  <?php echo $fun->consulta2()?>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">SERVICIO 3
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/bg.jpg" alt="">
+                </div>
+                <div>
+                  <?php echo $fun->consulta3()?>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="box">

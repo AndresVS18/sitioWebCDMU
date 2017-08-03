@@ -1,7 +1,3 @@
-<?php
-include_once 'logica/funciones.php';
-$fun = new funciones();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,13 +94,120 @@ $fun = new funciones();
           <div class="box">
               <div class="col-lg-12">
                   <hr>
-                  <h2 class="intro-text text-center">PUESTOS DE TRABAJO
-
+                  <h2 class="intro-text text-center">SECCIÓN
+                      <strong>1</strong>
                   </h2>
                   <hr>
               </div>
-              <?php echo $fun->consulta6()?>
+              <div class="col-sm-4 text-center">
+                  <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                  <h3>
+                  DISEÑADOR
+                  </h3>
+                  <h4 class="text-justify">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+                  </h4>
+                  <a href="#" class="btn btn-default btn-lg">Read More</a>
+              </div>
+              <div class="col-sm-4 text-center">
+                  <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                  <h3>
+                  ENCARGADO
+                  </h3>
+                  <h4 class="text-justify">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+                  </h4>
+                  <a href="#" class="btn btn-default btn-lg">Read More</a>
+              </div>
+              <div class="col-sm-4 text-center">
+                  <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                  <h3>
+                  MAQUINERO
+                  </h3>
+                  <h4 class="text-justify">
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+                  </h4>
+                  <a href="#" class="btn btn-default btn-lg">Read More</a>
+              </div>
       </div>
+      <div class="box">
+          <div class="col-lg-12">
+              <hr>
+              <h2 class="intro-text text-center">SECCIÓN
+                  <strong>1</strong>
+              </h2>
+              <hr>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+              <h3>
+              DISEÑADOR
+              </h3>
+              <h4 class="text-justify">
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+              </h4>
+              <a href="#" class="btn btn-default btn-lg">Read More</a>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+              <h3>
+              ENCARGADO
+              </h3>
+              <h4 class="text-justify">
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+              </h4>
+              <a href="#" class="btn btn-default btn-lg">Read More</a>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+              <h3>
+              MAQUINERO
+              </h3>
+              <h4 class="text-justify">
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+              </h4>
+              <a href="#" class="btn btn-default btn-lg">Read More</a>
+          </div>
+    </div>
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">SECCIÓN
+                <strong>1</strong>
+            </h2>
+            <hr>
+        </div>
+        <div class="col-sm-4 text-center">
+            <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <h3>
+            DISEÑADOR
+            </h3>
+            <h4 class="text-justify">
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+            </h4>
+            <a href="#" class="btn btn-default btn-lg">Read More</a>
+        </div>
+        <div class="col-sm-4 text-center">
+            <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <h3>
+            ENCARGADO
+            </h3>
+            <h4 class="text-justify">
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+            </h4>
+            <a href="#" class="btn btn-default btn-lg">Read More</a>
+        </div>
+        <div class="col-sm-4 text-center">
+            <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <h3>
+            MAQUINERO
+            </h3>
+            <h4 class="text-justify">
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+            </h4>
+            <a href="#" class="btn btn-default btn-lg">Read More</a>
+        </div>
+        </div>
           <div class="row">
               <div class="box">
                   <div class="col-lg-12">
