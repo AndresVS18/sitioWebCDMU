@@ -1,3 +1,7 @@
+<?php
+include_once 'logica/funciones.php';
+$fun = new funciones();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,16 +103,9 @@
                   </h2>
                   <hr>
               </div>
-              <div class="col-sm-4 text-center">
-                  <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                  <h3>
-                  DISEÑADOR
-                  </h3>
-                  <h4 class="text-justify">
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
-                  </h4>
-                  <a href="#" class="btn btn-default btn-lg">Read More</a>
-              </div>
+              
+              <?php echo $fun->bolsa()?>
+
               <div class="col-sm-4 text-center">
                   <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                   <h3>
