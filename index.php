@@ -228,9 +228,9 @@
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 footer-col">
-            <h6 class="heading7">CONTACTANOS</h6>
+
+          <div class="col-md-3 col-md-offset-3 footer-col">
+            <h2 style="color:white">CONTACTANOS</h2>
             <p><i class="fa fa-map-pin"></i>
               #228, Tiruvannamalai, Tamilnadu, India <br>
               Phone (India) : +91 9999 999 999,  <br>
@@ -238,15 +238,15 @@
           </div>
 
 
-          <div class=" footer-col">
-            <h6 class="heading7">SIGUENOS</h6>
+          <div class="col-md-6 footer-col">
+            <h2 style="color:white">SIGUENOS</h2>
             <ul class="footer-social">
               <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
               <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
               <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
             </ul>
           </div>
-        </div>
+
       </div>
     </footer>
     <!--footer start from here-->
