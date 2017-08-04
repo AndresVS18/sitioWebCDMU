@@ -9,6 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
+
+    <button type="button" name="button">HOLA</button>
+
     <title>Contact - Business Casual - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
