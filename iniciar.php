@@ -165,6 +165,7 @@
       </div>
 
       <!--Final de Iniciar sesion-->
+
       <footer>
         <div class="container">
           <div class="row">
@@ -174,13 +175,13 @@
             </div>
 
             <div class="col-lg-4 col-md-4 footer-col">
-              <h6 class="heading7">LATEST POST</h6>
+              <h6 class="heading7">SIGUENOS</h6>
               <div class="post">
-                <p>facebook crack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
+                <p>facebook caarack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 footer-col">
-              <h6 class="heading7">Social Media</h6>
+              <h6 class="heading7">Social Mediaa</h6>
               <ul class="footer-social">
                 <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
                 <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
@@ -191,6 +192,8 @@
           </div>
         </div>
       </footer>
+
+
 
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
