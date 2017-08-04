@@ -56,37 +56,8 @@ $fun = new funciones();
                 <a class="navbar-brand" href="index.html">Business Casual</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">INCIO</a>
-                    </li>
-                    <li>
-                        <a href="servicios.php">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="cursos.php">CURSOS</a>
-                    </li>
-
-                    <li>
-                        <a href="bolsa.php">Bolsa de trabajo</a>
-                    </li>
-
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="registrarse.php">Crear Usuario</a></li>
-                    <li><a href="iniciar.php">Iniciar Sesion</a></li>
-                    <li>
-                        <a href="oportunidad.php">Oportunidad de trabajo</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
-                </ul>
-            </div>
+            <!-- se toma el menu desde una funcion -->
+            <?php $fun->menu(); ?>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -103,44 +74,7 @@ $fun = new funciones();
                     </h2>
                     <hr>
                 </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt="">
-                    <h2>JAVA
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <?php echo $fun->consulta4()?>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-2.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-                    <?php echo $fun->consulta5()?>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <img class="img-responsive img-border img-full" src="img/slide-3.jpg" alt="">
-                    <h2>Post Title
-                        <br>
-                        <small>October 13, 2013</small>
-                    </h2>
-
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
-                    <hr>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-                </div>
+                <?php echo $fun->curso(); ?>
             </div>
         </div>
 
