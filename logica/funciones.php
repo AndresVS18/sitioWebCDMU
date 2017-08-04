@@ -112,40 +112,65 @@ function __construct(){
         </div>';
     }
 
-    public function bolsa_trabajo(){
-      $bolsa = $this->bd->bolsa();
+    public function consulta1(){
+      $con = $this->bd->consulta1();
       $texto="";
-      foreach ($bolsa as $a) {
-        $texto.='<div class="col-lg-12">'.$a['Nombre_vacante'].'</div>';
+      foreach ($con as $prueba) {
+        $texto.='<div>' .$prueba['Contenido'].'</div>';
       }
       return $texto;
     }
 
-    public function cursos(){
-      $curso = $this->bd->cursos();
+    public function consulta2(){
+      $con = $this->bd->consulta2();
       $texto="";
-      foreach ($curso as $c) {
-        $texto.='<button type="button" class="btn btn-primary btn-lg btn-block " value="'.$c['Id_curs'].'">'.$c['Nombre_curs'].'</button>';
+      foreach ($con as $prueba2) {
+        $texto.='<div>' .$prueba2['Contenido'].'</div>';
       }
       return $texto;
     }
 
-    public function curso(){
-      $con = $this->bd->curso();
+    public function consulta3(){
+      $con = $this->bd->consulta3();
       $texto="";
-      foreach ($con as $c) {
-        $texto.='<div class="panel-footer">'.$c['Tipo_curso'].'</div>';
+      foreach ($con as $prueba3) {
+        $texto.='<div>' .$prueba3['Contenido'].'</div>';
       }
       return $texto;
     }
 
-    public function servicio(){
-      $con = $this->bd->ser();
+    public function consulta4(){
+      $con = $this->bd->consulta4();
       $texto="";
-      foreach ($serv as $s) {
-        $texto.='<div class="col-md-6">'.$s['Tipo_curso'].'</div>';
+      foreach ($con as $prueba4) {
+        $texto.='<p>' .$prueba4['Tipo_curso'].'</p>';
       }
       return $texto;
     }
+    public function consulta5(){
+      $con = $this->bd->consulta5();
+      $texto="";
+      foreach ($con as $prueba5) {
+        $texto.='<p>' .$prueba5['Tipo_curso'].'</p>';
+      }
+      return $texto;
+    }
+    public function bolsa(){
+      $con = $this->bd->bolsa();
+      $texto='';
+      foreach ($con as $bolsa) {
+        $texto.='<div class="col-sm-4 text-center">
+            <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <h3>
+            ENCARGADO
+            </h3>
+            <h4 class="text-justify">
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae obcaecati temporibus est officiis magnam vel adipisci cumque dicta assumenda!</small>
+            </h4>
+            <a href="#" class="btn btn-default btn-lg">Read More</a>
+        </div>';
 
+      }
+      return $texto;
+    }
 }

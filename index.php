@@ -16,11 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/Style.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -218,34 +219,40 @@
 
     </div>
 
-    <footer style="background-color: #2a2e36; "><br>
 
-        <div class="container">
-          <div class="col-md-6  col-md-offset-1" style="color: #e9e2d8">
-          <h1 style=" color: #009788">CONTACT</h1> <hr>
-
-              <div class="glyphicon glyphicon-earphone" style="font-size:20px"> 238.123.4567 </div>
-              <br><br>
-              <div class="glyphicon glyphicon-envelope" style="font-size:20px"> CDMU@example.com </div>
-              <br><br>
-              <div class="glyphicon glyphicon-map-marker" style="font-size:20px"> 3481 Melrose Place Beverly Hills, CA 90210
-            </div>
-            </div>
-
-          <div class="col-md-3 col-md-offset-1"   >
-            <h1 style=" color: #009788; ">FOLLOW US</h1> <hr>
-              <ul class="list-unstyled  list-inline" style= "font-size:70px" >
-                      <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-                      <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-                      <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
-              </ul>
-          </div>
-        </div> <br><br>
-    </footer>
 
 
     <!-- /.container -->
 
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 footer-col">
+            <div class="logofooter">Contactanos</div>
+            <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 footer-col">
+            <h6 class="heading7">LATEST POST</h6>
+            <div class="post">
+              <p>facebook crack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 footer-col">
+            <h6 class="heading7">Social Media</h6>
+            <ul class="footer-social">
+              <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+              <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer start from here-->
 
 
     <!-- jQuery -->
