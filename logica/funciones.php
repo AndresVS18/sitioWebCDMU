@@ -49,32 +49,28 @@ function __construct(){
     }
 
     public function footer() {
-        echo'<footer>
+        echo'
 
-      <div class="footer" style="background-color: black; ">
-        <div class="container">
-          <div class="row">
-          <br>
-            <div class="text-center col-xs-6 col-sm-6 col-md-4 "  style="color:white">
-              Tel. Celular: (238) 0000- 111
-            </div>
-            <div class="text-center col-xs-6 col-sm-6 col-md-4 " style="color:white">
-              E-mail: CDMU@gmail.com
-            </div>
-            <div class="text-center col-xs-12 col-sm-12 col-md-4 " style="color:white" >
-              <ul class="list-unstyled text-center list-inline" style= "font-size:30px; >
-                <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-                <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-                <li class="icono"><a href="#"><i class="fa fa-linkedin-square" style="color: white"></i></a></li>
-              </ul>
-            </div >
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.footer -->
-    </footer>';
+    <footer id="myFooter">
+
+<div class="container">
+<ul>
+<li><a href="#">Company Information</a></li>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Terms of service</a></li>
+</ul>
+<p class="footer-copyright">© 2016 Copyright Text</p>
+</div>
+<div class="footer-social">
+<a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+<a href="#" class="social-icons"><i class="fa fa-google-plus"></i></a>
+<a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+</div>
+</footer>';
+
+
+
     }
 
     public function carfo(){

@@ -203,7 +203,7 @@
                 <ul class="list-unstyled  list-inline" style= "font-size:80px" >
                         <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
                         <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-                        <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
+                        <li class="icono"><a href="#"><i class="fa fa-instagram-square" style="color: white"></i></a></li>
                 </ul>
             </div>
           </div>

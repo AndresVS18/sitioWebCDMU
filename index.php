@@ -217,27 +217,36 @@
         </div>
 
     </div>
-    <!-- /.container -->
 
-    <footer style="background-color: rgba(255,255,255,0.9">
+    <footer style="background-color: #2a2e36; "><br>
 
         <div class="container">
-          <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-            <div class="col-xs-12 col-sm-12 col-md-8" style="color: black">
-              <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
+          <div class="col-md-6  col-md-offset-1" style="color: #e9e2d8">
+          <h1 style=" color: #009788">CONTACT</h1> <hr>
+
+              <div class="glyphicon glyphicon-earphone" style="font-size:20px"> 238.123.4567 </div>
               <br><br>
-              <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
+              <div class="glyphicon glyphicon-envelope" style="font-size:20px"> CDMU@example.com </div>
               <br><br>
-              <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
+              <div class="glyphicon glyphicon-map-marker" style="font-size:20px"> 3481 Melrose Place Beverly Hills, CA 90210
             </div>
             </div>
 
-            <div class="col-xs-12 col-sm-12  col-md-4"   >
-              <i class="fa fa-facebook-square"></i>
-              <i class="fa fa-facebook-square" style="font-size:36px"></i>
-            </div>
-        </div>
-   </footer>
+          <div class="col-md-3 col-md-offset-1"   >
+            <h1 style=" color: #009788; ">FOLLOW US</h1> <hr>
+              <ul class="list-unstyled  list-inline" style= "font-size:70px" >
+                      <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
+                      <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
+              </ul>
+          </div>
+        </div> <br><br>
+    </footer>
+
+
+    <!-- /.container -->
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
