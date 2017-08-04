@@ -1,3 +1,7 @@
+<?php
+include_once 'logica/funciones.php';
+$fun = new funciones();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,37 +55,7 @@
                 <a class="navbar-brand" href="index.html">Business Casual</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">INCIO</a>
-                    </li>
-                    <li>
-                        <a href="servicios.php">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="cursos.php">CURSOS</a>
-                    </li>
-
-                    <li>
-                        <a href="bolsa.php">Bolsa de trabajo</a>
-                    </li>
-
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="registrarse.php">Crear Usuario</a></li>
-                    <li><a href="iniciar.php">Iniciar Sesion</a></li>
-                    <li>
-                        <a href="oportunidad.php">Oportunidad de trabajo</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
-                </ul>
-            </div>
+            <?php $fun->menu();  ?>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
