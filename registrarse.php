@@ -72,36 +72,44 @@ $fun = new funciones();
         <h2 class="intro-text text-center">Registrate</h2>
         <hr>
         <h3 class="text-center">Para continuar registrate por favor</h3>
-        <form role="form">
+        <form role="form" method="post">
           <div class="row">
             <div class="form-group col-lg-4">
               <label>Nombre(s)</label>
-              <input type="text" class="form-control" class="form-control input-sm" placeholder="Name">
+              <input name="nombre" type="text" class="form-control" class="form-control input-sm" placeholder="Name">
             </div>
             <div class="form-group col-lg-4">
               <label>Apellidos</label>
-
-              <input type="text" class="form-control" class="form-control input-sm" placeholder="Last Name">
+              <input name="apellidos" type="text" class="form-control" class="form-control input-sm" placeholder="Last Name">
             </div>
             <div class="form-group col-lg-4">
               <label>Correo Electronico @</label>
-              <input type="email" class="form-control" class="form-control input-sm" placeholder="Email @">
+              <input name="email" type="email" class="form-control" class="form-control input-sm" placeholder="Email @">
+            </div>
+            <div class="form-group col-lg-4">
+              <label>Direccion</label>
+              <input name="direccion" type="text" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+            </div>
+            <div class="form-group col-lg-4">
+              <label>Telefono</label>
+              <input name="telefono" type="text" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
-              <input type="text" class="form-control" class="form-control input-sm" placeholder="Username">
+              <input name="user" type="text" class="form-control" class="form-control input-sm" placeholder="Username">
             </div>
             <div class="form-group col-lg-4">
               <label>Ingresa su Contraseña</label>
-              <input type="password" class="form-control" class="form-control input-sm" placeholder="Password">
+              <input name="contraseña" type="password" class="form-control" class="form-control input-sm" placeholder="Password">
             </div>
             <div class="form-group col-lg-4">
               <label>Confirme su contraseña</label>
-              <input type="password" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+              <input name="confirmar" type="password" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
             </div>
             <div class="form-group col-lg-12">
               <input type="hidden" name="save" value="contact">
-              <button  type="submit" class="btn btn-default col-sm-offset-6 ">Registrarse</button>
+              <?php $fun->N_afiliado();?>
+              <button  name="agregar" type="Afiliarse" class="btn btn-default col-sm-offset-6 ">Registrarse</button>
             </div>
           </div>
         </form>

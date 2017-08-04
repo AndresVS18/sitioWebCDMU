@@ -132,4 +132,25 @@ class funciones {
     }
     return $texto;
   }
+
+  public function N_afiliado(){
+  if (isset($_POST['agregar'])) {
+      $nombre= $_POST['nombre'];
+      $apellidos=$_POST['apellidos'];
+      $email= $_POST['email'];
+      $direccion= $_POST['direccion'];
+      $telefono=$_POST['telefono'];
+      $user= $_POST['user'];
+      $contraseña=$_POST['contraseña'];
+      $confirmar=$_POST['confirmar'];
+      if ($confirmar == $contraseña) {
+        $this->bd->N_afiliado($nombre, $apellidos, $email, $direccion, $telefono, $user, $contraseña);
+        echo '<script type="text/javascript">alert("Usted ha sido afiliado con exito espere la orden de pago");</script>';
+      }else{
+        echo '<script type="text/javascript">alert("Verifique su contraseña");</script>';
+      }
+    }
+
+  }
+
 }

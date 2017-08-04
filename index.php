@@ -6,7 +6,6 @@ $fun = new funciones();
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +13,6 @@ $fun = new funciones();
   <meta name="author" content="">
 
   <title>Contact - Business Casual - Start Bootstrap Theme</title>
-
-    <title>Contact - Business Casual - Start Bootstrap Theme</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +35,6 @@ $fun = new funciones();
 </head>
 
 <body>
-
   <div class="brand">Business Casual</div>
   <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
