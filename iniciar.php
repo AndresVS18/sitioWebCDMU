@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 footer-col">
-              <h6 class="heading7">Social Mediaa</h6>
+              <h6 class="heading7">SIGUENOS</h6>
               <ul class="footer-social">
                 <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
                 <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
