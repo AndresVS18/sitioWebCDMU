@@ -46,7 +46,7 @@ $fun = new funciones();
   <div class="brand">Business Casual</div>
   <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
-<<<<<<< HEAD
+
   <!-- Navigation -->
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -68,154 +68,69 @@ $fun = new funciones();
     <!-- /.container -->
   </nav>
 
-  <!--Inicio del Inicio de sesion-->
-  <div class="container">
+<br>
+<br>
+<br>
+          <div class="container"   >
+          	<div class="box">
+                  <div class="col-xs-4 col-md-offset-4">
+                      <div class="login" id="card">
+                      	<div class="front signin_form">
+                          <h2 style="text-align:center">INICIAR SESIÓN</h2> <hr>
+                            <form class="login-form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Username">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </span>
+                                    </div> <br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" placeholder="Type your password">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-lock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                <label><input type="checkbox">Recordar mi contraseña</label>
+                              </div> <hr>
 
-    <header>
-      <h1>Login and Registration Form</h1>
+                                <div class="form-group sign-btn">
+                                    <input type="submit" class="btn" value="Entrar"> <br><br>
+                                    <p><a href="#" class="forgot">¿No puedes acceder a tu cuenta?</a></p>
+                                    <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
+                                </div>
+                            </form>
+                          </div>
 
-    </header>
-    <section>
-      <div id="container_demo" >
-        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-        <a class="hiddenanchor" id="toregister"></a>
-        <a class="hiddenanchor" id="tologin"></a>
-        <div id="wrapper">
-          <div id="login" class="animate form">
-            <form  action="mysuperscript.php" autocomplete="on">
-              <h1>Log in</h1>
-              <p>
-                <label for="username" class="uname" > Your email or username </label>
-                <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-              </p>
-              <p>
-                <label for="password" class="youpasswd"> Your password </label>
-                <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
-              </p>
-              <p class="keeplogin">
-                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
-                <label for="loginkeeping">Keep me logged in</label>
-              </p>
-              <p class="login button">
-                <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
-              </p>
-              <p class="change_link">
-                Not a member yet ?
-                <a href="#toregister" class="to_register">Join us</a>
-              </p>
-            </form>
-          </div>
+                      </div>  <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                  </div>
+              </div>
 
-          <div id="register" class="animate form">
-            <form  action="mysuperscript.php" autocomplete="on">
-              <h1> Sign up </h1>
-              <p>
-                <label for="usernamesignup" class="uname" >Your username</label>
-                <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
-              </p>
-              <p>
-                <label for="emailsignup" class="youmail"  > Your email</label>
-                <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
-              </p>
-              <p>
-                <label for="passwordsignup" class="youpasswd" >Your password </label>
-                <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
-              </p>
-              <p>
-                <label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
-                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
-              </p>
-              <p class="signin button">
-                <input type="submit" value="Sign up"/>
-              </p>
-              <p class="change_link">
-                Already a member ?
-                <a href="#tologin" class="to_register"> Go and log in </a>
-              </p>
-            </form>
-          </div>
-
-        </div>
       </div>
-    </section>
-  </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
 
-  <!--Final de Iniciar sesion-->
 
-  <footer style="background-color: #282c34">
 
-    <div class="container">
-      <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-      <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
-        <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
-        <br><br>
-        <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
-        <br><br>
-        <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
-        </div>
-      </div>
 
-      <div class="col-xs-12 col-sm-12  col-md-4"   >
-        <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
-        <ul class="list-unstyled  list-inline" style= "font-size:80px" >
-          <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-          <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-          <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
-=======
-    <!--Inicio del Inicio de sesion-->
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <div class="main">
-
-
-        <div class="container">
-    <center>
-    <div class="middle">
-          <div id="login">
-
-            <form action="javascript:void(0);" method="get">
-
-              <fieldset class="clearfix">
-
-                <p ><span class="fa fa-user"></span><input type="text"  Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-                <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-
-                 <div>
-                                    <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
-                                    password?</a></span>
-                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
-                                </div>
-
-              </fieldset>
-    <div class="clearfix"></div>
-            </form>
-
-            <div class="clearfix"></div>
-
-          </div> <!-- end login -->
-          <div class="logo">LOGO
-
-              <div class="clearfix"></div>
-          </div>
-
-          </div>
-    </center>
-        </div>
-
-    </div>
-
-  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
-
-
-
-      <!--Final de Iniciar sesion-->
 
       <footer>
         <div class="container">
