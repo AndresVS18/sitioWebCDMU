@@ -56,37 +56,8 @@ $fun = new funciones();
                 <a class="navbar-brand" href="index.html">Business Casual</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">INCIO</a>
-                    </li>
-                    <li>
-                        <a href="servicios.php">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="cursos.php">CURSOS</a>
-                    </li>
-
-                    <li>
-                        <a href="bolsa.php">Bolsa de trabajo</a>
-                    </li>
-
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="registrarse.php">Crear Usuario</a></li>
-                    <li><a href="iniciar.php">Iniciar Sesion</a></li>
-                    <li>
-                        <a href="oportunidad.php">Oportunidad de trabajo</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
-                </li>
-                </ul>
-            </div>
+            <!-- se toma el menu desde una funcion -->
+            <?php $fun->menu(); ?>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -125,7 +96,7 @@ $fun = new funciones();
               </div>
           </div>
           <div class="col-lg-4 col-md-4 footer-col">
-            <h6 class="heading7">Social Media</h6>
+            <h6 class="heading7">Social Mediaa</h6>
             <ul class="footer-social">
               <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
               <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
@@ -136,6 +107,8 @@ $fun = new funciones();
         </div>
       </div>
     </footer>
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

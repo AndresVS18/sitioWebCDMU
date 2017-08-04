@@ -135,6 +135,7 @@ $fun = new funciones();
           </div>
 
         </div>
+<<<<<<< HEAD
       </div>
     </div>
 
@@ -168,6 +169,42 @@ $fun = new funciones();
   </footer>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+=======
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 footer-col">
+                <div class="logofooter">Contactanos</div>
+                <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-4 footer-col">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                  <p>facebook caarack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 footer-col">
+                <h6 class="heading7">Social Mediaa</h6>
+                <ul class="footer-social">
+                  <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+>>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>

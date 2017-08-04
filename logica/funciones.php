@@ -35,9 +35,10 @@ class funciones {
     </div>';
     echo $menu;
   }
-//muestra el mismo footer para todas las paginas
+//muestra el mismo footer
   public function footer() {
     echo'<footer>
+
     <div class="footer" style="background-color: black; ">
     <div class="container">
     <div class="row">

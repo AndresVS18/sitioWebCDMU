@@ -24,6 +24,8 @@ $fun = new funciones();
   <!--Business.css-->
   <link href="css/Business.css" rel="stylesheet">
 
+    <link href="css/inisiar.css" rel="stylesheet">
+
 
 
   <!-- Fonts -->
@@ -44,6 +46,7 @@ $fun = new funciones();
   <div class="brand">Business Casual</div>
   <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
+<<<<<<< HEAD
   <!-- Navigation -->
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -165,6 +168,99 @@ $fun = new funciones();
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+=======
+    <!--Inicio del Inicio de sesion-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header">Contact us</legend>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <!--Final de Iniciar sesion-->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 footer-col">
+              <div class="logofooter">Contactanos</div>
+              <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 footer-col">
+              <h6 class="heading7">SIGUENOS</h6>
+              <div class="post">
+                <p>facebook caarack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 footer-col">
+              <h6 class="heading7">SIGUENOS</h6>
+              <ul class="footer-social">
+                <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+>>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>

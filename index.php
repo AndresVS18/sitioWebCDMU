@@ -13,7 +13,15 @@ $fun = new funciones();
   <meta name="description" content="">
   <meta name="author" content="">
 
+<<<<<<< HEAD
   <title>Contact - Business Casual - Start Bootstrap Theme</title>
+=======
+
+
+    <button type="button" name="button">HOLA</button>
+
+    <title>Contact - Business Casual - Start Bootstrap Theme</title>
+>>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -189,6 +197,7 @@ $fun = new funciones();
 
       </div>
     </div>
+<<<<<<< HEAD
   </div>
 
 </div>
@@ -200,8 +209,40 @@ $fun = new funciones();
       <div class="col-lg-4 col-md-4 footer-col">
         <div class="logofooter">Contactanos</div>
         <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
+=======
+
+
+
+
+    <!-- /.container -->
+
+
+
+    <footer>
+      <div class="container">
+
+          <div class="col-md-3 col-md-offset-3 footer-col">
+            <h2 style="color:white">CONTACTANOS</h2>
+            <p><i class="fa fa-map-pin"></i>
+              #228, Tiruvannamalai, Tamilnadu, India <br>
+              Phone (India) : +91 9999 999 999,  <br>
+              E-mail : info@prabuuideveloper.com</p>
+          </div>
+
+
+          <div class="col-md-6 footer-col">
+            <h2 style="color:white">SIGUENOS</h2>
+            <ul class="footer-social">
+              <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+
+>>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
       </div>
 
+<<<<<<< HEAD
       <div class="col-lg-4 col-md-4 footer-col">
         <h6 class="heading7">LATEST POST</h6>
         <div class="post">
@@ -234,6 +275,21 @@ $('.carousel').carousel({
   interval: 5000 //changes the speed
 })
 </script>
+=======
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+>>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
 
 </body>
 
