@@ -13,15 +13,9 @@ $fun = new funciones();
   <meta name="description" content="">
   <meta name="author" content="">
 
-<<<<<<< HEAD
   <title>Contact - Business Casual - Start Bootstrap Theme</title>
-=======
-
-
-    <button type="button" name="button">HOLA</button>
 
     <title>Contact - Business Casual - Start Bootstrap Theme</title>
->>>>>>> eadae1cc917e084005e9573bbc17ed191a6559fb
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
