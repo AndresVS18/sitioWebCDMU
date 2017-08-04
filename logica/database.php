@@ -51,4 +51,12 @@ class database {
     }
     $this->CerrarConexion();
   }
+
+  function N_afiliado($nombre, $apellidos, $email, $direccion, $telefono, $user, $contraseña){
+    //inserta una nueva afiliacion
+    $sql = $this->pdo->prepare("INSERT INTO afiliados(`Nombre`, `Apellidos`, `Email`, `Direccion`, `Telefono`, `Nombre_usuario`, `Contraseña`) VALUES ('{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['email']}','''{$_POST['direccion']}
+      ','{$_POST['telefono']}','{$_POST['user']}','{$_POST['contraseña']}')");
+    $sql->execute(array($nombre, $apellidos, $email, $direccion, $telefono, $user, $contraseña));
+    $this->CerrarConexion();
+  }
 }
