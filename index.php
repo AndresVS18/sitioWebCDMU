@@ -15,8 +15,6 @@ $fun = new funciones();
 
   <title>Contact - Business Casual - Start Bootstrap Theme</title>
 
-    <title>Contact - Business Casual - Start Bootstrap Theme</title>
-
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
