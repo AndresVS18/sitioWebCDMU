@@ -20,7 +20,7 @@
     <!--Business.css-->
     <link href="css/Business.css" rel="stylesheet">
 
-    <link href="css/inisiar.css" rel="stylesheet">
+    <link href="css/Style0.css" rel="stylesheet">
 
 
 
@@ -96,59 +96,47 @@
 
     <!--Inicio del Inicio de sesion-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="well well-sm">
-                    <form class="form-horizontal" method="post">
-                        <fieldset>
-                            <legend class="text-center header">Contact us</legend>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <div class="main">
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                                </div>
-                            </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                                </div>
-                            </div>
+        <div class="container">
+    <center>
+    <div class="middle">
+          <div id="login">
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                </div>
-                            </div>
+            <form action="javascript:void(0);" method="get">
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                                </div>
-                            </div>
+              <fieldset class="clearfix">
 
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <p ><span class="fa fa-user"></span><input type="text"  Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+                 <div>
+                                    <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
+                                    password?</a></span>
+                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
                                 </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+
+              </fieldset>
+    <div class="clearfix"></div>
+            </form>
+
+            <div class="clearfix"></div>
+
+          </div> <!-- end login -->
+          <div class="logo">LOGO
+
+              <div class="clearfix"></div>
+          </div>
+
+          </div>
+    </center>
         </div>
+
     </div>
+
+  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
 
 
 
@@ -179,6 +167,7 @@
             </div>
           </div>
         </div>
+
       </footer>
 
 
