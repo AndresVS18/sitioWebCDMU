@@ -23,6 +23,7 @@ $fun = new funciones();
 
   <!--Business.css-->
   <link href="css/Business.css" rel="stylesheet">
+  <link href="css/Style.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -119,29 +120,34 @@ $fun = new funciones();
   <!--Final Registro-->
 
 
-  <footer style="background-color: #282c34">
+  <footer>
+  <div class="container">
 
-    <div class="container">
-      <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-      <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
-        <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
-        <br><br>
-        <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
-        <br><br>
-        <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
-        </div>
+      <div class="col-md-4 col-md-offset-2 footer-col " style="text-align:20px">
+        <h2 style="color: #41a394 ">CONTACTANOS</h2> <hr>
+        <li ><i class="icon fa fa-envelope" style="font-size: 20px; color: white" aria-hidden="true" >  E-mail : info@prabuuideveloper.com</i></li><br>
+        <li ><i  class="icon fa fa-phone" style="font-size:  20px; color: white" aria-hidden="true" > Phone (India) : +91 9999 999 999,</i></li><br>
+        <li ><i  class="icon fa fa-street-view" style="font-size: 20px; color: white" aria-hidden="true" > 3481 Melrose Place
+Beverly Hills, CA 90210 </i></li>
+
       </div>
 
-      <div class="col-xs-12 col-sm-12  col-md-4"   >
-        <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
-        <ul class="list-unstyled  list-inline" style= "font-size:80px" >
-          <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-          <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-          <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
+
+      <div class="col-md-3 col-md-offset-1 footer-col">
+        <h2 style="color: #41a394 ">SIGUENOS</h2> <hr>
+        <ul class="footer-social">
+          <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
         </ul>
       </div>
-    </div>
-  </footer>
+
+  </div>
+
+
+</div><br><hr>
+</div>
+</footer>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
