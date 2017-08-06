@@ -81,34 +81,7 @@ $fun = new funciones();
     </div>
     <!-- /.container -->
 
-    <footer>
-    <div class="container">
-
-        <div class="col-md-4 col-md-offset-2 footer-col " style="text-align:20px">
-          <h2 style="color: #41a394 ">CONTACTANOS</h2> <hr>
-          <li ><i class="icon fa fa-envelope" style="font-size: 20px; color: white" aria-hidden="true" >  E-mail : info@prabuuideveloper.com</i></li><br>
-          <li ><i  class="icon fa fa-phone" style="font-size:  20px; color: white" aria-hidden="true" > Phone (India) : +91 9999 999 999,</i></li><br>
-          <li ><i  class="icon fa fa-street-view" style="font-size: 20px; color: white" aria-hidden="true" > 3481 Melrose Place
-Beverly Hills, CA 90210 </i></li>
-
-        </div>
-
-
-        <div class="col-md-3 col-md-offset-1 footer-col">
-          <h2 style="color: #41a394 ">SIGUENOS</h2> <hr>
-          <ul class="footer-social">
-            <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
-            <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
-          </ul>
-        </div>
-
-    </div>
-
-
-  </div><br><hr>
-</div>
-</footer>
+    <?php $fun->footer(); ?>
 
 
 

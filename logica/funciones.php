@@ -5,7 +5,7 @@ include_once 'logica/database.php';
 class funciones {
 
   private $bd;
-//creacion de la conexion y consultas de la base
+  //creacion de la conexion y consultas de la base
   function __construct(){
     $this->bd = new database();
   }
@@ -35,33 +35,28 @@ class funciones {
     </div>';
     echo $menu;
   }
-//muestra el mismo footer
+  //muestra el mismo footer
   public function footer() {
     echo'<footer>
-
-    <div class="footer" style="background-color: black; ">
     <div class="container">
-    <div class="row">
-    <br>
-    <div class="text-center col-xs-6 col-sm-6 col-md-4 "  style="color:white">
-    Tel. Celular: (238) 0000- 111
+    <div class="col-md-4 col-md-offset-2 footer-col " style="text-align:20px">
+    <h2 style="color: #41a394 ">CONTACTANOS</h2> <hr>
+    <li ><i class="icon fa fa-envelope" style="font-size: 20px; color: white" aria-hidden="true" >  E-mail : info@prabuuideveloper.com</i></li><br>
+    <li ><i  class="icon fa fa-phone" style="font-size:  20px; color: white" aria-hidden="true" > Phone (India) : +91 9999 999 999,</i></li><br>
+    <li ><i  class="icon fa fa-street-view" style="font-size: 20px; color: white" aria-hidden="true" > 3481 Melrose Place
+    Beverly Hills, CA 90210 </i></li>
     </div>
-    <div class="text-center col-xs-6 col-sm-6 col-md-4 " style="color:white">
-    E-mail: CDMU@gmail.com
-    </div>
-    <div class="text-center col-xs-12 col-sm-12 col-md-4 " style="color:white" >
-    <ul class="list-unstyled text-center list-inline" style= "font-size:30px; >
-    <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-    <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-    <li class="icono"><a href="#"><i class="fa fa-linkedin-square" style="color: white"></i></a></li>
+    <div class="col-md-3 col-md-offset-1 footer-col">
+    <h2 style="color: #41a394 ">SIGUENOS</h2> <hr>
+    <ul class="footer-social">
+    <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
+    <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
+    <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
     </ul>
-    </div >
     </div>
-    <!-- /.row -->
     </div>
-    <!-- /.container -->
+    </div><br><hr>
     </div>
-    <!-- /.footer -->
     </footer>';
   }
 
@@ -134,7 +129,7 @@ class funciones {
   }
 
   public function N_afiliado(){
-  if (isset($_POST['agregar'])) {
+    if (isset($_POST['agregar'])) {
       $nombre= $_POST['nombre'];
       $apellidos=$_POST['apellidos'];
       $email= $_POST['email'];
@@ -150,7 +145,6 @@ class funciones {
         echo '<script type="text/javascript">alert("Verifique su contraseña");</script>';
       }
     }
-
   }
 
 }
