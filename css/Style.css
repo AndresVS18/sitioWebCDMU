@@ -41,8 +41,9 @@ footer {
     background-color: blue;
     color: #fff;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-top: 7px;
+    padding-left: 3px;
     border-radius: 50%;
 }
  .footer-social li{
@@ -57,3 +58,8 @@ footer {
  .twitter{
      background-color:#1da1f2;
  }
+
+
+foooter .icon {
+  color: red;
+}

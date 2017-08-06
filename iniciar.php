@@ -23,7 +23,7 @@ $fun = new funciones();
 
   <!--Business.css-->
   <link href="css/Business.css" rel="stylesheet">
-
+  <link href="css/Style.css" rel="stylesheet">
     <link href="css/Style0.css" rel="stylesheet">
 
 
@@ -132,33 +132,34 @@ $fun = new funciones();
   <script src="js/jquery.js"></script>
 
 
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 footer-col">
-              <div class="logofooter">Contactanos</div>
-              <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India Phone (India) : +91 9999 999 999,  E-mail : info@prabuuideveloper.com</p>
-            </div>
+  <footer>
+  <div class="container">
 
-            <div class="col-lg-4 col-md-4 footer-col">
-              <h6 class="heading7">SIGUENOS</h6>
-              <div class="post">
-                <p>facebook caarack the movie advertisment <br> code:what it means for you <span>August 3,2015</span></p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 footer-col">
-              <h6 class="heading7">SIGUENOS</h6>
-              <ul class="footer-social">
-                <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-4 col-md-offset-2 footer-col " style="text-align:20px">
+        <h2 style="color: #41a394 ">CONTACTANOS</h2> <hr>
+        <li ><i class="icon fa fa-envelope" style="font-size: 20px; color: white" aria-hidden="true" >  E-mail : info@prabuuideveloper.com</i></li><br>
+        <li ><i  class="icon fa fa-phone" style="font-size:  20px; color: white" aria-hidden="true" > Phone (India) : +91 9999 999 999,</i></li><br>
+        <li ><i  class="icon fa fa-street-view" style="font-size: 20px; color: white" aria-hidden="true" > 3481 Melrose Place
+Beverly Hills, CA 90210 </i></li>
 
-      </footer>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-1 footer-col">
+        <h2 style="color: #41a394 ">SIGUENOS</h2> <hr>
+        <ul class="footer-social">
+          <li><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram social-icon instagram" style="font-size:50px" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+
+  </div>
+
+
+</div><br><hr>
+</div>
+</footer>
 
 
 
