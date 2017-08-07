@@ -1,6 +1,21 @@
 <?php
 include_once 'logica/funciones.php';
 $fun = new funciones();
+$nom="";
+$app="";
+$correo="";
+$dir="";
+$tel="";
+$use="";
+if(isset($_POST["nombre"])){
+  $nom=$_POST["nombre"];
+  $app=$_POST["apellidos"];
+  $correo=$_POST["email"];
+  $dir=$_POST["direccion"];
+  $tel=$_POST["telefono"];
+  $use=$_POST["user"];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,27 +71,31 @@ $fun = new funciones();
           <div class="row">
             <div class="form-group col-lg-4">
               <label>Nombre(s)</label>
-              <input name="nombre" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre(s)" required="required" autofocus="autofocus">
+              <input name="nombre" value="<?php echo $nom; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre(s)" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Apellidos</label>
-              <input name="apellidos" type="text" class="form-control" class="form-control input-sm" placeholder="Apellidos" required="required" autofocus="autofocus">
+              <input name="apellidos" value="<?php echo $app; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Apellidos" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Correo Electronico @</label>
-              <input name="email" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
+              <input name="email" value="<?php echo $correo; ?>" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Direccion</label>
-              <input name="direccion" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion" required="required" autofocus="autofocus">
+              <input name="direccion" value="<?php echo $dir; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
+<<<<<<< HEAD
+              <input name="telefono" value="<?php echo $tel; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+=======
               <input name="telefono" type="tel" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+>>>>>>> 4ba211b85e069bfb0d3faad8b94047d7367513a5
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
-              <input name="user" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre de usuario" required="required" autofocus="autofocus">
+              <input name="user" value="<?php echo $use; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre de usuario" required="required" autofocus="autofocus">
             </div>
             <div class="TITLE form-group col-lg-4">
               <label>Ingresa su Contraseña</label>
@@ -111,8 +130,8 @@ $fun = new funciones();
               </div>
             </div>
             <div class="form-group col-lg-12">
-              <input type="hidden" name="save" value="contact">
               <?php $fun->N_afiliado();?>
+              <input type="hidden" name="save" value="contact">
               <button  name="agregar" type="Afiliarse" class="btn btn-default col-sm-offset-6 ">Registrarse</button>
             </div>
           </div>

@@ -67,28 +67,33 @@ $fun = new funciones();
           <h3>REgistrate al curso</h3>
         </div>
         <div class="modal-body">
-          <form role="form" id="formulario">
+          <form role="form" id="formulario" method="post">
             <div class="row">
               <div class="form-group col-lg-4">
-                <label>Name</label>
-                <input type="text" autofocus  class="form-control">
+                <label>Nombre(s)</label>
+                <input name="nombre" type="text" class="form-control" placeholder="Nombre(s)" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Email Address</label>
-                <input type="email" class="form-control">
+                <label>Apellidos</label>
+                <input name="apellidos" type="text" class="form-control" placeholder="Apellidos" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control">
+                <label>Telefono</label>
+                <input name="telefono" type="tel" class="form-control" placeholder="Telelfono" required="required" autofocus="autofocus">
               </div>
               <div class="clearfix"></div>
-              <div class="form-group col-lg-12">
-                <label>Message</label>
-                <textarea class="form-control" rows="6"></textarea>
+              <div class="form-group col-lg-4">
+                <label>Direccion</label>
+                <input name="direccion" type="text" class="form-control" placeholder="Direccion" required="required" autofocus="autofocus">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Correo</label>
+                <input name="email" type="email" class="form-control" placeholder=Correo@ required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-12">
-                <input type="hidden" name="save" id="id_curso">
-                <button type="submit" class="btn btn-default">Registrse</button>
+                <?php $fun->N_aspirante();?>
+                <input type="hidden" name="id" id="Id_curs">
+                <button name="inscribir" class="btn btn-default col-sm-offset-5">Registrse</button>
               </div>
             </div>
           </form>
