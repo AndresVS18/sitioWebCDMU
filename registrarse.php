@@ -56,11 +56,11 @@ $fun = new funciones();
           <div class="row">
             <div class="form-group col-lg-4">
               <label>Nombre(s)</label>
-              <input name="nombre" type="text" class="form-control" class="form-control input-sm" placeholder="Name">
+              <input name="nombre" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre(s)">
             </div>
             <div class="form-group col-lg-4">
               <label>Apellidos</label>
-              <input name="apellidos" type="text" class="form-control" class="form-control input-sm" placeholder="Last Name">
+              <input name="apellidos" type="text" class="form-control" class="form-control input-sm" placeholder="Apellidos">
             </div>
             <div class="form-group col-lg-4">
               <label>Correo Electronico @</label>
@@ -68,23 +68,23 @@ $fun = new funciones();
             </div>
             <div class="form-group col-lg-4">
               <label>Direccion</label>
-              <input name="direccion" type="text" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+              <input name="direccion" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion">
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
-              <input name="telefono" type="text" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+              <input name="telefono" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono">
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
-              <input name="user" type="text" class="form-control" class="form-control input-sm" placeholder="Username">
+              <input name="user" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre de usuario">
             </div>
             <div class="form-group col-lg-4">
               <label>Ingresa su Contraseña</label>
-              <input name="contraseña" type="password" class="form-control" class="form-control input-sm" placeholder="Password">
+              <input name="contraseña" type="password" class="form-control" class="form-control input-sm" placeholder="Contraseña">
             </div>
             <div class="form-group col-lg-4">
               <label>Confirme su contraseña</label>
-              <input name="confirmar" type="password" class="form-control" class="form-control input-sm" placeholder="Confirm Password">
+              <input name="confirmar" type="password" class="form-control" class="form-control input-sm" placeholder="Confirmar contraseña">
             </div>
             <div class="form-group col-lg-12">
               <input type="hidden" name="save" value="contact">
