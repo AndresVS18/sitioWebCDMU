@@ -43,7 +43,7 @@ $fun = new funciones();
   <?php $fun->menu();  ?>
 
 
-  <!--Inicio Formulario de Registro-->
+  <!--Inicio Formulario de Registro -->
 
   <div class="container">
     <div class="box">
@@ -72,20 +72,43 @@ $fun = new funciones();
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
-              <input name="telefono" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+              <input name="telefono" type="tel" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
               <input name="user" type="text" class="form-control" class="form-control input-sm" placeholder="Nombre de usuario" required="required" autofocus="autofocus">
             </div>
-            <div class="form-group col-lg-4">
+            <div class="TITLE form-group col-lg-4">
               <label>Ingresa su Contraseña</label>
               <input name="contraseña" type="password" class="form-control" class="form-control input-sm" placeholder="Contraseña"required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Confirme su contraseña</label>
               <input name="confirmar" type="password" class="form-control" class="form-control input-sm" placeholder="Confirmar contraseña" required="required" autofocus="autofocus">
+            </div> </DIV>
+            <h3 style="text-align: center">DATOS DE SU EMPRESA</h3><hr>
+            <div class="row">
+            <div class="form-group col-lg-4">
+              <label>Nombre de la empresa</label>
+              <input name="nombre" type="text" class="form-control" class="form-control input-sm" placeholder="Empresa" required="required" autofocus="autofocus">
             </div>
+            <div class="form-group col-lg-4">
+              <label>Direccion de la empresa</label>
+              <input name="apellidos" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion" required="required" autofocus="autofocus">
+            </div>
+            <div class="form-group col-lg-4">
+              <label>Telefono de la empresa</label>
+              <input name="telefono" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+            </div>
+            <div class="form-group col-lg-4">
+              <label>Correo aElectronico de la empresa @</label>
+              <input name="email" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
+            </div>
+            <div class="form-group col-lg-4">
+              <label>Descripción de la empresa</label>
+              <input name="Descripción" type="text" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
+            </div>
+
             <div class="form-group col-lg-12">
               <input type="hidden" name="save" value="contact">
               <?php $fun->N_afiliado();?>
@@ -93,6 +116,9 @@ $fun = new funciones();
             </div>
           </div>
         </form>
+        <!--Final RegistroPERSONAL-->
+
+        <!--Inicio Formulario de Registro-->
       </div>
     </div>
   </div>
