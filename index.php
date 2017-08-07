@@ -94,9 +94,9 @@ $fun = new funciones();
         <hr>
         <img class="img-responsive img-border img-left" src="img/serv.jpg" alt="">
         <hr class="visible-xs">
-        <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-        <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <p>Los servicios se basan en el contexto operativo de la solicitud y las políticas establecidas para satisfacer las necesidades de los clientes .</p>
+        <p>Se ofrecen servicios a los usuarios con el fin de que puedan conocer o encontrar las posobilidades de trabajo, saber  los beneficios que da la empresa hasia ellos.  </p>
+         <p>-Capacitaciones <br> -Cursos <br> -Oportunidades de trabajo</p>
       </div>
     </div>
   </div>
@@ -110,9 +110,11 @@ $fun = new funciones();
         <hr>
         <img class="img-responsive img-border img-left" src="img/cur.jpg" alt="">
         <hr class="visible-xs">
-        <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-        <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Los cursos o desarrollo de personal es una actividad desarrollada en la empresa de acuerdo a sus necesidades y busca mejorar la actitud, el conocimiento, habilidades del personal.</p>
+        <p>Damos cursos enfocados a la industria del vestido, para asi tener personal mas actualizado en la empresa.</p>
+        <p>Los cursos no solo son un proceso, es un aprendizaje para la persona que lo tome. Son herramientas que serviran para su desempeño en la empresa </p>
+        
+
       </div>
     </div>
   </div>
@@ -126,9 +128,9 @@ $fun = new funciones();
         <hr>
         <img class="img-responsive img-border img-left" src="img/oportunidad.jpg" alt="">
         <hr class="visible-xs">
-        <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-        <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Las oportunidades de trabajo. Utilizado para para reclutar trabajadores a lo largo de varios periodos de tiempo. </p>
+        <p>Los aspirantes superan las entrevistas de trabajo y las posibles pruebas y pasan a formar parte de las oportunidades de trabajo.</p>
+
       </div>
     </div>
   </div>

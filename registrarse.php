@@ -106,7 +106,7 @@ $fun = new funciones();
             </div>
             <div class="form-group col-lg-4">
               <label>Descripción de la empresa</label>
-              <input name="Descripción" type="text" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
+              <input name="Descripciónaaaaa" type="text" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
             </div>
 
             <div class="form-group col-lg-12">
