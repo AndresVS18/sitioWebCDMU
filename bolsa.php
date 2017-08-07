@@ -85,7 +85,7 @@ $fun = new funciones();
                 <textarea class="form-control" rows="6"></textarea>
               </div>
               <div class="form-group col-lg-12">
-                <input type="hidden" name="save" value="contact">
+                <input type="hidden" name="save" id="id_bolsa">
                 <button type="submit" class="btn btn-default">Registrse</button>
               </div>
             </div>

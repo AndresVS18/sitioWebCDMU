@@ -3,19 +3,15 @@ $("#modal-login").on('hidden.bs.modal', function () {
   $('#login')[0].reset();
 });
 
-$("#modal-login").on('show.bs.modal', function () {
-  $('#focus-login').focus();
-});
-
 //script para borrar el formulario del modal bolsa
 $("#modal-contact-form").on('hidden.bs.modal', function () {
   $('#formulario')[0].reset();
 });
 
-$("#modal-contact-from").on('show.bs.modal', function () {
-  $('#focus-bolsa').focus();
-});
-
+$('#modal-contact-form').on('show.bs.modal', function(e) {
+     var id = $(e.relatedTarget).data().id;
+      $(e.currentTarget).find('#id_bolsa').val(id);
+  });
 
 //script para birrar formulario de modal curos
 
@@ -23,6 +19,8 @@ $("#modal-curso-form").on('hidden.bs.modal', function () {
   $('#formulario')[0].reset();
 });
 
-$("#modal-cursa-fro").on('show.bs.modal', function () {
-  $('#focus-curso').focus();
-});
+
+$('#modal-curso-form').on('show.bs.modal', function(e) {
+     var id = $(e.relatedTarget).data().id;
+      $(e.currentTarget).find('#id_curso').val(id);
+  });
