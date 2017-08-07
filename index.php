@@ -12,7 +12,7 @@ $fun = new funciones();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Contact - Business Casual - Start Bootstrap Theme</title>
+  <title>CDDMU</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,29 +35,10 @@ $fun = new funciones();
 </head>
 
 <body>
-  <div class="brand">Business Casual</div>
-  <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-        <a class="navbar-brand" href="index.html">Business Casual</a>
-      </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <?php $fun->menu();  ?>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
+
 
   <div class="container">
 
@@ -75,13 +56,13 @@ $fun = new funciones();
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img class="img-responsive img-full" src="img/s1.jpg" alt="">
+                <img class="img-responsive img-full" src="img/sli2.jpg" alt="">
               </div>
               <div class="item">
-                <img class="img-responsive img-full" src="img/s2.jpg" alt="">
+                <img class="img-responsive img-full" src="img/sli1.jpg" alt="">
               </div>
               <div class="item">
-                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                <img class="img-responsive img-full" src="img/sli3.jpg" alt="">
               </div>
             </div>
 
@@ -111,7 +92,7 @@ $fun = new funciones();
           <a href=""><strong>SERVICIOS</strong></a>
         </h2>
         <hr>
-        <img class="img-responsive img-border img-left" src="img/servicios.jpg" alt="">
+        <img class="img-responsive img-border img-left" src="img/serv.jpg" alt="">
         <hr class="visible-xs">
         <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
         <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
@@ -127,7 +108,7 @@ $fun = new funciones();
           <a href=""><strong>CURSOS</strong></a>
         </h2>
         <hr>
-        <img class="img-responsive img-border img-left" src="img/cursos.jpg" alt="">
+        <img class="img-responsive img-border img-left" src="img/cur.jpg" alt="">
         <hr class="visible-xs">
         <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
         <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
@@ -143,7 +124,7 @@ $fun = new funciones();
           <a href=""><strong>OPORTUNIDADES DE TRABAJO</strong></a>
         </h2>
         <hr>
-        <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+        <img class="img-responsive img-border img-left" src="img/oportunidad.jpg" alt="">
         <hr class="visible-xs">
         <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
         <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
@@ -166,13 +147,13 @@ $fun = new funciones();
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img class="img-responsive img-full" src="img/sl1.jpg" alt="">
+              <img class="img-responsive img-full" src="img/slid1.jpg" alt="">
             </div>
             <div class="item">
-              <img class="img-responsive img-full" src="img/sl2.jpg" alt="">
+              <img class="img-responsive img-full" src="img/slid2.jpg" alt="">
             </div>
             <div class="item">
-              <img class="img-responsive img-full" src="img/sl3.jpg" alt="">
+              <img class="img-responsive img-full" src="img/slid3.jpg" alt="">
             </div>
           </div>
 
@@ -192,7 +173,7 @@ $fun = new funciones();
 
 </div>
 <!-- /.container -->
-<?php $fun->footer(); ?>
+</body>
 <!--footer start from here-->
 
 
@@ -211,7 +192,7 @@ $('.carousel').carousel({
   interval: 5000 //changes the speed
 })
 </script>
+  <?php $fun->footer();  ?>
 
-</body>
 
 </html>

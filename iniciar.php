@@ -2,7 +2,7 @@
 include_once 'logica/funciones.php';
 $fun = new funciones();
 ?>
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@ $fun = new funciones();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Contact - Business Casual - Start Bootstrap Theme</title>
+  <title>CDDMU</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@ $fun = new funciones();
   <!--Business.css-->
   <link href="css/Business.css" rel="stylesheet">
   <link href="css/Style.css" rel="stylesheet">
-    <link href="css/Style0.css" rel="stylesheet">
+  <link href="css/Style0.css" rel="stylesheet">
 
 
 
@@ -43,95 +43,67 @@ $fun = new funciones();
 
 <body>
 
-  <div class="brand">Business Casual</div>
-  <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+  <?php $fun->menu();  ?>
 
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-        <a class="navbar-brand" href="index.html">Business Casual</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <?php $fun->menu();  ?>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-
-<br>
-<br>
-<br>
-          <div class="container"   >
-          	<div class="box">
-                  <div class="col-xs-4 col-md-offset-4">
-                      <div class="login" id="card">
-                      	<div class="front signin_form">
-                          <h2 style="text-align:center">INICIAR SESIÓN</h2> <hr>
-                            <form class="login-form">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Username">
-                                        <span class="input-group-addon">
-                                            <i class="glyphicon glyphicon-user"></i>
-                                        </span>
-                                    </div> <br>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="password" class="form-control" placeholder="Type your password">
-                                        <span class="input-group-addon">
-                                            <i class="glyphicon glyphicon-lock"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="checkbox">
-                                <label><input type="checkbox">Recordar mi contraseña</label>
-                              </div> <hr>
-
-                                <div class="form-group sign-btn">
-                                    <input type="submit" class="btn" value="Entrar"> <br><br>
-                                    <p><a href="#" class="forgot">¿No puedes acceder a tu cuenta?</a></p>
-                                    <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
-                                </div>
-                            </form>
-                          </div>
-
-                      </div>  <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                  </div>
+  <br>
+  <div class="container">
+    <div class="box col-xs-12 col-md-4 col-md-offset-4">
+      <div class="">
+        <div class="login" id="card">
+          <div class="front signin_form">
+            <h2 style="text-align:center">INICIAR SESIÓN</h2> <hr>
+            <form class="login-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Username">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                </div> <br>
               </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" placeholder="Type your password">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Recordar mi contraseña</label>
+              </div> <hr>
+
+              <div class="form-group sign-btn">
+                <input type="submit" class="btn" value="Entrar"> <br><br>
+                <p><a href="#" class="forgot">¿No puedes acceder a tu cuenta?</a></p>
+                <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
+              </div>
+            </form>
+          </div>
+
+        </div>  <br>
 
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <?php $fun->footer(); ?>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.0.18/jquery.flip.js"></script>
+
+
+
+
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
-      <!-- jQuery -->
-      <script src="js/jquery.js"></script>
+  <!-- jQuery -->
+
+
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
 
 </body>
-
+<?php $fun->footer();  ?>
 </html>
