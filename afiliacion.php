@@ -65,6 +65,7 @@ $fun = new funciones();
         <?php $fun->carfo();?>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="js/modals.js"></script>
     </body>
     <?php $fun->footer(); ?>
 </html>

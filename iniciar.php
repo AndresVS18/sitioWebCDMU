@@ -2,7 +2,7 @@
 include_once 'logica/funciones.php';
 $fun = new funciones();
 ?>
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>

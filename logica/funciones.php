@@ -45,7 +45,7 @@ class funciones {
       <li><a href="#">Cerrar secion</a></li>';
     }else{
       $menu.='<li><a href="registrarse.php">Crear Usuario</a></li>
-      <li><a href="iniciar.php">Iniciar Sesion</a></li>';
+      <li><a href="#" data-toggle="modal" data-target="#modal-login">Iniciar Sesion</a></li>';
     }
     $menu.='</ul>
     </li>
@@ -55,6 +55,46 @@ class funciones {
     </div>
   <!-- /.container -->
     </nav>  ';
+// agrega el modal de seccion
+if(!isset($_SESSION['usuario'])){
+  $menu.='<div class="modal fade" id="modal-login" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h3>Inicia secion</h3>
+        </div>
+        <div class="modal-body">
+        <form class="login-form" id="login">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" id="focus-login" class="form-control" placeholder="Username">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-user"></i>
+              </span>
+            </div> <br>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="Type your password">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-lock"></i>
+              </span>
+            </div>
+          </div>
+        <div class="form-group sign-btn">
+            <input type="submit" class="btn" value="Entrar"> <br><br>
+            <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>';
+}
     echo $menu;
   }
 //muestra el mismo footer
@@ -115,7 +155,7 @@ class funciones {
       <h4 class="text-justify">
       <small>'.$bolsa['Contenido'].'<br> Telefono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
       </h4>
-      <a href="#" class="btn btn-default btn-lg">Mandar Información</a>
+      <a data-toggle="modal" data-target="#modal-contact-form" class="btn btn-default btn-lg">Mandar Información</a>
       </div>';
 
     }
@@ -163,7 +203,7 @@ class funciones {
       </h2>
       '.$cur['Tipo_curso'].'
       <br>
-      <a href="#" class="btn btn-default btn-lg">Registarse</a>
+      <a data-toggle="modal" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
       <hr>
       </div>';
     }

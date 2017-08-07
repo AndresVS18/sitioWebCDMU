@@ -167,6 +167,7 @@ $fun = new funciones();
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/modals.js"></script>
 
 </body>
 
