@@ -116,16 +116,10 @@ if(isset($_POST["nombre"])){
               <input name="telefonoempresa" type="tel" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-<<<<<<< HEAD
-              <label>Descripción de la empresa</label>
-              <input name="Descripciónaaaaa" type="text" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
-=======
               <label>Correo Electronico de la empresa @</label>
               <input name="emailempresa" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
->>>>>>> 0c22896e41dafd950a1f8c34db5dce9a5602528d
             </div>
-            <div class="form-group col-lg-12" >
-
+            <div class="form-group col-lg-4" >
                 <label>Descripción de la empresa</label>
                 <input name="descripcionempresa" type="text" class="form-control des" class="form-control input-sm" placeholder="Descripción de la empresa" required="required" autofocus="autofocus">
               </div>
