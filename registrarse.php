@@ -87,11 +87,7 @@ if(isset($_POST["nombre"])){
             </div>
             <div class="form-group col-lg-4">
               <label>Telefono</label>
-<<<<<<< HEAD
               <input name="telefono" value="<?php echo $tel; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
-=======
-              <input name="telefono" type="tel" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
->>>>>>> 4ba211b85e069bfb0d3faad8b94047d7367513a5
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
