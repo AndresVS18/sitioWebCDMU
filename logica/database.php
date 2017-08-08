@@ -57,14 +57,28 @@ class database {
     $sql = $this->pdo->prepare("INSERT INTO afiliados(`Nombre`, `Apellidos`, `Email`, `Direccion`, `Telefono`, `Nombre_usuario`, `Contraseña`) VALUES ('{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['email']}','''{$_POST['direccion']}
       ','{$_POST['telefono']}','{$_POST['user']}','{$_POST['contraseña']}')");
     $sql->execute(array($nombre, $apellidos, $email, $direccion, $telefono, $user, $contraseña));
-    $this->CerrarConexion();
+  }
+
+  function afilidao_id($user, $contraseña){
+    $sql = $this->pdo->prepare("select * from afiliados where Nombre_usuario=?  and contraseña = ?");
+    if ($sql->execute(array($user, $contraseña))) {
+      //retorna los datos obtenidos de la base
+      return $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
+  }
+
+  function N_maquila($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa){
+    //inserta una nueva afiliacion
+    $sql = $this->pdo->prepare("INSERT INTO `maquila`( `Id_afiliado`, `Nombre_maqui`, `Direccion`, `Telefono`, `Email`, `Descripcion`) VALUES ('{$id}','{$_POST['nombreempresa']}','{$_POST['direccionempresa']}','{$_POST['telefonoempresa']}
+      ','{$_POST['emailempresa']}','{$_POST['descripcionempresa']}')");
+    $sql->execute(array($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa));
   }
 
   function N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email){
     //inserta una nueva afiliacion
-    $sql = $this->pdo->prepare("INSERT INTO aspirantes(`Id_curs`,`Nombre_aspi`, `Apellidos`, `Telefono`, `Direccion`, `Email`) VALUES ('{$_POST['id']}','{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['telefono']}
+    $sql = $this->pdo->prepare("INSERT INTO aspirantes(`Id_curs`,`Nombre_aspi`, `Apellidos`, `Telefono`, `Direccion`, `Email`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['telefono']}
       ','{$_POST['direccion']}','{$_POST['email']}')");
-    $sql->execute(array( $nombre, $apellidos, $telefono, $direccion, $email,$id));
+    $sql->execute(array($id, $nombre, $apellidos, $telefono, $direccion, $email));
     $this->CerrarConexion();
   }
 }

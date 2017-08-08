@@ -203,7 +203,7 @@ if(!isset($_SESSION['usuario'])){
       </h2>
       '.$cur['Tipo_curso'].'
       <br>
-      <a data-toggle="modal" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
+      <a data-toggle="modal" data-id="'.$cur['Id_curs'].'" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
       <hr>
       </div>';
     }
@@ -220,9 +220,22 @@ if(!isset($_SESSION['usuario'])){
       $user= $_POST['user'];
       $contraseña=$_POST['contraseña'];
       $confirmar=$_POST['confirmar'];
+      //datos de la empresa
+      $nombre_empresa=$_POST['nombreempresa'];
+      $direccion_empresa=$_POST['direccionempresa'];
+      $telefono_empresa=$_POST['telefonoempresa'];
+      $email_empresa=$_POST['emailempresa'];
+      $descripcion_empresa=$_POST['descripcionempresa'];
       if ($confirmar == $contraseña) {
         $this->bd->N_afiliado($nombre, $apellidos, $email, $direccion, $telefono, $user, $contraseña);
+        $afiliado= $this->bd->afilidao_id($user, $contraseña);
+        $id="";
+        foreach ($afiliado as $afi) {
+          $id=$afi['Id_afiliado'];
+        }
+        $this->bd->N_maquila($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa);
         echo '<script type="text/javascript">alert("Usted ha sido afiliado con exito espere la orden de pago");</script>';
+        echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
       }else{
         echo '<script type="text/javascript">alert("Verifique su contraseña");</script>';
       }
@@ -230,7 +243,7 @@ if(!isset($_SESSION['usuario'])){
   }
   public function N_aspirante(){
   if (isset($_POST['inscribir'])) {
-      $id= $_POST['id'];
+      $id= $_POST['Id_curs'];
       $nombre= $_POST['nombre'];
       $apellidos=$_POST['apellidos'];
       $telefono=$_POST['telefono'];

@@ -92,7 +92,7 @@ $fun = new funciones();
               </div>
               <div class="form-group col-lg-12">
                 <?php $fun->N_aspirante();?>
-                <input type="hidden" name="id" id="Id_curs">
+                <input type="hidden" name="Id_curs" id="id_curso">
                 <button name="inscribir" class="btn btn-default col-sm-offset-5">Registrse</button>
               </div>
             </div>
