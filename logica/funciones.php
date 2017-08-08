@@ -155,7 +155,7 @@ if(!isset($_SESSION['usuario'])){
       <h4 class="text-justify">
       <small>'.$bolsa['Contenido'].'<br> Telefono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
       </h4>
-      <a data-toggle="modal" data-target="#modal-contact-form" data-id="'.$bolsa['Id_bolsa'].'" class="btn btn-default btn-lg">Mandar Información</a>
+      <a data-toggle="modal" data-target="#modal-contact-form" class="btn btn-default btn-lg">Mandar Información</a>
       </div>';
 
     }
@@ -203,7 +203,7 @@ if(!isset($_SESSION['usuario'])){
       </h2>
       '.$cur['Tipo_curso'].'
       <br>
-      <a data-toggle="modal" data-target="#modal-curso-form" data-id="'.$cur['Id_curs'].'" class="btn btn-default btn-lg">Registarse</a>
+      <a data-toggle="modal" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
       <hr>
       </div>';
     }
@@ -227,7 +227,17 @@ if(!isset($_SESSION['usuario'])){
         echo '<script type="text/javascript">alert("Verifique su contraseña");</script>';
       }
     }
-
   }
-
+  public function N_aspirante(){
+  if (isset($_POST['inscribir'])) {
+      $id= $_POST['id'];
+      $nombre= $_POST['nombre'];
+      $apellidos=$_POST['apellidos'];
+      $telefono=$_POST['telefono'];
+      $direccion= $_POST['direccion'];
+      $email= $_POST['email'];
+      $this->bd->N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email);
+      echo '<script type="text/javascript">alert("Usted se registro con exito.");</script>';
+      }
+    }
 }
