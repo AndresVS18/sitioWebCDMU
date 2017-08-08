@@ -5,7 +5,7 @@ include_once 'logica/database.php';
 class funciones {
 
   private $bd;
-//creacion de la conexion y consultas de la base
+  //creacion de la conexion y consultas de la base
   function __construct(){
     $this->bd = new database();
   }
@@ -17,32 +17,35 @@ class funciones {
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-          <a class="navbar-brand" href="index.html">Business Casual</a>
-        </div>
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+    <a class="navbar-brand" href="index.html">Business Casual</a>
+    </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="font-size:15px;">
-        <li><a href="index.php">INICIO</a></li>
-        <li><a href="servicios.php">SERVICIOS</a></li>
-        <li><a href="cursos.php">CURSOS</a></li>
-        <li><a href="bolsa.php">Bolsa de trabajo</a></li>
-        <li><a href="contact.php">Contacto</a></li>
+    <ul class="nav navbar-nav" style="font-size:15px;">
+    <li><a href="index.php">INICIO</a></li>
+    <li><a href="servicios.php">SERVICIOS</a></li>
+    <li><a href="cursos.php">CURSOS</a></li>
+    <li><a href="bolsa.php">Bolsa de trabajo</a></li>
+    <li><a href="contact.php">Contacto</a></li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
     <ul class="dropdown-menu">';
     // condicion de que exista una variable de secion
     if(isset($_SESSION['usuario'])){
-      $menu.='<li><a href="oportunidad.php">Oportunidad de trabajo</a></li>
-      <li><a href="#">Cerrar secion</a></li>';
+      $menu.='<li><a href="perfil.php">Ver Perfil</a></li>
+      <li><a href="oportunidad.php">Oportunidad de trabajo</a></li>
+      <form accion="'.$this->cerrarSession().'" method="post">
+      <li><input type="submit" class="btn" name="salir" value="cerrar sesión"></li>
+      </form>';
     }else{
       $menu.='<li><a href="registrarse.php">Crear Usuario</a></li>
       <li><a href="#" data-toggle="modal" data-target="#modal-login">Iniciar Sesion</a></li>';
@@ -53,92 +56,92 @@ class funciones {
     </div>
     <!-- /.navbar-collapse -->
     </div>
-  <!-- /.container -->
+    <!-- /.container -->
     </nav>  ';
-// agrega el modal de seccion
-if(!isset($_SESSION['usuario'])){
-  $menu.='<div class="modal fade" id="modal-login" role="dialog">
-    <div class="modal-dialog">
+    // agrega el modal de seccion
+    if(!isset($_SESSION['usuario'])){
+      $menu.='<div class="modal fade" id="modal-login" role="dialog">
+      <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h3>Inicia secion</h3>
-        </div>
-        <div class="modal-body">
-        <form class="login-form" id="login">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="text" id="focus-login" class="form-control" placeholder="Username">
-              <span class="input-group-addon">
-                <i class="glyphicon glyphicon-user"></i>
-              </span>
-            </div> <br>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <input type="password" class="form-control" placeholder="Type your password">
-              <span class="input-group-addon">
-                <i class="glyphicon glyphicon-lock"></i>
-              </span>
-            </div>
-          </div>
-        <div class="form-group sign-btn">
-            <input type="submit" class="btn" value="Entrar"> <br><br>
-            <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
-          </div>
-        </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
-        </div>
+      <div class="modal-header">
+      <button class="close" data-dismiss="modal">&times;</button>
+      <h3>Inicia secion</h3>
       </div>
-    </div>
-  </div>';
-}
+      <div class="modal-body">
+      <form class="login-form" id="login" method="post" action="'.$this->login().'">
+      <div class="form-group">
+      <div class="input-group">
+      <input name="user" type="text" id="focus-login" class="form-control" placeholder="Username">
+      <span class="input-group-addon">
+      <i class="glyphicon glyphicon-user"></i>
+      </span>
+      </div> <br>
+      </div>
+      <div class="form-group">
+      <div class="input-group">
+      <input name="contraseña" type="password" class="form-control" placeholder="Type your password">
+      <span class="input-group-addon">
+      <i class="glyphicon glyphicon-lock"></i>
+      </span>
+      </div>
+      </div>
+      <div class="form-group sign-btn">
+      <input type="submit" class="btn" name="logear" value="Entrar"> <br><br>
+      <p><strong>¿Eres nuevo?</strong><br><a href="registrarse.php" id="flip-btn" class="signup signup_link">Crea una cuenta ahora.</a></p>
+      </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+      </div>
+      </div>';
+    }
     echo $menu;
   }
-//muestra el mismo footer
+  //muestra el mismo footer
   public function footer() {
     echo'<footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row" style="color:white";>
-            <br>
-            <div class="col-xs-6 col-sm-4 col-md-4 ">
-              <h4>C D D M U </h4>
-              <ul class="footer-social">
-                <li><a href=""><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></a></i></li>
-                <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
+    <div class="footer">
+    <div class="container">
+    <div class="row" style="color:white";>
+    <br>
+    <div class="col-xs-6 col-sm-4 col-md-4 ">
+    <h4>C D D M U </h4>
+    <ul class="footer-social">
+    <li><a href=""><i class="fa fa-facebook social-icon facebook" style="font-size:50px" aria-hidden="true"></a></i></li>
+    <li><i class="fa fa-twitter social-icon twitter" style="font-size:50px" aria-hidden="true"></i></li>
 
-              </ul>
-            </div>
-            <div class="col-xs-6 col-sm-2 col-md-4 ">
-              <h4>SECCIONES</h4>
-              <ul class="list-unstyled">
-                <li><a href="index.php">INICIO</a></li>
-                <li><a href="servicios.php">SERVICIOS</a></li>
-                <li><a href="cursos.php">CURSOS</a></li>
-                <li><a href="bolsa.php">BOLSA DE TRABAJO</a></li>
-                <li><a href="contact.php">CONTACTO</a></li>
+    </ul>
+    </div>
+    <div class="col-xs-6 col-sm-2 col-md-4 ">
+    <h4>SECCIONES</h4>
+    <ul class="list-unstyled">
+    <li><a href="index.php">INICIO</a></li>
+    <li><a href="servicios.php">SERVICIOS</a></li>
+    <li><a href="cursos.php">CURSOS</a></li>
+    <li><a href="bolsa.php">BOLSA DE TRABAJO</a></li>
+    <li><a href="contact.php">CONTACTO</a></li>
 
-              </ul>
-            </div>
-            <div class="clearfix visible-xs"></div>
+    </ul>
+    </div>
+    <div class="clearfix visible-xs"></div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 ">
-              <h4>Contactanos</h4>
-              <ul class="list-unstyled">
-                <li><i class="glyphicon glyphicon-globe"></i> 27 Norte #115 Fracc.El rosario, Tehuacán Puebla.</li>
-                <li><i class="glyphicon glyphicon-earphone"></i> (044) 238 123 4567</li>
-                <li><i class="glyphicon glyphicon-envelope"></i><a href="#">   cddmu@contacto.com</a></li>
-              </ul>
-            </div>
-          </div> <br>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.footer -->
+    <div class="col-xs-12 col-sm-4 col-md-4 ">
+    <h4>Contactanos</h4>
+    <ul class="list-unstyled">
+    <li><i class="glyphicon glyphicon-globe"></i> 27 Norte #115 Fracc.El rosario, Tehuacán Puebla.</li>
+    <li><i class="glyphicon glyphicon-earphone"></i> (044) 238 123 4567</li>
+    <li><i class="glyphicon glyphicon-envelope"></i><a href="#">   cddmu@contacto.com</a></li>
+    </ul>
+    </div>
+    </div> <br>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.footer -->
     </footer>';
   }
 
@@ -211,7 +214,7 @@ if(!isset($_SESSION['usuario'])){
   }
 
   public function N_afiliado(){
-  if (isset($_POST['agregar'])) {
+    if (isset($_POST['agregar'])) {
       $nombre= $_POST['nombre'];
       $apellidos=$_POST['apellidos'];
       $email= $_POST['email'];
@@ -242,7 +245,7 @@ if(!isset($_SESSION['usuario'])){
     }
   }
   public function N_aspirante(){
-  if (isset($_POST['inscribir'])) {
+    if (isset($_POST['inscribir'])) {
       $id= $_POST['Id_curs'];
       $nombre= $_POST['nombre'];
       $apellidos=$_POST['apellidos'];
@@ -251,6 +254,34 @@ if(!isset($_SESSION['usuario'])){
       $email= $_POST['email'];
       $this->bd->N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email);
       echo '<script type="text/javascript">alert("Usted se registro con exito.");</script>';
+    }
+  }
+
+  public function login(){
+    if(isset($_POST['logear'])){
+      $user= $_POST['user'];
+      $contraseña= $_POST['contraseña'];
+      $afi= $this->bd->afilidao_id($user,$contraseña);
+      if (empty($afi)) {
+        echo '<script type="text/javascript">alert("No se encuentra segirtrado.");</script>';
+      }else {
+        foreach ($afi as $v) {
+          $_SESSION['usuario'] = $v['Nombre'] . ' ' . $v['Apellidos'];
+          $_SESSION['alias'] = $v['Nombre_usuario'];
+          $_SESSION['email'] = $v['Email'];
+          $_SESSION['direccion'] = $v['Direccion'];
+          $_SESSION['id_user'] = $v['Id_afiliado'];
+          $_SESSION['telefono'] = $v['Telefono'];
+          echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
+        }
       }
     }
+  }
+
+  public function cerrarSession(){
+    if (isset($_POST["salir"])) {
+      session_destroy();
+      echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
+    }
+  }
 }

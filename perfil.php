@@ -1,6 +1,7 @@
 <?php
 include_once 'logica/funciones.php';
 $fun = new funciones();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,8 +44,6 @@ $fun = new funciones();
 <hr>
 <h2 class="intro-text text-center">Datos personales</h2>
 <hr>
-
-  <a href="#"><span class="glyphicon glyphicon-log-in " style="left: 950px"> CERRAR SESIÓN </span> </a>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid" style="color:white">

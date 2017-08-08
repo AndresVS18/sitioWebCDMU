@@ -1,6 +1,7 @@
 <?php
 include_once 'logica/funciones.php';
 $fun = new funciones();
+session_start();
 $nom="";
 $app="";
 $correo="";
@@ -119,11 +120,8 @@ if(isset($_POST["nombre"])){
               <label>Correo Electronico de la empresa @</label>
               <input name="emailempresa" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
             </div>
-<<<<<<< HEAD
             <div class="form-group col-lg-12" >
-=======
             <div class="form-group col-lg-4" >
->>>>>>> 5e0899bc0bf7202cf3fedaaf8812c6c107341a87
                 <label>Descripción de la empresa</label>
                 <input name="descripcionempresa" type="text" class="form-control des" class="form-control input-sm" placeholder="Descripción de la empresa" required="required" autofocus="autofocus">
               </div>

@@ -1,6 +1,7 @@
 <?php
 include_once 'logica/funciones.php';
 $fun = new funciones();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +114,7 @@ $fun = new funciones();
         <p>Los cursos o desarrollo de personal es una actividad desarrollada en la empresa de acuerdo a sus necesidades y busca mejorar la actitud, el conocimiento, habilidades del personal.</p>
         <p>Damos cursos enfocados a la industria del vestido, para asi tener personal mas actualizado en la empresa.</p>
         <p>Los cursos no solo son un proceso, es un aprendizaje para la persona que lo tome. Son herramientas que serviran para su desempeño en la empresa </p>
-        
+
 
       </div>
     </div>
