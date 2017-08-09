@@ -22,6 +22,5 @@ $("#modal-curso-form").on('hidden.bs.modal', function () {
 
 $('#modal-curso-form').on('show.bs.modal', function(e) {
      var id = $(e.relatedTarget).data().id;
-     alert(id);
-     document.getElementById("id_curso").innerHTML = id;
+     $(e.currentTarget).find('#id_curso').val(id);
   });
