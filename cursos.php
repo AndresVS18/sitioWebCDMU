@@ -65,7 +65,7 @@ session_start();
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal">&times;</button>
-          <h3>REgistrate al curso</h3>
+          <h3>Registrate al curso</h3>
         </div>
         <div class="modal-body">
           <form role="form" id="formulario" method="post">
