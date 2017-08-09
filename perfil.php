@@ -51,9 +51,6 @@ session_start();
       Nombre(s)
     </div>
     <div class="col-lg-2">
-      Apellidos
-    </div>
-    <div class="col-lg-2">
       Email@
     </div>
     <div class="col-lg-2">
@@ -66,6 +63,23 @@ session_start();
       Contraseña
     </div>
   </div>
+  <?php echo '<div class="container-fluid" style="color:white">
+    <div class="col-lg-2">
+      '.$_SESSION['usuario'].'
+    </div>
+    <div class="col-lg-2">
+      '.$_SESSION['email'].'
+    </div>
+    <div class="col-lg-2">
+      '.$_SESSION['telefono'].'
+    </div>
+    <div class="col-lg-2">
+      '.$_SESSION['alias'].'
+    </div>
+    <div class="col-lg-2">
+      '.$_SESSION['contraseña'].'
+    </div>
+  </div>'; ?>
 </nav>
 <br>
 <br>

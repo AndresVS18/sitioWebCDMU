@@ -272,6 +272,7 @@ class funciones {
           $_SESSION['direccion'] = $v['Direccion'];
           $_SESSION['id_user'] = $v['Id_afiliado'];
           $_SESSION['telefono'] = $v['Telefono'];
+          $_SESSION['contraseña'] = $v['contraseña'];          
           echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
         }
       }
