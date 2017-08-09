@@ -284,4 +284,19 @@ class funciones {
       echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
     }
   }
-}
+
+
+  public function N_bolsa(){
+    if (isset($_POST['agregar'])) {
+      $nombre= $_POST['nombre'];
+      $contenido=$_POST['contenido'];
+      $telefono= $_POST['telefono'];
+      $direccion= $_POST['direccion'];
+      $fecha_limite=$_POST['fecha_limite'];
+      $this->bd->N_bolsa($nombre,$contenido, $telefono,$direccion,$fecha_limite);
+        echo '<script type="text/javascript">alert("Registro correcto");</script>';
+      }else{
+        echo '<script type="text/javascript">alert("Error al cargar");</script>';
+      }
+    }
+  }
