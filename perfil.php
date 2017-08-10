@@ -2,6 +2,7 @@
 include_once 'logica/funciones.php';
 $fun = new funciones();
 session_start();
+$fun->comprobar();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -107,7 +108,7 @@ session_start();
       <div>
         <h4>Descripción:</h4>
       </div>
-    
+
 
 </div>
 </div>

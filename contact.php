@@ -63,7 +63,7 @@ session_start();
                         <strong>(044) 238 123 4567</strong>
                     </p>
                     <p>Email:
-                        <strong><a href="cddmu@contacto.com">cddmu@contacto.com/a></strong>
+                        <strong><a href="cddmu@contacto.com">cddmu@contacto.com</a></strong>
                     </p>
                     <p>Address:
                         <strong>27 Norte #115 Fracc.El rosario,
@@ -78,28 +78,28 @@ session_start();
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Contact
-                        <strong>form</strong>
+                    <h2 class="intro-text text-center">Contactanos
+                        
                     </h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
+                    <p>En esta sección podrás enviar un mensaje directamente a la empresa.  .</p>
                     <form role="form">
                         <div class="row">
                             <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" class="form-control">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control">
+                                <label>Correo</label>
+                                <input type="email" class="form-control" placeholder="Correo">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
+                                <label>Telefono</label>
+                                <input type="tel" class="form-control" placeholder="Telefono">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
-                                <label>Message</label>
+                                <label>Comentario</label>
                                 <textarea class="form-control" rows="6"></textarea>
                             </div>
                             <div class="form-group col-lg-12">

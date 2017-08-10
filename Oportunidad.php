@@ -2,6 +2,7 @@
 include_once 'logica/funciones.php';
 $fun = new funciones();
 session_start();
+$fun->comprobar();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +77,7 @@ session_start();
         <div class="row">
           <div class="form-group col-lg-4">
             <label>Nombre</label>
-            <input name"nombre" type="text" class="form-control input-sm" placeholder="Nombre de la vacante">
+            <input name="vacante" type="text" class="form-control input-sm" placeholder="Nombre de la vacante">
           </div>
           <div class="form-group col-lg-4">
             <label>Contenido</label>
@@ -92,7 +93,7 @@ session_start();
           </div>
           <div class="form-group col-lg-4">
             <label>Fecha limite</label>
-            <input name="fecha_limite" type="tel" class="form-control input-sm" placeholder="AAAA\MM\DD">
+            <input name="fecha" type="date" class="form-control input-sm" placeholder="AAAA\MM\DD">
           </div>
         </div>
       <div class="clearfix"></div>
@@ -100,7 +101,7 @@ session_start();
       <div class="form-group col-lg-12">
         <?php $fun->N_bolsa();?>
         <input type="hidden" name="agregar" value="contact">
-        <button name="agregar" type="submit" class="btn btn-default">Enviar</button>
+        <button name="enviar" type="submit" class="btn btn-default">Enviar</button>
       </div>
     </div>
   </form>

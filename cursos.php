@@ -55,7 +55,6 @@ session_start();
         <?php echo $fun->curso(); ?>
       </div>
     </div>
-
   </div>
   <!-- /.container -->
   <!-- modal del formulario -->
