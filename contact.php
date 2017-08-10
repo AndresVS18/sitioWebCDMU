@@ -105,7 +105,7 @@ session_start();
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
                                 <button type="submit" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
-                            </div>
+                            </div>    
                         </div>
                     </form>
                 </div>
