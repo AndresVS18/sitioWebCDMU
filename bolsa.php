@@ -86,15 +86,9 @@ session_start();
                 <textarea name="comentario" class="form-control" rows="6"></textarea>
               </div>
               <div class="form-group col-lg-12">
-<<<<<<< HEAD
-                  <?php $fun->N_empleado();?>
-                <input type="hidden" name="Id_bolsa" id="id_bolsa">
-                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar</button>
-=======
                 <?php $fun->N_empleado();?>
                 <input type="hidden" name="Id_bolsa" id="id_bolsa">
                 <button name="enviar" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
->>>>>>> 8fc795f039cac6f3083dda188f0efff3ae99c349
               </div>
             </div>
           </form>

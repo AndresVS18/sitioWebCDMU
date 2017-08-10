@@ -96,6 +96,4 @@ class database {
       ','{$_POST['comentario']}')");
     $sql->execute(array($id, $nombre, $telefono, $email , $mensaje));
   }
-
-
 }
