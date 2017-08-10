@@ -257,18 +257,6 @@ class funciones {
     }
   }
 
-  public function N_empleado(){
-    if (isset($_POST['enviar'])) {
-      $id= $_POST['Id_bolsa'];
-      $nombre= $_POST['nombre'];
-      $telefono=$_POST['telefono'];
-      $email= $_POST['email'];
-      $mensaje= $_POST['comentario'];
-      $this->bd->N_empleado($id, $nombre, $telefono, $email, $mensaje);
-      echo '<script type="text/javascript">alert("Sus datos han sido enviados con exito");</script>';
-    }
-  }
-
   public function login(){
     if(isset($_POST['logear'])){
       $user= $_POST['user'];
@@ -284,7 +272,7 @@ class funciones {
           $_SESSION['direccion'] = $v['Direccion'];
           $_SESSION['id_user'] = $v['Id_afiliado'];
           $_SESSION['telefono'] = $v['Telefono'];
-          $_SESSION['contraseña'] = $v['contraseña'];          
+          $_SESSION['contraseña'] = $v['contraseña'];
           echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
         }
       }
