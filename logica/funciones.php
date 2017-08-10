@@ -288,7 +288,7 @@ class funciones {
 
   public function N_bolsa(){
     if (isset($_POST['agregar'])) {
-      $nombre= $_POST['nombre'];
+      $nombre= $_POST['nombre']; 
       $contenido=$_POST['contenido'];
       $telefono= $_POST['telefono'];
       $direccion= $_POST['direccion'];

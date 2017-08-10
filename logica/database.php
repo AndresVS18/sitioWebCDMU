@@ -80,7 +80,7 @@ class database {
       ','{$_POST['direccion']}','{$_POST['email']}')");
     $sql->execute(array($id, $nombre, $apellidos, $telefono, $direccion, $email));
     $this->CerrarConexion();
-  }
+  } 
   function N_bolsa($nombre,$contenido, $telefono,$direccion,$fecha_limite){
     //inserta una nueva afiliacion
     $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo(`Id_bolsa`,`Nombre_vacante`, `Contenido`, `Telefono`, `Direccion`, `Fecha_limite`) VALUES (('{$id}','{$_POST['nombre']}','{$_POST['contenido']}','{$_POST['telefono']}
