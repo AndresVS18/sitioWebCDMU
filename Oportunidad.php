@@ -98,7 +98,7 @@ session_start();
       <div class="clearfix"></div>
 
       <div class="form-group col-lg-12">
-        <?php $fun->N_bolsa();?> 
+        <?php $fun->N_bolsa();?>
         <input type="hidden" name="agregar" value="contact">
         <button name="agregar" type="submit" class="btn btn-default">Enviar</button>
       </div>
@@ -110,6 +110,7 @@ session_start();
 
 </div>
 <!--/Formulario--->
+
 
   <?php $fun->footer(); ?>
 <!-- jQuery -->
