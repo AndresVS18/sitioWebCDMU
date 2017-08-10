@@ -84,7 +84,7 @@ class database {
 
   function N_empleado($id, $nombre, $telefono, $email, $mensaje){
     //inserta una nueva afiliacion
-    $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
+    $sql = $this->pdo->prepare("INSERT INTO bolsa_formulario(`Id`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
       ','{$_POST['comentario']}')");
     $sql->execute(array($id, $nombre, $telefono, $email, $mensaje));
     $this->CerrarConexion();
