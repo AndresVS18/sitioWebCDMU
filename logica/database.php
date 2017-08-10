@@ -92,11 +92,7 @@ class database {
 
   function Empleado ($id, $nombre, $telefono, $email , $mensaje){
     //inserta una nueva afiliacion
-<<<<<<< HEAD
     $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
-=======
-    $sql = $this->pdo->prepare("INSERT INTO `bolsa_formulario`(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$_POST['Id_bolsa']}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
->>>>>>> 8fc795f039cac6f3083dda188f0efff3ae99c349
       ','{$_POST['comentario']}')");
     $sql->execute(array($id, $nombre, $telefono, $email , $mensaje));
   }
