@@ -68,71 +68,39 @@ session_start();
     <div class="box">
       <div class="col-lg-12">
         <hr>
-        <h2 class="intro-text text-center">Afiliate con Nosotros</h2>
+        <h2 class="intro-text text-center">Bolsa de Trabajo</h2>
         <hr>
-        <h3 class="text-center">Estos son los datos requeridos de la pagina para poder ser un miembro afiliado</h3>
+        <h3 class="text-center">Ingresa la informacion para las vacantes</h3>
       </br>
-      <form role="form">
+      <form role="form" method="post">
         <div class="row">
           <div class="form-group col-lg-4">
-            <label>Nombre(s)</label>
-            <input type="text" class="form-control input-sm" placeholder="Name">
+            <label>Nombre</label>
+            <input name"nombre" type="text" class="form-control input-sm" placeholder="Nombre de la vacante">
           </div>
           <div class="form-group col-lg-4">
-            <label>Apellido Paterno</label>
-            <input type="text" class="form-control input-sm" placeholder="Last Name">
+            <label>Contenido</label>
+            <input name="contenido" type="text" class="form-control input-sm" placeholder="Contenido">
           </div>
           <div class="form-group col-lg-4">
-            <label>Apellido Materno</label>
-            <input type="text" class="form-control input-sm" placeholder="Last Name">
+            <label>Telefono </label>
+            <input name="telefono" type="text" class="form-control input-sm" placeholder="Telefono">
           </div>
           <div class="form-group col-lg-4">
-            <label>Correo Electronico</label>
-            <input type="email" class="form-control input-sm" placeholder="Email @">
+            <label>Direccion</label>
+            <input  name="direccion" type="text" class="form-control input-sm" placeholder="Direccion">
           </div>
           <div class="form-group col-lg-4">
-            <label>Telefono</label>
-            <input type="tel" class="form-control input-sm" placeholder="Phone">
-          </div>
-          <div class="form-group col-lg-4">
-            <label>Contraseña</label>
-            <input type="password" class="form-control input-sm" placeholder="Password">
-          </div>
-          <div class="form-group col-lg-4">
-            <label>Confirma tu contraseña</label>
-            <input type="password" class="form-control input-sm" placeholder="Confirm Password">
+            <label>Fecha limite</label>
+            <input name="fecha_limite" type="tel" class="form-control input-sm" placeholder="AAAA\MM\DD">
           </div>
         </div>
-
-
-        <hr>
-        <h3 class="text-center">Datos de la Empresa</h3>
-        <hr>
-      </br>
-      <div class="form-group col-lg-4">
-        <label>Nombre de la empresa</label>
-        <input type="tel" class="form-control input-sm" placeholder="Comapany Name">
-      </div>
-<<<<<<< HEAD
-      <div class="form-group col-lg-4">
-        <label>Dirección</label>
-        <input type="tel" class="form-control input-sm" placeholder="Address">
-      </div>
-      <div class="form-group col-lg-4">
-        <label>Codigo postal</label>
-        <input type="tel" class="form-control input-sm" placeholder="Postal Code">
-      </div>
-      <div class="form-group col-lg-4">
-        <label>Telefono de la Empresa</label>
-        <input type="tel" class="form-control input-sm" placeholder="Company Phone">
-      </div>
-
-
       <div class="clearfix"></div>
 
       <div class="form-group col-lg-12">
-        <input type="hidden" name="save" value="contact">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <?php $fun->N_bolsa();?>
+        <input type="hidden" name="agregar" value="contact">
+        <button name="agregar" type="submit" class="btn btn-default">Enviar</button>
       </div>
     </div>
   </form>
@@ -142,6 +110,7 @@ session_start();
 
 </div>
 <!--/Formulario--->
+
 
   <?php $fun->footer(); ?>
 <!-- jQuery -->
