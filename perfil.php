@@ -22,6 +22,7 @@ session_start();
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="css/Style.css" rel="stylesheet">
+    <link href="css/diseño.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -42,76 +43,77 @@ session_start();
 <div class="container">
 <div class="box">
 <hr>
-<h2 class="intro-text text-center">Datos personales</h2>
+<h2 class="intro-text text-center" >Datos personales</h2>
 <hr>
+<div class="col-md-12">
+  <img src="img/perfil/user.png" class="profile">
+  <img src="img/perfil/empresa.png" class="empresa">
+</div>
+<div class="col-md-2 col-md-offset-1">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="color:white">
-    <div class="col-lg-2">
-      Nombre(s)
-    </div>
-    <div class="col-lg-2">
-      Email@
-    </div>
-    <div class="col-lg-2">
-      Telefono
-    </div>
-    <div class="col-lg-2">
-      Nombre de usuario
-    </div>
-    <div class="col-lg-2">
-      Contraseña
+
+    <div >
+      <h4>Nombre(s):</h4>
+    </div><br>
+    <div >
+      <h4>Email@:</h4>
+    </div><br>
+    <div >
+      <h4>Telefono:</h4>
+    </div><br>
+    <div >
+      <h4 >Nombre de usuario:</h4>
+    </div><br>
+    <div >
+      <h4>Contraseña:</h4>
     </div>
   </div>
-  <?php echo '<div class="container-fluid" style="color:white">
-    <div class="col-lg-2">
+<div class="col-md-2 ">
+  <?php echo '
+  <div style="color:black; ">
+    <div ><h4>
       '.$_SESSION['usuario'].'
-    </div>
-    <div class="col-lg-2">
+    </h4></div><br>
+    <div><h4>
       '.$_SESSION['email'].'
-    </div>
-    <div class="col-lg-2">
+    </h4></div><br>
+    <div ><h4>
       '.$_SESSION['telefono'].'
-    </div>
-    <div class="col-lg-2">
+    </h4></div><br>
+    <div ><h4>
       '.$_SESSION['alias'].'
-    </div>
-    <div class="col-lg-2">
+    </h4></div><br>
+    <div>
       '.$_SESSION['contraseña'].'
     </div>
   </div>'; ?>
-</nav>
-<br>
-<br>
-<br>
-<br>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="color:white">
-<div class="col-lg-2">
-  Nombre de la maquila
-</div>
-<div class="col-lg-2">
-  Dirección de la maquila
-</div>
-<div class="col-lg-2">
-  Telefono
-</div>
-<div class="col-lg-2">
-  Email@
 </div>
 
-<div class="col-lg-4">
-  Descripción
+<div class="col-md-2 col-md-offset-1">
+
+      <div >
+        <h4>Nombre de la maquila:</h4>
+      </div><br>
+      <div>
+        <h4 >Dirección de la maquila:</h4>
+      </div><br>
+      <div>
+        <h4>Email@:</h4>
+      </div><br>
+      <div>
+        <h4>Telefono:</h4>
+      </div><br>
+
+      <div>
+        <h4>Descripción:</h4>
+      </div>
+    
+
 </div>
 </div>
-</nav>
-<br>
-<br>
-<br>
-<br>
 </div>
-</div>
+
+
     <!-- /.container -->
 
         <!-- jQuery -->
