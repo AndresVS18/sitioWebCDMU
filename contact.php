@@ -79,7 +79,7 @@ session_start();
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Contactanos
-                        
+
                     </h2>
                     <hr>
                     <p>En esta sección podrás enviar un mensaje directamente a la empresa.  .</p>
@@ -104,7 +104,7 @@ session_start();
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
                             </div>
                         </div>
                     </form>
