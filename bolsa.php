@@ -47,26 +47,26 @@ session_start();
       <div class="box">
         <div class="col-lg-12">
           <hr>
-          <h2 class="intro-text text-center">Trabajos disponibles
+          <h2 class="intro-text text-center">
+            <strong>Trabajos Disponibles</strong>
           </h2>
           <hr>
         </div>
-        <!-- se muestran todas las oportunudades de trabajo existentes -->
-        <?php echo $fun->bolsa()?>
+        <?php echo $fun->bolsa(); ?>
       </div>
     </div>
   </div>
   <!-- /.container -->
-  <!-- modal para mostrar formulario -->
+  <!-- modal del formulario -->
   <div class="modal fade" id="modal-contact-form" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal">&times;</button>
-          <h3>Oportunidades de Trabajo</h3>
+          <h3>Registrate al curso</h3>
         </div>
         <div class="modal-body">
-          <form method="post" role="form" id="formulario">
+          <form role="form" id="formulario" method="post">
             <div class="row">
               <div class="form-group col-lg-4">
                 <label>Nombre(s)</label>
@@ -86,9 +86,9 @@ session_start();
                 <textarea name="comentario" class="form-control" rows="6"></textarea>
               </div>
               <div class="form-group col-lg-12">
-                  <?php $fun->N_empleado();?>
-                <input type="hidden" name="Id_empleo" id="id_bolsa">
-                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar</button>
+                <?php $fun->N_empleado();?>
+                <input type="hidden" name="Id_bolsa" id="id_bolsa">
+                <button name="enviar" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
               </div>
             </div>
           </form>

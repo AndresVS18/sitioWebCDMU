@@ -147,10 +147,13 @@ class funciones {
 
   public function bolsa(){
     //se usa la caonsulta
+    date_default_timezone_set ("America/Mexico_City");
+    $fecha_actual = date("Y-m-d");
     $con = $this->bd->bolsa();
     $texto='';
     //recorre los datos
     foreach ($con as $bolsa) {
+      if($bolsa['Fecha_limite'] > $fecha_actual){
       $texto.='<div class="col-sm-4 text-center">
       <h3>
       '.$bolsa['Nombre_vacante'].'
@@ -158,9 +161,9 @@ class funciones {
       <h4 class="text-justify">
       <small>'.$bolsa['Contenido'].'<br> Telefono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
       </h4>
-      <a data-toggle="modal" data-target="#modal-contact-form" class="btn btn-default btn-lg">Mandar Información</a>
+      <a data-toggle="modal" data-target="#modal-contact-form" data-id="'.$bolsa['Id_bolsa'].'" class="btn btn-default btn-lg">Mandar Información</a>
       </div>';
-
+}
     }
     return $texto;
   }
@@ -257,6 +260,37 @@ class funciones {
     }
   }
 
+  public function N_bolsa(){
+    if (isset($_POST['enviar'])) {
+      $activo=$this->activo();
+      if($activo == 1){
+        $id= $_SESSION['id_user'];
+        $nombre= $_POST['vacante'];
+        $contenido=$_POST['contenido'];
+        $telefono= $_POST['telefono'];
+        $direccion= $_POST['direccion'];
+        $fecha=$_POST['fecha'];
+        $fecha_limite= date("Y-m-d",strtotime($fecha));
+        $this->bd->N_bolsa($id, $nombre, $contenido, $telefono,$direccion, $fecha_limite);
+          echo '<script type="text/javascript">alert("Registro correcto");</script>';
+      }else{
+        echo '<script type="text/javascript">alert("No tiene permitido hacer esta acción");</script>';
+      }
+    }
+    }
+
+    public function N_empleado(){
+      if (isset($_POST["enviar"])) {
+        $id=$_POST['Id_bolsa'];
+        $nombre=$_POST['nombre'];
+        $telefono=$_POST['telefono'];
+        $email=$_POST['email'];
+        $mensaje=$_POST['comentario'];
+        $this->bd->Empleado($id, $nombre, $telefono, $email , $mensaje);
+          echo '<script type="text/javascript">alert("Registro correcto");</script>';
+      }
+    }
+
   public function login(){
     if(isset($_POST['logear'])){
       $user= $_POST['user'];
@@ -272,7 +306,7 @@ class funciones {
           $_SESSION['direccion'] = $v['Direccion'];
           $_SESSION['id_user'] = $v['Id_afiliado'];
           $_SESSION['telefono'] = $v['Telefono'];
-          $_SESSION['contraseña'] = $v['contraseña'];
+          $_SESSION['contraseña'] = $v['passwors'];
           echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
         }
       }
@@ -286,17 +320,20 @@ class funciones {
     }
   }
 
-  public function N_bolsa(){
-    if (isset($_POST['agregar'])) {
-      $nombre= $_POST['nombre'];
-      $contenido=$_POST['contenido'];
-      $telefono= $_POST['telefono'];
-      $direccion= $_POST['direccion'];
-      $fecha_limite=$_POST['fecha_limite'];
-      $this->bd->N_bolsa($nombre,$contenido, $telefono,$direccion,$fecha_limite);
-        echo '<script type="text/javascript">alert("Registro correcto");</script>';
-      }else{
-        echo '<script type="text/javascript">alert("Error al cargar");</script>';
-      }
+  public function activo(){
+    $usuario=$_SESSION['alias'];
+    $contraseña=$_SESSION['contraseña'];
+    $afi= $this->bd->afilidao_id($usuario,$contraseña);
+    $activo= "";
+    foreach ($afi as $v) {
+      $activo = $v['activo'];
+    }
+    return $activo;
+  }
+
+  public function comprobar(){
+    if(!isset($_SESSION['usuario'])){
+        echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
     }
   }
+}

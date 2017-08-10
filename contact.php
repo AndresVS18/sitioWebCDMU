@@ -63,7 +63,7 @@ session_start();
                         <strong>(044) 238 123 4567</strong>
                     </p>
                     <p>Email:
-                        <strong><a href="cddmu@contacto.com">cddmu@contacto.com/a></strong>
+                        <strong><a href="cddmu@contacto.com">cddmu@contacto.com</a></strong>
                     </p>
                     <p>Address:
                         <strong>27 Norte #115 Fracc.El rosario,
