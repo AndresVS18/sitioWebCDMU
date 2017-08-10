@@ -68,14 +68,14 @@ class database {
   }
 
   function N_maquila($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa){
-    //inserta una nueva afiliacion
+    //inserta una nueva maquila
     $sql = $this->pdo->prepare("INSERT INTO `maquila`( `Id_afiliado`, `Nombre_maqui`, `Direccion`, `Telefono`, `Email`, `Descripcion`) VALUES ('{$id}','{$_POST['nombreempresa']}','{$_POST['direccionempresa']}','{$_POST['telefonoempresa']}
       ','{$_POST['emailempresa']}','{$_POST['descripcionempresa']}')");
     $sql->execute(array($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa));
   }
 
   function N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email){
-    //inserta una nueva afiliacion
+    //inserta una nuevo aspirante
     $sql = $this->pdo->prepare("INSERT INTO aspirantes(`Id_curs`,`Nombre_aspi`, `Apellidos`, `Telefono`, `Direccion`, `Email`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['telefono']}
       ','{$_POST['direccion']}','{$_POST['email']}')");
     $sql->execute(array($id, $nombre, $apellidos, $telefono, $direccion, $email));
@@ -92,7 +92,11 @@ class database {
 
   function Empleado ($id, $nombre, $telefono, $email , $mensaje){
     //inserta una nueva afiliacion
+<<<<<<< HEAD
+    $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
+=======
     $sql = $this->pdo->prepare("INSERT INTO `bolsa_formulario`(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$_POST['Id_bolsa']}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
+>>>>>>> 8fc795f039cac6f3083dda188f0efff3ae99c349
       ','{$_POST['comentario']}')");
     $sql->execute(array($id, $nombre, $telefono, $email , $mensaje));
   }
