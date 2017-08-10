@@ -158,7 +158,7 @@ class funciones {
       <h4 class="text-justify">
       <small>'.$bolsa['Contenido'].'<br> Telefono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
       </h4>
-      <a data-toggle="modal" data-target="#modal-contact-form" class="btn btn-default btn-lg">Mandar Información</a>
+      <a data-toggle="modal" data-target="#modal-contact-form" data-id="'.$bolsa['Id_bolsa'].'" class="btn btn-default btn-lg">Mandar Información</a>
       </div>';
 
     }
@@ -284,7 +284,7 @@ class funciones {
           $_SESSION['direccion'] = $v['Direccion'];
           $_SESSION['id_user'] = $v['Id_afiliado'];
           $_SESSION['telefono'] = $v['Telefono'];
-          $_SESSION['contraseña'] = $v['contraseña'];          
+          $_SESSION['contraseña'] = $v['contraseña'];
           echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
         }
       }
