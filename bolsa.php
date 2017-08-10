@@ -63,31 +63,32 @@ session_start();
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal">&times;</button>
-          <h3>REgistrate al curso</h3>
+          <h3>Oportunidades de Trabajo</h3>
         </div>
         <div class="modal-body">
-          <form role="form" id="formulario">
+          <form role="form" id="formulario" method="post">
             <div class="row">
               <div class="form-group col-lg-4">
-                <label>Name</label>
-                <input type="text" autofocus  class="form-control ">
+                <label>Nombre(s)</label>
+                <input name="nombre" type="text" class="form-control " placeholder="Nombre(s)" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Email Address</label>
-                <input type="email" class="form-control">
+                <label>Numero de telefono</label>
+                <input name="telefono" type="text" class="form-control" placeholder="Telefono" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control">
+                <label>Correo</label>
+                <input name="email" type="email" class="form-control" placeholder="Correo@" required="required" autofocus="autofocus">
               </div>
               <div class="clearfix"></div>
               <div class="form-group col-lg-12">
-                <label>Message</label>
-                <textarea class="form-control" rows="6"></textarea>
+                <label>Deja un mensaje</label>
+                <textarea name="comentario" class="form-control" rows="6"></textarea>
               </div>
               <div class="form-group col-lg-12">
-                <input type="hidden" name="save" id="id_bolsa">
-                <button type="submit" class="btn btn-default">Registrse</button>
+                  <?php $fun->N_empleado();?>
+                <input type="hidden" name="Id_bolsa" id="id_bolsa">
+                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar</button>
               </div>
             </div>
           </form>

@@ -14,13 +14,14 @@ session_start();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Contact - Business Casual - Start Bootstrap Theme</title>
+  <title>CDDMU</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/business-casual.css" rel="stylesheet">
+  <link href="css/Style.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -37,12 +38,13 @@ session_start();
 
 <body>
 
-  <div class="brand">Business Casual</div>
-  <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <?php $fun->menu(); ?>
+
 
   <!-- Navigation -->
+  <div class="container">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
+
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -52,14 +54,14 @@ session_start();
           <span class="icon-bar"></span>
         </button>
         <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-        <a class="navbar-brand" href="index.html">Business Casual</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <?php $fun->menu();  ?>
       <!-- /.navbar-collapse -->
-    </div>
+
     <!-- /.container -->
   </nav>
+</div>
+
 
   <!--/Formulario--->
   <div class="row">
@@ -108,28 +110,7 @@ session_start();
 
 </div>
 <!--/Formulario--->
-<footer style="background-color: #282c34">
 
-  <div class="container">
-    <h1 style=" color: #e94c3d">CONTACT</h1> <br>
-    <div class="col-xs-12 col-sm-12 col-md-8" style="color: #e9e2d8">
-      <div class="glyphicon glyphicon-earphone" style="font-size:30px"> 238.123.4567 </div>
-      <br><br>
-      <div class="glyphicon glyphicon-envelope" style="font-size:30px"> CDMU@example.com </div>
-      <br><br>
-      <div class="glyphicon glyphicon-map-marker" style="font-size:30px"> 3481 Melrose Place Beverly Hills, CA 90210
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-12  col-md-4"   >
-      <h1 style=" color: #e94c3d; ">FOLLOW US</h1>
-      <ul class="list-unstyled  list-inline" style= "font-size:80px" >
-        <li class="icono"><a href="#"><i class="fa fa-facebook-square" style="color: white"></i></a></li>
-        <li class="icono"><a href="#"><i class="fa fa-twitter-square" style="color: white"></i></a></li>
-        <li class="icono"><a href="#"><i class="fa fa-instagram" style="color: white"></i></a></li>
-      </ul>
-    </div>
-  </div>
   <?php $fun->footer(); ?>
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
