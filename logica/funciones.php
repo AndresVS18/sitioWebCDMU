@@ -313,6 +313,28 @@ class funciones {
     }
   }
 
+  public function empresa(){
+    if(isset($_POST['logear'])){
+      $user= $_POST['user'];
+      $contraseña= $_POST['contraseña'];
+      $afi= $this->bd->maquila_id($user,$contraseña);
+      if (empty($afi)) {
+        echo '<script type="text/javascript">alert("No se encuentra segirtrado.");</script>';
+      }else {
+        foreach ($afi as $v) {
+          $_SESSION['usuario'] = $v['Nombre'] . ' ' . $v['Apellidos'];
+          $_SESSION['alias'] = $v['Nombre_usuario'];
+          $_SESSION['email'] = $v['Email'];
+          $_SESSION['direccion'] = $v['Direccion'];
+          $_SESSION['id_user'] = $v['Id_afiliado'];
+          $_SESSION['telefono'] = $v['Telefono'];
+          $_SESSION['contraseña'] = $v['passwors'];
+          echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
+        }
+      }
+    }
+  }
+
   public function cerrarSession(){
     if (isset($_POST["salir"])) {
       session_destroy();

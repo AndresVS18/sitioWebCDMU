@@ -51,8 +51,6 @@ $fun->comprobar();
   <img src="img/perfil/empresa.png" class="empresa">
 </div>
 <div class="col-md-2 col-md-offset-1">
-
-
     <div >
       <h4>Nombre(s):</h4>
     </div><br>
@@ -91,7 +89,6 @@ $fun->comprobar();
 </div>
 
 <div class="col-md-2 col-md-offset-1">
-
       <div >
         <h4>Nombre de la maquila:</h4>
       </div><br>
@@ -104,12 +101,29 @@ $fun->comprobar();
       <div>
         <h4>Telefono:</h4>
       </div><br>
-
       <div>
         <h4>Descripción:</h4>
       </div>
-
-
+</div>
+<div class="col-md-2 ">
+  <?php echo '
+  <div style="color:black; ">
+    <dsiv ><h4>
+      '.$_POST['nombreempresa'].'
+    </h4></div><br>
+    <div><h4>
+      '.$_POST['direccionempresa'].'
+    </h4></div><br>
+    <div ><h4>
+      '.$_POST['telefonoempresa'].'
+    </h4></div><br>
+    <div ><h4>
+      '.$_POST['emailempresa'].'
+    </h4></div><br>
+    <div>
+      '.$_POST['descripcionempresa'].'
+    </div>
+  </div>'; ?>
 </div>
 </div>
 </div>
