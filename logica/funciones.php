@@ -65,7 +65,7 @@ class funciones {
       <div class="modal-content">
       <div class="modal-header">
       <button class="close" data-dismiss="modal">&times;</button>
-      <h3>Inicia secion</h3>
+      <h3>Iniciar sesión</h3>
       </div>
       <div class="modal-body">
       <form class="login-form" id="login" method="post" action="'.$this->login().'">
