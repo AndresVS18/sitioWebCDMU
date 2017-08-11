@@ -65,7 +65,7 @@ class funciones {
       <div class="modal-content">
       <div class="modal-header">
       <button class="close" data-dismiss="modal">&times;</button>
-      <h3>Inicia secion</h3>
+      <h3>Iniciar sesión</h3>
       </div>
       <div class="modal-body">
       <form class="login-form" id="login" method="post" action="'.$this->login().'">
@@ -315,28 +315,6 @@ class funciones {
     }
   }
 
-  public function empresa(){
-    if(isset($_POST['logear'])){
-      $user= $_POST['user'];
-      $contraseña= $_POST['contraseña'];
-      $afi= $this->bd->maquila_id($user,$contraseña);
-      if (empty($afi)) {
-        echo '<script type="text/javascript">alert("No se encuentra segirtrado.");</script>';
-      }else {
-        foreach ($afi as $v) {
-          $_SESSION['usuario'] = $v['Nombre'] . ' ' . $v['Apellidos'];
-          $_SESSION['alias'] = $v['Nombre_usuario'];
-          $_SESSION['email'] = $v['Email'];
-          $_SESSION['direccion'] = $v['Direccion'];
-          $_SESSION['id_user'] = $v['Id_afiliado'];
-          $_SESSION['telefono'] = $v['Telefono'];
-          $_SESSION['contraseña'] = $v['passwors'];
-          echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
-        }
-      }
-    }
-  }
-
   public function cerrarSession(){
     if (isset($_POST["salir"])) {
       session_destroy();
@@ -359,5 +337,32 @@ class funciones {
     if(!isset($_SESSION['usuario'])){
         echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=index.php">';
     }
+  }
+
+  public function maqula(){
+    $maquilas= $this->bd->maquila($_SESSION['id_user']);
+    $texto='';
+    //recorre los datos
+    foreach ($maquilas as $maq) {
+      $texto.='<div style="color:black; ">
+        <div ><h4>
+          '.$maq['Nombre_maqui'].'
+        </h4></div><br>
+        <div><h4>
+          '.$maq['Direccion'].'
+        </h4></div><br>
+        <div ><h4>
+          '.$maq['Telefono'].'
+        </h4></div><br>
+        <div><h4>
+          '.$maq['Email'].'
+        </h4></div><br>
+        <div><h4>
+          '.$maq['Descripcion'].'
+          </h4>
+        </div>
+      </div>';
+    }
+    echo $texto;
   }
 }

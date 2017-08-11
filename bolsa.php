@@ -63,7 +63,7 @@ session_start();
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal">&times;</button>
-          <h3>Solicitar Informes</h3>
+          <h3>Registrate al curso</h3>
         </div>
         <div class="modal-body">
           <form role="form" id="formulario" method="post">
@@ -88,7 +88,7 @@ session_start();
               <div class="form-group col-lg-12">
                 <?php $fun->N_empleado();?>
                 <input type="hidden" name="Id_bolsa" id="id_bolsa">
-                <button name="enviar" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
+                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
               </div>
             </div>
           </form>
