@@ -74,18 +74,6 @@ class database {
     $sql->execute(array($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa));
   }
 
-<<<<<<< HEAD
-  function maquila_id($user, $contraseña){
-    //inserta una nueva maquila
-    $sql = $this->pdo->prepare("select * from maquila where Id_maquila=?  and passwors = ?");
-    if ($sql->execute(array($user, $contraseña))) {
-      //retorna los datos obtenidos de la base
-      return $sql->fetchAll(PDO::FETCH_ASSOC);
-    }
-  }
-
-=======
->>>>>>> a9504275e0c600aedb9c4d3a8c594d1dfbb05d07
   function N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email){
     //inserta una nuevo aspirante
     $sql = $this->pdo->prepare("INSERT INTO aspirantes(`Id_curs`,`Nombre_aspi`, `Apellidos`, `Telefono`, `Direccion`, `Email`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['telefono']}
