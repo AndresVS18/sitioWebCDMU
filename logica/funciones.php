@@ -39,7 +39,7 @@ class funciones {
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afiliarse<span class="caret"></span></a>
     <ul class="dropdown-menu">';
-    // condicion de que exista una variable de secion
+    // condicion de que exista una variable de sesion
     if(isset($_SESSION['usuario'])){
       $menu.='<li><a href="perfil.php">Ver Perfil</a></li>
       <li><a href="oportunidad.php">Oportunidad de trabajo</a></li>
@@ -48,7 +48,7 @@ class funciones {
       </form>';
     }else{
       $menu.='<li><a href="registrarse.php">Crear Usuario</a></li>
-      <li><a href="#" data-toggle="modal" data-target="#modal-login">Iniciar Sesion</a></li>';
+      <li><a href="#" data-toggle="modal" data-target="#modal-login">Iniciar Sesión</a></li>';
     }
     $menu.='</ul>
     </li>
@@ -71,7 +71,7 @@ class funciones {
       <form class="login-form" id="login" method="post" action="'.$this->login().'">
       <div class="form-group">
       <div class="input-group">
-      <input name="user" type="text" id="focus-login" class="form-control" placeholder="Username">
+      <input name="user" type="text" id="focus-login" class="form-control" placeholder="Nombre de usuario">
       <span class="input-group-addon">
       <i class="glyphicon glyphicon-user"></i>
       </span>
@@ -79,7 +79,7 @@ class funciones {
       </div>
       <div class="form-group">
       <div class="input-group">
-      <input name="contraseña" type="password" class="form-control" placeholder="Type your password">
+      <input name="contraseña" type="password" class="form-control" placeholder="Escribe tu contraseña">
       <span class="input-group-addon">
       <i class="glyphicon glyphicon-lock"></i>
       </span>
@@ -159,7 +159,7 @@ class funciones {
       '.$bolsa['Nombre_vacante'].'
       </h3>
       <h4 class="text-justify">
-      <small>'.$bolsa['Contenido'].'<br> Telefono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
+      <small>'.$bolsa['Contenido'].'<br> Teléfono:'.$bolsa['Telefono'].'<br> Dirección:'.$bolsa['Direccion'].'</small>
       </h4>
       <a data-toggle="modal" data-target="#modal-contact-form" data-id="'.$bolsa['Id_bolsa'].'" class="btn btn-default btn-lg">Mandar Información</a>
       </div>';
@@ -202,9 +202,7 @@ class funciones {
     //recorre los datos
     foreach ($con as $cur) {
       $texto.='<div class="col-lg-12 text-center">
-      <div class="container" style="width:850px">
-      <img class="curso img-responsive img-border img-full" src="img/'.$cur['imagen'].'" alt="">
-      </div>
+      <img class="img-responsive img-border img-full" src="img/'.$cur['imagen'].'" alt="">
       <h2>'.$cur['Nombre_curs'].'
       <br>
       <small>'.$cur['Fecha_curso'].'</small>
