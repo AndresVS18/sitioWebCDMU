@@ -60,7 +60,7 @@ class database {
   }
 
   function afilidao_id($user, $contraseña){
-    $sql = $this->pdo->prepare("select * from afiliados where Nombre_usuario=?  and password = ?");
+    $sql = $this->pdo->prepare("SELECT * FROM `afiliados` WHERE `Nombre_usuario` = ? AND `passwors`= ?");
     if ($sql->execute(array($user, $contraseña))) {
       //retorna los datos obtenidos de la base
       return $sql->fetchAll(PDO::FETCH_ASSOC);

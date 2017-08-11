@@ -201,17 +201,26 @@ class funciones {
     $texto='';
     //recorre los datos
     foreach ($con as $cur) {
-      $texto.='<div class="col-lg-12 text-center">
-      <img class="img-responsive img-border img-full" src="img/'.$cur['imagen'].'" alt="">
-      <h2>'.$cur['Nombre_curs'].'
-      <br>
-      <small>'.$cur['Fecha_curso'].'</small>
-      </h2>
-      '.$cur['Tipo_curso'].'
-      <br>
-      <a data-toggle="modal" data-id="'.$cur['Id_curs'].'" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
-      <hr>
-      </div>';
+
+      $texto.='  <div class="row">
+        <div class="box">
+        <div class="col-lg-12">
+        <hr>
+        <h2 class="intro-text text-center">'.$cur['Nombre_curs'].'
+        <br>Fecha del curos: '.$cur['Fecha_curso'].'
+        </h2>
+        <hr>
+        </div>
+        <div class="col-md-6">
+        <img class="img-responsive img-border-left" src="img/'.$cur['imagen'].'" alt="">
+        </div>
+        <div>
+        <p>'.$cur['Tipo_curso'].'</p>
+        </div>
+        <div class="clearfix">
+          <a data-toggle="modal" data-id="'.$cur['Id_curs'].'" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
+        </div>
+        </div>';
     }
     return $texto;
   }

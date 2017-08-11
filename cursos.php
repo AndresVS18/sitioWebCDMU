@@ -42,20 +42,15 @@ session_start();
   <?php $fun->menu(); ?>
 
   <div class="container">
-
     <div class="row">
       <div class="box">
         <div class="col-lg-12">
-          <hr>
-          <h2 class="intro-text text-center">
-            <strong>CURSOS</strong>
-          </h2>
-          <hr>
+          <h2 class="intro-text text-center"> <strong>C U R S O S </strong></h2>
         </div>
-        <?php echo $fun->curso(); ?>
       </div>
     </div>
-  </div>
+        <?php echo $fun->curso(); ?>
+
   <!-- /.container -->
   <!-- modal del formulario -->
   <div class="modal fade" id="modal-curso-form" role="dialog">

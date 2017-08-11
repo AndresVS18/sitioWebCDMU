@@ -90,11 +90,6 @@ session_start();
                   <?php $fun->N_empleado();?>
                 <input type="hidden" name="Id_bolsa" id="id_bolsa">
                 <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar</button>
-
-                <?php $fun->N_empleado();?>
-                <input type="hidden" name="Id_bolsa" id="id_bolsa">
-                <button name="enviar" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
-
               </div>
             </div>
           </form>
