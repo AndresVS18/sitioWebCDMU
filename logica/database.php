@@ -60,7 +60,7 @@ class database {
   }
 
   function afilidao_id($user, $contraseña){
-    $sql = $this->pdo->prepare("select * from afiliados where Nombre_usuario=?  and passwors = ?");
+    $sql = $this->pdo->prepare("select * from afiliados where Nombre_usuario=?  and password = ?");
     if ($sql->execute(array($user, $contraseña))) {
       //retorna los datos obtenidos de la base
       return $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -72,15 +72,6 @@ class database {
     $sql = $this->pdo->prepare("INSERT INTO `maquila`( `Id_afiliado`, `Nombre_maqui`, `Direccion`, `Telefono`, `Email`, `Descripcion`) VALUES ('{$id}','{$_POST['nombreempresa']}','{$_POST['direccionempresa']}','{$_POST['telefonoempresa']}
       ','{$_POST['emailempresa']}','{$_POST['descripcionempresa']}')");
     $sql->execute(array($id,$nombre_empresa,$direccion_empresa,$telefono_empresa,$email_empresa,$descripcion_empresa));
-  }
-
-  function maquila_id($user, $contraseña){
-    //inserta una nueva maquila
-    $sql = $this->pdo->prepare("select * from maquila where Nombre_usuario=?  and passwors = ?");
-    if ($sql->execute(array($user, $contraseña))) {
-      //retorna los datos obtenidos de la base
-      return $sql->fetchAll(PDO::FETCH_ASSOC);
-    }
   }
 
   function N_aspirante($id, $nombre, $apellidos, $telefono, $direccion, $email){
@@ -101,8 +92,17 @@ class database {
 
   function Empleado ($id, $nombre, $telefono, $email , $mensaje){
     //inserta una nueva afiliacion
-    $sql = $this->pdo->prepare("INSERT INTO bolsa_trabajo(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$id}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
+    $sql = $this->pdo->prepare("INSERT INTO `bolsa_formulario`(`Id_bolsa`, `Nombre`, `Telefono`, `Correo`, `Mensaje`) VALUES ('{$_POST['Id_bolsa']}','{$_POST['nombre']}','{$_POST['telefono']}','{$_POST['email']}
       ','{$_POST['comentario']}')");
     $sql->execute(array($id, $nombre, $telefono, $email , $mensaje));
   }
+
+ function maquila($id){
+   $sql = $this->pdo->prepare("select * from maquila where Id_afiliado = ?");
+   if ($sql->execute(array($id))) {
+     //retorna los datos obtenidos de la base
+     return $sql->fetchAll(PDO::FETCH_ASSOC);
+   }
+ }
+
 }

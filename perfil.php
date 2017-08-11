@@ -81,9 +81,10 @@ $fun->comprobar();
     </h4></div><br>
     <div ><h4>
       '.$_SESSION['alias'].'
-    </h4></div><br>
-    <div>
+    </h4></div><br><br>
+    <div><h4>
       '.$_SESSION['contraseña'].'
+      </h4>
     </div>
   </div>'; ?>
 </div>
@@ -106,24 +107,7 @@ $fun->comprobar();
       </div>
 </div>
 <div class="col-md-2 ">
-  <?php echo '
-  <div style="color:black; ">
-    <dsiv ><h4>
-      '.$_POST['nombreempresa'].'
-    </h4></div><br>
-    <div><h4>
-      '.$_POST['direccionempresa'].'
-    </h4></div><br>
-    <div ><h4>
-      '.$_POST['telefonoempresa'].'
-    </h4></div><br>
-    <div ><h4>
-      '.$_POST['emailempresa'].'
-    </h4></div><br>
-    <div>
-      '.$_POST['descripcionempresa'].'
-    </div>
-  </div>'; ?>
+  <?php $fun->maqula(); ?>
 </div>
 </div>
 </div>
