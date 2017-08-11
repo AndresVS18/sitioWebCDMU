@@ -129,7 +129,7 @@ class funciones {
     <div class="clearfix visible-xs"></div>
 
     <div class="col-xs-12 col-sm-4 col-md-4 ">
-    <h4>Contactanos</h4>
+    <h4>Contáctanos</h4>
     <ul class="list-unstyled">
     <li><i class="glyphicon glyphicon-globe"></i> 27 Norte #115 Fracc.El rosario, Tehuacán Puebla.</li>
     <li><i class="glyphicon glyphicon-earphone"></i> (044) 238 123 4567</li>
@@ -202,7 +202,9 @@ class funciones {
     //recorre los datos
     foreach ($con as $cur) {
       $texto.='<div class="col-lg-12 text-center">
-      <img class="img-responsive img-border img-full" src="img/'.$cur['imagen'].'" alt="">
+      <div class="container" style="width:850px">
+      <img class="curso img-responsive img-border img-full" src="img/'.$cur['imagen'].'" alt="">
+      </div>
       <h2>'.$cur['Nombre_curs'].'
       <br>
       <small>'.$cur['Fecha_curso'].'</small>

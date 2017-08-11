@@ -76,7 +76,7 @@ class database {
 
   function maquila_id($user, $contraseña){
     //inserta una nueva maquila
-    $sql = $this->pdo->prepare("select * from maquila where Nombre_usuario=?  and passwors = ?");
+    $sql = $this->pdo->prepare("select * from maquila where Id_maquila=?  and passwors = ?");
     if ($sql->execute(array($user, $contraseña))) {
       //retorna los datos obtenidos de la base
       return $sql->fetchAll(PDO::FETCH_ASSOC);
