@@ -218,7 +218,7 @@ class funciones {
         <p>'.$cur['Tipo_curso'].'</p>
         </div>
         <div class="clearfix">
-          <a data-toggle="modal" data-id="'.$cur['Id_curs'].'" data-target="#modal-curso-form" class="btn btn-default btn-lg">Regístrate</a>
+          <a data-toggle="modal" data-id="'.$cur['Id_curs'].'" data-target="#modal-curso-form" class="btn btn-default btn-lg">Registarse</a>
         </div>
         </div>';
     }

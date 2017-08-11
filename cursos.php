@@ -77,7 +77,7 @@ session_start();
               </div>
               <div class="clearfix"></div>
               <div class="form-group col-lg-4">
-                <label>Direccion</label>
+                <label>Dirección</label>
                 <input name="direccion" type="text" class="form-control" placeholder="Direccion" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
@@ -87,7 +87,7 @@ session_start();
               <div class="form-group col-lg-12">
                 <?php $fun->N_aspirante();?>
                 <input type="hidden" name="Id_curs" id="id_curso">
-                <button name="inscribir" class="btn btn-default col-sm-offset-5">Registrse</button>
+                <button name="inscribir" class="btn btn-default col-sm-offset-5">Regístrate</button>
               </div>
             </div>
           </form>

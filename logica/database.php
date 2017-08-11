@@ -4,9 +4,9 @@ class database {
 
   private $pdo;//variable para iniciar el pdo
   var $HOST = "localhost";//nombre del host que se ocupara
-  var $BDNAME = "pagina_web";//nombre de la base de datos
-  var $USUARIO = "root";//nombre del usuario
-  var $PASSWORD = "";//la contraseña para acceder a la base
+  var $BDNAME = "id2249975_pagina_web";//nombre de la base de datos
+  var $USUARIO = "id2249975_cddmu";//nombre del usuario
+  var $PASSWORD = "andres18";//la contraseña para acceder a la base
 
   public function __construct() {
     try {
