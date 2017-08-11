@@ -77,7 +77,7 @@ session_start();
                 <input name="apellidos" type="text" class="form-control" placeholder="Apellidos" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Telefono</label>
+                <label>Teléfono</label>
                 <input name="telefono" type="tel" class="form-control" placeholder="Telelfono" required="required" autofocus="autofocus">
               </div>
               <div class="clearfix"></div>

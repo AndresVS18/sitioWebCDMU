@@ -49,8 +49,8 @@ session_start();
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Contact
-                        <strong>business casual</strong>
+                    <h2 class="intro-text text-center">
+                        <strong>contacto</strong>
                     </h2>
                     <hr>
                 </div>
@@ -78,11 +78,11 @@ session_start();
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Contactanos
+                    <h2 class="intro-text text-center">Contáctanos
 
                     </h2>
                     <hr>
-                    <p>En esta sección podrás enviar un mensaje directamente a la empresa.  .</p>
+                    <p>Contáctanos para más información, entrevistas o visitas a la empresa.</p>
                     <form role="form">
                         <div class="row">
                             <div class="form-group col-lg-4">
@@ -94,8 +94,8 @@ session_start();
                                 <input type="email" class="form-control" placeholder="Correo">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label>Telefono</label>
-                                <input type="tel" class="form-control" placeholder="Telefono">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-control" placeholder="Teléfono">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
@@ -105,7 +105,7 @@ session_start();
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
                                 <button type="submit" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
-                            </div>    
+                            </div>
                         </div>
                     </form>
                 </div>

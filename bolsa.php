@@ -73,8 +73,8 @@ session_start();
                 <input name="nombre" type="text" class="form-control " placeholder="Nombre(s)" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
-                <label>Numero de telefono</label>
-                <input name="telefono" type="text" class="form-control" placeholder="Telefono" required="required" autofocus="autofocus">
+                <label>Numero de teléfono</label>
+                <input name="telefono" type="text" class="form-control" placeholder="Teléfono" required="required" autofocus="autofocus">
               </div>
               <div class="form-group col-lg-4">
                 <label>Correo</label>
@@ -86,9 +86,15 @@ session_start();
                 <textarea name="comentario" class="form-control" rows="6"></textarea>
               </div>
               <div class="form-group col-lg-12">
+
+                  <?php $fun->N_empleado();?>
+                <input type="hidden" name="Id_bolsa" id="id_bolsa">
+                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar</button>
+
                 <?php $fun->N_empleado();?>
                 <input type="hidden" name="Id_bolsa" id="id_bolsa">
-                <button name="enviar" type="submit" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
+                <button name="enviar" class="btn btn-default col-sm-offset-5">Enviar Datos</button>
+
               </div>
             </div>
           </form>

@@ -129,8 +129,8 @@ session_start();
         <hr>
         <img class="img-responsive img-border img-left" src="img/oportunidad.jpg" alt="">
         <hr class="visible-xs">
-        <p>Las oportunidades de trabajo. Utilizado para reclutar trabajadores a lo largo de varios periodos de tiempo. </p>
-        <p>Los aspirantes superan las entrevistas de trabajo y las posibles pruebas y pasan a formar parte de las oportunidades de trabajo.</p>
+        <p>Las oportunidades de trabajo van enfocadas a las personas que quieran participar dentro de la empresa por distintos periodos de tiempo. </p>
+        <p>Los aspirantes tendrán entrevistas de trabajo, pruebas para poder pasar a formar parte del equipo de trabajo.</p>
 
       </div>
     </div>

@@ -79,16 +79,16 @@ if(isset($_POST["nombre"])){
               <input name="apellidos" value="<?php echo $app; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Apellidos" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Correo Electronico @</label>
+              <label>Correo Electrónico @</label>
               <input name="email" value="<?php echo $correo; ?>" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Direccion</label>
-              <input name="direccion" value="<?php echo $dir; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion" required="required" autofocus="autofocus">
+              <label>Dirección</label>
+              <input name="direccion" value="<?php echo $dir; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Dirección" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Telefono</label>
-              <input name="telefono" value="<?php echo $tel; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+              <label>Teléfono</label>
+              <input name="telefono" value="<?php echo $tel; ?>" type="text" class="form-control" class="form-control input-sm" placeholder="Teléfono" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
               <label>Nombre de Usuario</label>
@@ -109,23 +109,23 @@ if(isset($_POST["nombre"])){
               <input name="nombreempresa" type="text" class="form-control" class="form-control input-sm" placeholder="Empresa" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Direccion de la empresa</label>
-              <input name="direccionempresa" type="text" class="form-control" class="form-control input-sm" placeholder="Direccion" required="required" autofocus="autofocus">
+              <label>Dirección de la empresa</label>
+              <input name="direccionempresa" type="text" class="form-control" class="form-control input-sm" placeholder="Dirección" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Telefono de la empresa</label>
-              <input name="telefonoempresa" type="tel" class="form-control" class="form-control input-sm" placeholder="Telefono" required="required" autofocus="autofocus">
+              <label>Teléfono de la empresa</label>
+              <input name="telefonoempresa" type="tel" class="form-control" class="form-control input-sm" placeholder="Teléfono" required="required" autofocus="autofocus">
             </div>
             <div class="form-group col-lg-4">
-              <label>Correo Electronico de la empresa @</label>
+              <label>Correo Electrónico de la empresa @</label>
               <input name="emailempresa" type="email" class="form-control" class="form-control input-sm" placeholder="Email @" required="required" autofocus="autofocus">
             </div>
-            <div class="form-group col-lg-12" >
+
             <div class="form-group col-lg-4" >
                 <label>Descripción de la empresa</label>
                 <input name="descripcionempresa" type="text" class="form-control des" class="form-control input-sm" placeholder="Descripción de la empresa" required="required" autofocus="autofocus">
               </div>
-            </div>
+
             <div class="form-group col-lg-12">
               <?php $fun->N_afiliado();?>
               <input type="hidden" name="save" value="contact">
